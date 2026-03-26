@@ -33,10 +33,10 @@ The U.S. is entering its most significant electricity demand supercycle since po
 - Transformer lead times <100 weeks: accelerate grid infrastructure
 
 ## Agents
-1. **Morning Brief** — 6 AM, Sonnet 4.6, daily sector briefing + flagged ticker deep-dives
-2. **Opportunity Screener** — 12 PM, Sonnet 4.6, discovers NEW tickers not on watchlist
+1. **Morning Brief** — 6 AM, Opus 4.6 (extended thinking), daily sector briefing + flagged ticker deep-dives + commodity dashboard + threshold alerts
+2. **Opportunity Screener** — 12 PM, Opus 4.6, deep 3-pass discovery system (wide-net → validation → deep-dive reports)
 3. **Post-Market Scorecard** — 5 PM, Opus 4.6, recap + conviction scoring (1-10 across Momentum, Sentiment, Valuation, Catalyst Density)
-4. **Trader Agent** — 8 PM, Opus 4.6, specific trade proposals with full thesis, risk/reward, options analysis
+4. **Trader Agent** — 8 PM, Opus 4.6 (extended thinking), specific trade proposals with full thesis, risk/reward, options analysis
 5. **Tutor Agent** — on-demand interactive, Opus 4.6, works through curriculum files
 
 ## Configuration Files
