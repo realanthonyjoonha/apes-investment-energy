@@ -1,18 +1,28 @@
 {
   "flagged": [
     {
-      "ticker": "RKLB",
-      "reason": "Neutron test flight expected this month — watching for date confirmation",
+      "ticker": "LNG",
+      "reason": "Middle East disruption driving European/Asian LNG demand surge — watching for new long-term contract announcements and cargo rerouting",
       "added": "2026-03-25"
     },
     {
-      "ticker": "PLTR",
-      "reason": "NATO contract expansion rumor — need to track any official announcement",
+      "ticker": "EQT",
+      "reason": "Lowest-cost U.S. gas producer benefits from Henry Hub price spikes + DC supply deal pipeline — watching for new power agreements",
       "added": "2026-03-25"
     },
     {
-      "ticker": "AVGO",
-      "reason": "Custom AI accelerator deal with hyperscaler — earnings call hinted at it",
+      "ticker": "FANG",
+      "reason": "Pure-play Permian, most leveraged to crude price spikes from Iran conflict — watching for production guidance updates",
+      "added": "2026-03-25"
+    },
+    {
+      "ticker": "CEG",
+      "reason": "TMI Unit 1 restart accelerated to 2027, 500 FTEs on-site — watching for construction milestones and NRC updates",
+      "added": "2026-03-25"
+    },
+    {
+      "ticker": "GEV",
+      "reason": "Gas turbine backlog 83 GW, expected sold out through 2030 — watching for new DC turbine orders",
       "added": "2026-03-25"
     }
   ]

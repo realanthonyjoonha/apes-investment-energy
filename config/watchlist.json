@@ -1,18 +1,23 @@
 {
-  "defense_space": {
-    "prime_contractors": ["LMT", "RTX", "NOC", "GD", "BA"],
-    "space_launch": ["RKLB", "LUNR", "ASTS", "LDOS"],
-    "cyber_c4isr": ["PLTR", "LHX", "CACI", "BAH"],
-    "hypersonics_missiles": ["LMT", "RTX"],
-    "drones_autonomous": ["AVAV", "KTOS", "JOBY"],
-    "sector_etfs": ["ITA", "XAR", "DFEN"]
+  "ai_power_demand": {
+    "dc_infrastructure": ["VRT", "APLD", "IREN", "CRWV"],
+    "utilities_dc_exposed": ["D", "AEP", "PPL", "SO"],
+    "dc_power_solutions": ["BE"],
+    "sector_etfs": ["XLU"]
   },
-  "ai_semi_robotics": {
-    "ai_platforms_infra": ["NVDA", "AMD", "AVGO", "MRVL"],
-    "foundry_equipment": ["TSM", "ASML", "AMAT", "LRCX"],
-    "robotics_automation": ["ISRG", "FANUY", "TER", "IRBT"],
-    "ai_software_cloud": ["MSFT", "GOOGL", "AMZN", "CRM"],
-    "edge_ai_custom_silicon": ["QCOM", "ARM", "INTC", "MCHP"],
-    "sector_etfs": ["SMH", "SOXX", "BOTZ"]
+  "energy_generation": {
+    "nuclear_operators": ["CEG", "VST", "TLN"],
+    "nuclear_development": ["SMR", "OKLO", "BWXT"],
+    "nuclear_fuel": ["CCJ", "LEU"],
+    "natural_gas_ep": ["EQT", "EXE", "CTRA", "CRK", "LNG", "AR", "RRC", "CNX"],
+    "oil_gas_ep": ["OXY", "DVN", "FANG", "COP", "HES"],
+    "renewables_storage": ["FSLR", "TSLA", "GWH"],
+    "sector_etfs": ["URA", "XLE"]
+  },
+  "energy_infrastructure": {
+    "grid_construction": ["PWR", "ETN", "HUBB"],
+    "grid_equipment": ["GEV"],
+    "midstream": ["WMB", "KMI", "ET", "DTM", "TRGP", "OKE"],
+    "sector_etfs": ["GRID"]
   }
 }

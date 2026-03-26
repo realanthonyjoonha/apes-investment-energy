@@ -2,12 +2,37 @@
   "mode": "hybrid",
   "my_picks": [
     {
-      "ticker": "RKLB",
+      "ticker": "LNG",
       "bias": "bullish",
-      "notes": "Call spreads ahead of Neutron test"
+      "notes": "Iran conflict tailwind — look at call spreads on LNG demand surge, European/Asian buyers scrambling for non-Middle East supply"
+    },
+    {
+      "ticker": "FANG",
+      "bias": "bullish",
+      "notes": "Pure-play Permian, most leveraged to crude price spikes — evaluate aggressive directional calls on geopolitical premium"
+    },
+    {
+      "ticker": "CEG",
+      "bias": "bullish",
+      "notes": "TMI restart catalyst approaching 2027, dominant nuclear fleet post-Calpine — consider LEAPS for multi-quarter thesis"
+    },
+    {
+      "ticker": "EQT",
+      "bias": "bullish",
+      "notes": "Lowest-cost gas producer + DC supply pipeline — bull call spreads targeting Henry Hub squeeze to $5+ scenario"
+    },
+    {
+      "ticker": "GEV",
+      "bias": "bullish",
+      "notes": "$150B backlog, gas turbine reservations sold out through 2030 — picks-and-shovels play across gas + grid, look at pullback entries"
+    },
+    {
+      "ticker": "ET",
+      "bias": "bullish",
+      "notes": "5.5 GW in DC behind-the-meter deals + LNG export infrastructure — benefits from both AI power demand and Middle East disruption"
     }
   ],
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
-  "risk_tolerance": "moderate"
+  "risk_tolerance": "aggressive"
 }
