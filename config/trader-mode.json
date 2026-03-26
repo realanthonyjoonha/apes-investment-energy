@@ -1,0 +1,13 @@
+{
+  "mode": "hybrid",
+  "my_picks": [
+    {
+      "ticker": "RKLB",
+      "bias": "bullish",
+      "notes": "Call spreads ahead of Neutron test"
+    }
+  ],
+  "max_ideas_per_day": 5,
+  "preferred_timeframe": "swing",
+  "risk_tolerance": "moderate"
+}

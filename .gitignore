@@ -1,0 +1,13 @@
+# Outputs (local only)
+outputs/
+
+# OS files
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/

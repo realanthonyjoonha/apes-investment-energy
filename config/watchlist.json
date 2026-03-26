@@ -1,0 +1,18 @@
+{
+  "defense_space": {
+    "prime_contractors": ["LMT", "RTX", "NOC", "GD", "BA"],
+    "space_launch": ["RKLB", "LUNR", "ASTS", "LDOS"],
+    "cyber_c4isr": ["PLTR", "LHX", "CACI", "BAH"],
+    "hypersonics_missiles": ["LMT", "RTX"],
+    "drones_autonomous": ["AVAV", "KTOS", "JOBY"],
+    "sector_etfs": ["ITA", "XAR", "DFEN"]
+  },
+  "ai_semi_robotics": {
+    "ai_platforms_infra": ["NVDA", "AMD", "AVGO", "MRVL"],
+    "foundry_equipment": ["TSM", "ASML", "AMAT", "LRCX"],
+    "robotics_automation": ["ISRG", "FANUY", "TER", "IRBT"],
+    "ai_software_cloud": ["MSFT", "GOOGL", "AMZN", "CRM"],
+    "edge_ai_custom_silicon": ["QCOM", "ARM", "INTC", "MCHP"],
+    "sector_etfs": ["SMH", "SOXX", "BOTZ"]
+  }
+}

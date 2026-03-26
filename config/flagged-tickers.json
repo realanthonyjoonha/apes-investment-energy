@@ -1,0 +1,19 @@
+{
+  "flagged": [
+    {
+      "ticker": "RKLB",
+      "reason": "Neutron test flight expected this month — watching for date confirmation",
+      "added": "2026-03-25"
+    },
+    {
+      "ticker": "PLTR",
+      "reason": "NATO contract expansion rumor — need to track any official announcement",
+      "added": "2026-03-25"
+    },
+    {
+      "ticker": "AVGO",
+      "reason": "Custom AI accelerator deal with hyperscaler — earnings call hinted at it",
+      "added": "2026-03-25"
+    }
+  ]
+}
