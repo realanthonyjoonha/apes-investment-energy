@@ -1,0 +1,41 @@
+name: Post-Market Scorecard Agent
+
+on:
+  schedule:
+    # 5:00 PM Pacific (00:00 UTC next day) — Monday through Friday
+    - cron: '0 0 * * 2-6'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  MMD_API_KEY: ${{ secrets.MMD_API_KEY }}
+  GMAIL_TOKEN: ${{ secrets.GMAIL_TOKEN }}
+  GMAIL_CREDENTIALS: ${{ secrets.GMAIL_CREDENTIALS }}
+  GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+  GOOGLE_SEARCH_CX: ${{ secrets.GOOGLE_SEARCH_CX }}
+
+jobs:
+  run-post-market-scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45  # 47 tickers = lots of API calls
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run Post-Market Scorecard Agent
+        run: python scripts/run_agent.py --agent post-market-scorecard
+
+      - name: Post-run summary
+        if: always()
+        run: echo "Post-Market Scorecard completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"

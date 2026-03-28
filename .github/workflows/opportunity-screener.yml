@@ -1,0 +1,41 @@
+name: Opportunity Screener Agent
+
+on:
+  schedule:
+    # 12:00 PM Pacific (19:00 UTC) — Monday through Friday
+    - cron: '0 19 * * 1-5'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  MMD_API_KEY: ${{ secrets.MMD_API_KEY }}
+  GMAIL_TOKEN: ${{ secrets.GMAIL_TOKEN }}
+  GMAIL_CREDENTIALS: ${{ secrets.GMAIL_CREDENTIALS }}
+  GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+  GOOGLE_SEARCH_CX: ${{ secrets.GOOGLE_SEARCH_CX }}
+
+jobs:
+  run-opportunity-screener:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45  # Screener is the longest-running agent
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run Opportunity Screener Agent
+        run: python scripts/run_agent.py --agent opportunity-screener
+
+      - name: Post-run summary
+        if: always()
+        run: echo "Opportunity Screener completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
