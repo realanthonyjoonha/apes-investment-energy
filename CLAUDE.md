@@ -33,11 +33,19 @@ The U.S. is entering its most significant electricity demand supercycle since po
 - Transformer lead times <100 weeks: accelerate grid infrastructure
 
 ## Agents
-1. **Morning Brief** — 6 AM, Opus 4.6 (extended thinking), daily sector briefing + flagged ticker deep-dives + commodity dashboard + threshold alerts
-2. **Opportunity Screener** — 12 PM, Opus 4.6, deep 3-pass discovery system (wide-net → validation → deep-dive reports)
-3. **Post-Market Scorecard** — 5 PM, Opus 4.6, recap + conviction scoring (1-10 across Momentum, Sentiment, Valuation, Catalyst Density)
-4. **Trader Agent** — 8 PM, Opus 4.6 (extended thinking), specific trade proposals with full thesis, risk/reward, options analysis
+1. **Morning Brief** — 6 AM Mon-Fri, Opus 4.6 (extended thinking), daily sector briefing + flagged ticker deep-dives + commodity dashboard + threshold alerts
+2. **Opportunity Screener** — 12 PM Every Day, Opus 4.6, deep 3-pass discovery system (wide-net → validation → deep-dive reports)
+3. **Post-Market Scorecard** — 5 PM Mon-Fri, Opus 4.6, recap + conviction scoring (1-10 across Momentum, Sentiment, Valuation, Catalyst Density)
+4. **Trader Agent** — 8 PM Every Day, Opus 4.6 (extended thinking), specific trade proposals with full thesis, risk/reward, options analysis
 5. **Tutor Agent** — on-demand interactive, Opus 4.6, works through curriculum files
+
+## Cloud Infrastructure
+- **Host:** DigitalOcean Droplet (209.38.70.60) — Ubuntu 24.04 LTS, SFO3
+- **Auth:** Claude Max account via OAuth token (no API costs)
+- **Runner:** `/root/run-agent.sh` executes prompts via `claude --print`
+- **Logs:** `/root/Trading/outputs/logs/`
+- **Repo:** Cloned at `/root/Trading/` — pull latest with `cd ~/Trading && git pull`
+- **Timezone:** Pacific (PDT/PST)
 
 ## Configuration Files
 All in `/config/`:
