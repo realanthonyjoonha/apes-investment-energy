@@ -4,32 +4,52 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "Iran conflict tailwind — look at call spreads on LNG demand surge, European/Asian buyers scrambling for non-Middle East supply"
+      "notes": "ACTIVE TRADE: Apr17 $295/$310 bull call spread at $6.52 debit. Iran/Hormuz disruption + Qatar Ras Laffan offline 3-5 yrs. Earnings Apr 30 BMO. Goldman target $312. HIGH CONVICTION.",
+      "trade_entered": "2026-03-28",
+      "structure": "Apr17 $295/$310 BCS",
+      "debit": 6.52,
+      "max_profit": 8.48,
+      "breakeven": 301.52
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "Pure-play Permian, most leveraged to crude price spikes — evaluate aggressive directional calls on geopolitical premium"
+      "notes": "ACTIVE TRADE: Apr17 $200/$210 bull call spread at $4.20 debit. WTI at $99.64, Brent $112.57. Geopolitical risk premium play. Earnings ~May4. MEDIUM CONVICTION. Note: above Street consensus at $201.84.",
+      "trade_entered": "2026-03-28",
+      "structure": "Apr17 $200/$210 BCS",
+      "debit": 4.20,
+      "max_profit": 5.80,
+      "breakeven": 204.20
     },
     {
       "ticker": "CEG",
       "bias": "bullish",
-      "notes": "TMI restart catalyst approaching 2027, dominant nuclear fleet post-Calpine — consider LEAPS for multi-quarter thesis"
+      "notes": "ACTIVE TRADE: Jun18 $300/$330 bull call spread at $12.20 debit. Analyst median target $406.50 vs current $301.49. TMI restart 2027 on track despite PJM 2031 grid delay noise. Earnings May7. MEDIUM CONVICTION.",
+      "trade_entered": "2026-03-28",
+      "structure": "Jun18 $300/$330 BCS",
+      "debit": 12.20,
+      "max_profit": 17.80,
+      "breakeven": 312.20
     },
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "Lowest-cost gas producer + DC supply pipeline — bull call spreads targeting Henry Hub squeeze to $5+ scenario"
+      "notes": "ACTIVE TRADE: Apr17 $67.50/$72.50 bull call spread at $1.69 debit. Q1 FCF 30%+ above consensus from Jan HH spike. BMO $76 target. HH at $3.05 is headwind. Liquidity warning on $72.50c (vol=2). MEDIUM CONVICTION.",
+      "trade_entered": "2026-03-28",
+      "structure": "Apr17 $67.50/$72.50 BCS",
+      "debit": 1.69,
+      "max_profit": 3.31,
+      "breakeven": 69.19
     },
     {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "$150B backlog, gas turbine reservations sold out through 2030 — picks-and-shovels play across gas + grid, look at pullback entries"
-    },
-    {
-      "ticker": "ET",
-      "bias": "bullish",
-      "notes": "5.5 GW in DC behind-the-meter deals + LNG export infrastructure — benefits from both AI power demand and Middle East disruption"
+      "notes": "ACTIVE TRADE: Apr17 $850/$900 bull call spread at $23.10 debit. SPECULATIVE — expires Apr17, earnings Apr22 (before earnings). Pre-earnings momentum play only. 83GW backlog, raised guidance $44-45B. Must be above $855 on entry. SPECULATIVE.",
+      "trade_entered": "2026-03-28",
+      "structure": "Apr17 $850/$900 BCS",
+      "debit": 23.10,
+      "max_profit": 26.90,
+      "breakeven": 873.10
     }
   ],
   "max_ideas_per_day": 5,

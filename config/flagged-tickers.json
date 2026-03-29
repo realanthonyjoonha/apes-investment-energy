@@ -1,6 +1,11 @@
 {
   "flagged": [
     {
+      "ticker": "VG",
+      "reason": "Venture Global LNG: Morgan Stanley double-upgraded to Overweight $22, Iran/Qatar disruption removing ~12.8 MTPA global supply, CP2 Phase 2 FID just closed — watching for DOE CP2 amendment and BP arbitration ruling",
+      "added": "2026-03-28"
+    },
+    {
       "ticker": "LNG",
       "reason": "Middle East disruption driving European/Asian LNG demand surge — watching for new long-term contract announcements and cargo rerouting",
       "added": "2026-03-25"
@@ -8,11 +13,6 @@
     {
       "ticker": "EQT",
       "reason": "Lowest-cost U.S. gas producer benefits from Henry Hub price spikes + DC supply deal pipeline — watching for new power agreements",
-      "added": "2026-03-25"
-    },
-    {
-      "ticker": "FANG",
-      "reason": "Pure-play Permian, most leveraged to crude price spikes from Iran conflict — watching for production guidance updates",
       "added": "2026-03-25"
     },
     {
