@@ -1,6 +1,16 @@
 {
   "flagged": [
     {
+      "ticker": "CORZ",
+      "reason": "Core Scientific AI pivot: 250MW CoreWeave delivery due Q2 2026, Q1 earnings (May) = first full HPC revenue quarter, $1B Morgan Stanley financing closed Mar 18 — imminent construction milestone and earnings catalyst",
+      "added": "2026-03-29"
+    },
+    {
+      "ticker": "NXE",
+      "reason": "NexGen Energy: Final federal CNSC approval received Mar 5, 2026 — construction commencing summer 2026. Ground-breaking announcement expected Q2. Time-sensitive entry before institutional re-rating of 30M lb/yr Rook I uranium project",
+      "added": "2026-03-29"
+    },
+    {
       "ticker": "VG",
       "reason": "Venture Global LNG: Morgan Stanley double-upgraded to Overweight $22, Iran/Qatar disruption removing ~12.8 MTPA global supply, CP2 Phase 2 FID just closed — watching for DOE CP2 amendment and BP arbitration ruling",
       "added": "2026-03-28"
@@ -11,18 +21,8 @@
       "added": "2026-03-25"
     },
     {
-      "ticker": "EQT",
-      "reason": "Lowest-cost U.S. gas producer benefits from Henry Hub price spikes + DC supply deal pipeline — watching for new power agreements",
-      "added": "2026-03-25"
-    },
-    {
       "ticker": "CEG",
       "reason": "TMI Unit 1 restart accelerated to 2027, 500 FTEs on-site — watching for construction milestones and NRC updates",
-      "added": "2026-03-25"
-    },
-    {
-      "ticker": "GEV",
-      "reason": "Gas turbine backlog 83 GW, expected sold out through 2030 — watching for new DC turbine orders",
       "added": "2026-03-25"
     }
   ]
