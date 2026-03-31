@@ -45,18 +45,27 @@ For each ETF (XLU, XLE, URA, GRID), pull:
 - 5-day range: `GET /v2/aggs/ticker/{etf}/range/1/day/{5_days_ago}/{today}`
 - Volume comparison: compare previous day volume to the 20-day average (pull 20-day range and calculate)
 
-**2c. Full Watchlist Prices — EVERY Ticker**
-For EVERY ticker in watchlist.json (all 47 tickers), pull:
-- Previous day bar: `GET /v2/aggs/ticker/{ticker}/prev` — gives you OHLC, volume, VWAP
-- 5-day range: `GET /v2/aggs/ticker/{ticker}/range/1/day/{5_days_ago}/{today}` — for trend context
+**2c. Flagged Tickers — PRIORITY (Pull First)**
+For EVERY ticker in `flagged-tickers.json` (3-5 tickers), pull DETAILED data:
+- Previous day bar: `GET /v2/aggs/ticker/{ticker}/prev` — OHLC, volume, VWAP
+- 5-day range: `GET /v2/aggs/ticker/{ticker}/range/1/day/{5_days_ago}/{today}`
+- 30-day range: `GET /v2/aggs/ticker/{ticker}/range/1/day/{30_days_ago}/{today}` — for trend and moving average context
+These are the highest-priority tickers. Pull them first before anything else.
 
-Store results using the `store_as` parameter so you can query them with SQL later. For example:
-```
-call_api: GET /v2/aggs/ticker/EQT/prev → store_as: "eqt_prev"
-call_api: GET /v2/aggs/ticker/EQT/range/1/day/2026-03-20/2026-03-25 → store_as: "eqt_5day"
-```
+**2d. Watchlist Tickers — Secondary**
+For EVERY ticker in `watchlist.json`, pull:
+- Previous day bar: `GET /v2/aggs/ticker/{ticker}/prev` — OHLC, volume, VWAP
+This gives you enough data to identify the biggest movers and calculate sub-sector performance.
 
-**2d. Technical Indicators for Flagged Tickers**
+**2e. Energy Sector Discovery — Find Movers NOT on Our Watchlist**
+Search for energy sector stocks making big moves that are NOT already on the watchlist:
+- Use `search_endpoints` to find sector/market movers endpoints
+- Search the web for "energy stocks biggest movers today", "energy stocks up today", "energy stocks down today"
+- Identify 5-10 tickers with moves of +/-3% or more that are NOT in watchlist.json
+- For each discovered mover, pull: `GET /v2/aggs/ticker/{ticker}/prev`
+These are potential additions to the watchlist — new names we might be missing.
+
+**2f. Technical Indicators for Flagged Tickers**
 For each flagged ticker, use `search_endpoints` to find and pull:
 - RSI (14-period)
 - Simple Moving Averages (50-day and 200-day)
@@ -70,48 +79,61 @@ The API has per-minute rate limits. If you hit a 429 error, wait 60 seconds and 
 
 ### PHASE 3: Extensive Web Research
 
-This is NOT a quick search. You must conduct **deep, multi-query web research** across all of the following categories. Run at least 15-20 separate web searches to ensure comprehensive coverage. The goal is to find EVERY material overnight development affecting your watchlist.
+This is NOT a quick search. You must conduct **deep, multi-query web research** across all of the following categories. Run at least **25-30 separate web searches** to ensure comprehensive coverage. The goal is to find EVERY material overnight development affecting your watchlist AND the broader stock market / energy markets. **NEWS IS THE #1 PRIORITY** — the reader needs to wake up and immediately understand what happened overnight and what's driving markets today.
 
-**3a. Commodity & Energy Markets (run 3-4 searches)**
-- "natural gas prices today" / "Henry Hub futures" — get the latest price, any overnight moves, forward curve direction
-- "oil prices today Iran Middle East" — crude price action, geopolitical supply disruption updates
-- "uranium price spot market" — spot price, contract market developments
-- "copper prices LME" — industrial metals relevant to grid infrastructure
+**3a. BROAD MARKET & MACRO NEWS (run 4-5 searches) — THIS IS CRITICAL**
+- "stock market news today" — overnight futures, Asia/Europe session, key market-moving headlines
+- "S&P 500 futures premarket" — US equity direction, risk sentiment
+- "Fed interest rate news today" — any Fed commentary, rate expectations, economic data releases
+- "tariffs trade war news today" — trade policy changes affecting energy, industrials, supply chains
+- "geopolitical news today markets" — wars, conflicts, sanctions, elections impacting global markets
+- For EVERY major headline you find, explain HOW it connects to the energy/AI power thesis
 
-**3b. AI Data Center Power (run 3-4 searches)**
-- "AI data center power announcement" — new facility announcements, expansions, delays
-- "Microsoft Google Amazon Meta Oracle data center" — hyperscaler-specific news (capex updates, facility locations, power deals)
+**3b. Energy Market News (run 4-5 searches) — EQUALLY CRITICAL**
+- "energy news today" — broad sweep of all energy market developments
+- "natural gas prices today" / "Henry Hub futures" — price action, storage data, weather demand, forward curve
+- "oil prices today Iran Middle East OPEC" — crude price action, geopolitical supply disruption, OPEC decisions, sanctions enforcement
+- "uranium price news today" — spot price, contract market, enrichment developments
+- "electricity market news power prices" — wholesale power prices, grid emergencies, demand records
+- "EIA energy report" — any government data releases (storage, production, imports/exports)
+
+**3c. AI Data Center Power News (run 3-4 searches)**
+- "AI data center power announcement" — new facility announcements, expansions, delays, cancellations
+- "Microsoft Google Amazon Meta Oracle data center" — hyperscaler capex updates, facility locations, power deals
 - "behind the meter data center power" — BTM generation deals, utility bypass arrangements
-- "data center power PPA nuclear" — new PPAs, co-location deals, FERC rulings
+- "data center power PPA nuclear natural gas" — new PPAs, co-location deals, FERC rulings
 
-**3c. Nuclear Sector (run 2-3 searches)**
+**3d. Nuclear Sector News (run 2-3 searches)**
 - "nuclear power plant restart NRC" — TMI, Palisades, Duane Arnold milestone updates
 - "SMR small modular reactor NuScale Oklo" — advanced reactor development news
 - "HALEU uranium enrichment Centrus" — fuel supply chain developments
 - "Constellation Energy Vistra nuclear" — company-specific nuclear fleet news
 
-**3d. Natural Gas & Oil E&P (run 2-3 searches)**
-- "natural gas production pipeline EQT Expand Energy" — E&P company news
-- "LNG export Cheniere" — LNG trade flow developments, new contracts
+**3e. Natural Gas & Oil E&P News (run 2-3 searches)**
+- "natural gas production pipeline EQT Expand Energy" — E&P company news, production guidance
+- "LNG export Cheniere news" — LNG trade flow developments, new contracts, terminal updates
 - "Permian Basin oil production" — oil E&P activity, rig count trends
-- "Iran oil supply disruption sanctions" — geopolitical impact on oil markets
+- "Iran oil supply disruption sanctions conflict" — geopolitical impact on oil markets, military developments
 
-**3e. Grid Infrastructure & Midstream (run 2-3 searches)**
-- "power grid transformer shortage" — equipment supply chain updates
-- "FERC transmission interconnection" — regulatory developments, queue updates
-- "Quanta Services Eaton GE Vernova" — grid construction company news
-- "Williams Kinder Morgan Energy Transfer pipeline" — midstream news, DC deals
+**3f. Grid Infrastructure & Midstream News (run 2-3 searches)**
+- "power grid transformer shortage news" — equipment supply chain updates, factory announcements
+- "FERC transmission interconnection ruling" — regulatory developments, queue updates
+- "Quanta Services Eaton GE Vernova earnings news" — grid construction company news
+- "Williams Kinder Morgan Energy Transfer pipeline data center" — midstream news, DC deals
 
-**3f. Policy & Regulation (run 1-2 searches)**
-- "FERC order energy regulation" — new FERC orders, rulings, meeting outcomes
-- "NRC nuclear license" — license renewals, new applications, safety reviews
-- "DOE loan energy" — DOE Loan Programs Office announcements
-- "state data center moratorium rate case" — state-level policy developments
+**3g. Policy, Regulation & Government News (run 2-3 searches)**
+- "FERC order energy regulation news" — new FERC orders, rulings, meeting outcomes
+- "NRC nuclear license approval" — license renewals, new applications, safety reviews
+- "DOE loan energy announcement" — DOE Loan Programs Office announcements
+- "state data center moratorium rate case utility" — state-level policy developments
+- "Congress energy bill legislation" — any legislative developments affecting energy sector
 
-**3g. Analyst Actions & Earnings (run 1-2 searches)**
+**3h. Analyst Actions, Earnings & Market Sentiment (run 2-3 searches)**
+- "energy stock analyst upgrade downgrade today" — sector-wide analyst moves
 - Search for analyst upgrades/downgrades on watchlist names: "[ticker] upgrade downgrade analyst"
-- Search for upcoming earnings: "[ticker] earnings date"
+- "energy earnings preview this week" — upcoming earnings and expectations
 - Search for insider transactions: "[ticker] insider buying selling SEC filing"
+- "energy sector fund flows ETF" — institutional positioning, ETF inflows/outflows
 
 **3h. Flagged Ticker Deep Research**
 For EACH ticker in `flagged-tickers.json`, run a DEDICATED search using the ticker AND the specific reason it's flagged. Example:
@@ -127,23 +149,29 @@ Only AFTER completing Phases 1-3 do you write the email. Every claim must be bac
 ## Output Structure
 
 ### Subject Line
-`Morning Brief — [DATE]`
+`Morning Brief — [DATE] | [1-line summary of the biggest story today]`
+
+---
+
+### Section 0: TL;DR — 30-Second Summary
+**This goes at the very top of the email.** 4-6 bullet points that tell the reader everything they need to know if they only have 30 seconds. Include:
+- Overall market direction and why
+- The single biggest energy/thesis headline
+- Flagged ticker updates (1 line each)
+- The #1 sub-sector to watch today and why
+- Any threshold alerts triggered
+- The single most important action item for today
+
+Use signal icons: 🟢🟢🟢 = strong bullish | 🟢 = mildly bullish | ⚪ = neutral | 🔴 = mildly bearish | 🔴🔴🔴 = strong bearish
 
 ---
 
 ### Section 1: Commodity Dashboard
-This is the first thing the reader should see — the key prices that drive the entire thesis:
+Compact one-line format for quick scanning, followed by a brief note on any significant moves:
 
-| Indicator | Last | Change | Signal |
-|-----------|------|--------|--------|
-| Henry Hub Natural Gas (CME) | | | |
-| WTI Crude Oil | | | |
-| Brent Crude Oil | | | |
-| Uranium Spot (UxC/TradeTech) | | | |
-| Copper (LME/COMEX) | | | |
-| 10-Year Treasury Yield | | | |
+**Gas** $X.XX (+X.X%) 🟢 | **WTI** $XX.XX (+X.X%) ⚪ | **Brent** $XX.XX (+X.X%) ⚪ | **Uranium** $XX/lb (+X.X%) 🟢 | **Copper** $X.XX (+X.X%) ⚪ | **10Y** X.XX% (+Xbp) 🔴
 
-Note any significant moves and explain why they matter for the thesis.
+Then below the one-liner, only elaborate on commodities that moved significantly (>1%) — explain why they moved and what it means for the thesis. If a commodity is flat, don't waste space on it.
 
 ### Section 2: Threshold Alert Check
 Check EVERY threshold from the monitoring framework. If any are breached or approaching, flag them prominently:
@@ -157,10 +185,23 @@ Check EVERY threshold from the monitoring framework. If any are breached or appr
 
 If ALL thresholds are clear, state: "All threshold alerts clear — no positioning changes triggered."
 
-### Section 3: Market Context
-- US futures direction (S&P 500, Nasdaq, Dow)
-- Key macro events for the day (Fed speeches, economic data releases, Congressional hearings)
-- Overnight geopolitical developments affecting energy markets (Iran conflict updates, Middle East shipping, China trade policy)
+### Section 3: Top Stories & Market Context
+**THIS IS THE MOST IMPORTANT SECTION.** Lead with the 3-5 biggest news stories driving markets today. For each story, explain WHY it matters for the energy/AI power thesis. Then cover:
+- **Breaking overnight news**: What happened while we slept? Wars, deals, earnings, policy changes
+- **US futures direction**: S&P 500, Nasdaq, Dow — what's driving the direction
+- **Key macro events for the day**: Fed speeches, economic data releases (CPI, PPI, jobs, GDP), Congressional hearings
+- **Geopolitical developments**: Iran conflict updates, Middle East shipping/oil, China trade policy, tariffs, sanctions
+- **Energy-specific headlines**: OPEC decisions, pipeline explosions, grid emergencies, utility announcements
+- **Sentiment check**: Is the market risk-on or risk-off today? How does that affect energy positioning?
+
+The reader should be able to read JUST this section and understand everything important happening in markets today.
+
+### Section 3b: What Changed Since Yesterday
+A short section highlighting ONLY what's different from the previous session. Don't repeat information that hasn't changed. Format:
+- **NEW**: Things that happened overnight that weren't in yesterday's brief
+- **CHANGED**: Prices, sentiment, or developments that shifted materially
+- **RESOLVED**: Catalysts or events that played out and are no longer pending
+If nothing material changed in a sub-sector (e.g., nuclear had no news overnight), simply say "No material updates" — don't pad with filler.
 
 ### Section 4: Sector ETF Snapshot
 | ETF | Ticker | Previous Close | Daily % Change | 5-Day Trend | Volume vs Avg |
@@ -205,22 +246,53 @@ If ALL thresholds are clear, state: "All threshold alerts clear — no positioni
 - Utility capex announcements, rate case decisions
 - Pre-market movers: PWR, ETN, HUBB, GEV, WMB, KMI, ET, DTM, TRGP, OKE
 
-### Section 8: Full Watchlist Dashboard
-Table of ALL watchlist tickers (sorted by sub-theme, then by daily % change):
-
-| Sub-Theme | Ticker | Prev Close | Daily % | 5-Day % | Volume vs Avg | Key Note |
-|-----------|--------|------------|---------|---------|---------------|----------|
-
-### Section 9: Flagged Ticker Deep-Dives
-For EACH ticker in `flagged-tickers.json`, provide a dedicated section:
+### Section 8: Flagged Ticker Deep-Dives (TOP PRIORITY)
+**These go BEFORE the sector overview.** For EACH ticker in `flagged-tickers.json`, provide a dedicated section:
 - **Why flagged**: (from the config file's "reason" field)
-- **Price action**: Previous close, daily change, 5-day trend
+- **Price action**: Previous close, daily change, 5-day trend, 30-day trend
 - **Overnight/pre-market developments** specific to the flagged reason
 - **What to watch today**: specific events, levels, or catalysts
-- **Key technical levels**: support/resistance, key moving averages
+- **Key technical levels**: support/resistance, key moving averages, RSI
 - **Thesis status**: Is the flagged thesis still intact? Any changes?
 
-### Section 10: Upcoming Events (Next 7 Days)
+### Section 9: Energy Sub-Sector Performance Overview
+Instead of listing every ticker, provide a **sub-sector level summary** showing how each group is performing. Calculate the average daily % change for each sub-sector from the watchlist data:
+
+| Sub-Sector | Avg Daily % | Best Performer | Worst Performer | Key Driver |
+|------------|-------------|----------------|-----------------|------------|
+| DC Infrastructure | | | | |
+| Utilities w/ DC Exposure | | | | |
+| Nuclear Operators | | | | |
+| Nuclear Development/Fuel | | | | |
+| Natural Gas E&P | | | | |
+| Oil & Gas E&P | | | | |
+| Renewables & Storage | | | | |
+| Grid Construction | | | | |
+| Grid Equipment | | | | |
+| Midstream | | | | |
+
+For each sub-sector, write 1-2 sentences explaining WHY it's up or down today. Which news or macro factor is driving it?
+
+### Section 10: Watchlist Top Movers
+Only show tickers with significant moves — the top 5 gainers and top 5 losers from the full watchlist:
+
+**Top 5 Gainers:**
+| Ticker | Prev Close | Daily % | Volume vs Avg | Why It's Moving |
+|--------|------------|---------|---------------|-----------------|
+
+**Top 5 Losers:**
+| Ticker | Prev Close | Daily % | Volume vs Avg | Why It's Moving |
+|--------|------------|---------|---------------|-----------------|
+
+### Section 11: Off-Watchlist Movers — New Names to Watch
+Tickers that are NOT on our watchlist but are making big moves (+/-3% or more) in energy/power/infrastructure today. These are potential watchlist additions:
+
+| Ticker | Name | Price | Daily % | Sector | Why It's Moving | Watchlist Candidate? |
+|--------|------|-------|---------|--------|-----------------|---------------------|
+
+For each, give a 1-sentence thesis on whether it fits our macro theme and should be added to the watchlist.
+
+### Section 12: Upcoming Events (Next 7 Days)
 - Earnings dates for watchlist companies
 - FERC meeting dates, NRC filing deadlines
 - EIA Natural Gas Storage Report (Thursday)
@@ -230,15 +302,25 @@ For EACH ticker in `flagged-tickers.json`, provide a dedicated section:
 - Contract award timelines, regulatory decisions
 - Insider transaction filings on watchlist names
 
+### Section 13: Today's Action Items
+End the report with **3-5 specific, actionable things to watch or do today**. These should be concrete, time-bound, and directly tied to the analysis above. Examples:
+- "Watch EQT earnings at 4 PM — guidance on Permian volumes will move gas E&P names"
+- "FERC meeting at 10 AM — interconnection queue ruling could impact PWR, ETN"
+- "ET approaching $19.50 breakout level — a close above triggers bull case to $23"
+- "Henry Hub at $4.82, approaching $5 threshold — if sustained 3+ days, add gas E&P exposure per playbook"
+
+This section should feel like a checklist the reader can act on throughout the day.
+
 ---
 
 ## Formatting
-- Use clean, well-structured formatting suitable for email
-- Tables for data, prose for analysis
+- Use clean, well-structured formatting suitable for reading on both desktop and mobile
+- Tables for data, prose for analysis — but keep tables narrow and scannable
 - **Bold** key numbers, price levels, and directional calls
 - Use ⚠️ for threshold alerts that are breached or approaching
-- Use 🟢 for bullish developments, 🔴 for bearish
+- Signal icons for conviction: 🟢🟢🟢 = strong bullish | 🟢 = mildly bullish | ⚪ = neutral | 🔴 = mildly bearish | 🔴🔴🔴 = strong bearish
 - Include timestamp at the top: "Morning Brief — [DATE] | Generated [TIME] ET"
+- **Readability rule**: If a section has no material updates, keep it to 1 line ("No material updates") — don't pad with filler text. The reader's time is valuable.
 
 ## Tone
 Concise, analytical, actionable. Every sentence should either inform or prompt action. No filler. Write like a sell-side research analyst's morning note — professional, data-driven, and direct.
@@ -248,14 +330,25 @@ Include at the bottom of every email:
 "This briefing is generated by an AI model for research and educational purposes only. It is not financial advice. All data is delayed and sourced from public APIs. Do your own due diligence before making investment decisions."
 
 ## Config Management — Update Flagged Tickers If Warranted
-After completing your analysis, evaluate whether `config/flagged-tickers.json` needs updating. If overnight developments revealed a new high-priority catalyst for a ticker (earnings surprise, major contract, analyst upgrade, geopolitical trigger), or if a previously flagged ticker's catalyst has fully played out:
-1. Read the current `config/flagged-tickers.json`
-2. Add the new ticker with a clear "reason" explaining the catalyst
-3. Remove the least relevant ticker if the list exceeds 5
-4. Write the updated file
-5. Run: `git add config/flagged-tickers.json && git commit -m "Morning Brief: update flagged tickers — [DATE]" && git push`
+The `config/flagged-tickers.json` file has TWO sections:
 
-Only make changes when there is a clear, evidence-based reason. Do not change flagged tickers just for the sake of changing them.
+### `user_flagged` — DO NOT TOUCH
+These are the user's personal picks. **Never add, remove, or modify** tickers in this section. Always analyze them first in every report.
+
+### `claude_suggested` — You CAN Edit
+These are your AI-suggested tickers. After completing your analysis, evaluate whether this section needs updating:
+- If overnight developments revealed a new high-priority catalyst for a ticker, **add it** with a clear "reason", "added" date, and "suggested_by" field (your agent name)
+- If a previously suggested ticker's catalyst has fully played out or the thesis broke, **remove it**
+- **Keep to 5 tickers max** — if adding a new one when at 5, remove the least relevant
+- Every suggestion MUST have a specific catalyst and approximate timeframe — no vague reasons
+
+When making changes:
+1. Read the current `config/flagged-tickers.json`
+2. Modify ONLY the `claude_suggested.tickers` array
+3. Write the updated file
+4. Run: `git add config/flagged-tickers.json && git commit -m "Morning Brief: update claude_suggested tickers — [DATE]" && git push`
+
+Only make changes when there is a clear, evidence-based reason. Do not change tickers just for the sake of changing them.
 
 ## Email Delivery
 Send the formatted email to all recipients in `config/email-distro.json` with the subject line format above and reply-to set per config.

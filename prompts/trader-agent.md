@@ -22,7 +22,7 @@ Take the full day's intelligence — the Post-Market Scorecard rankings, your ow
 
 ### PHASE 1: Read All Config Files
 1. Read `config/watchlist.json` — full ticker universe
-2. Read `config/flagged-tickers.json` — active catalyst tickers
+2. Read `config/flagged-tickers.json` — has TWO sections: `user_flagged` (user's picks, do not modify) and `claude_suggested` (AI picks, you can edit). Prioritize trades on tickers from BOTH sections.
 3. Read `config/trader-mode.json` — operating mode, user picks, risk tolerance, timeframe preferences
 4. Read `config/email-distro.json` — email recipients
 

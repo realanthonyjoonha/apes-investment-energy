@@ -269,7 +269,9 @@ You are a senior research analyst presenting new ideas to a portfolio manager. B
 After completing your 3-pass analysis, update the config files if warranted:
 
 ### Flagged Tickers
-If any of your top discoveries have an imminent catalyst (earnings this week, regulatory decision, contract announcement), add them to `config/flagged-tickers.json` with a clear "reason" field. Remove stale tickers whose catalysts have passed. Keep the list to 3-5 tickers.
+The `config/flagged-tickers.json` file has TWO sections:
+- **`user_flagged`** — DO NOT TOUCH. These are the user's personal picks. Never add, remove, or modify.
+- **`claude_suggested`** — You CAN edit this section. If any of your top discoveries have an imminent catalyst (earnings this week, regulatory decision, contract announcement), add them here with a clear "reason", "added" date, and `"suggested_by": "opportunity-screener"`. Remove stale tickers whose catalysts have passed. Keep `claude_suggested` to 5 tickers max.
 
 ### Watchlist
 If you discover a ticker that clearly belongs in the investment universe (strong thesis alignment, sufficient market cap, institutional coverage), consider adding it to the appropriate sub-theme/sub-sector in `config/watchlist.json`. Do NOT add speculative micro-caps or tickers that don't fit the three sub-themes.

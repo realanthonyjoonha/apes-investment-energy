@@ -1,24 +1,77 @@
 {
-  "flagged": [
-    {
-      "ticker": "UUUU",
-      "reason": "Energy Fuels: New CEO Ross Bhappu takes over April 15 (16 days) — strategic re-communication catalyst. First domestic commercial Dy/Tb heavy REE production circuit commissioning Q4 2026. Uranium output doubling to 1.5-2.5M lbs. Stock at $16.46 vs HC Wainwright $27.25 Strong Buy target (65% upside). Analyst consensus Strong Buy.",
-      "added": "2026-03-29"
-    },
-    {
-      "ticker": "ETR",
-      "reason": "Entergy Corp: Meta deal confirmed — 10 gas plants (5.2 GW), 240-mile HV transmission, nuclear uprates, $2.65B total customer benefits. Meta bears all construction costs; ETR captures rate base. Jefferies Buy $114 PT. Q1 earnings April 29 = first quantification of EPS accretion math. Highest composite score (7.70) in watchlist.",
-      "added": "2026-03-30"
-    },
-    {
-      "ticker": "AGX",
-      "reason": "Argan Inc: Blowout FY2026 earnings (EPS $3.47 vs $2.05 est, +69% beat). Record $2.9B backlog (+114% YoY), 77% natural gas. Stock extended 25% above avg analyst target ($409.50) after +37.9% earnings surge. Watching for pullback entry below $480 and/or new contract announcement. Next EPC contract likely imminent given Meta/ETR gas plant proliferation.",
-      "added": "2026-03-30"
-    },
-    {
-      "ticker": "GEV",
-      "reason": "GE Vernova: Q1 earnings April 22 (23 days) — nearest major earnings catalyst in watchlist. Added to S&P 100 March 23. $150B backlog, $59B 2025 orders. Acquired remaining 50% of Prolec GE (transformer maker). Stock pulled back -5% today from ATH $948.38 set March 25. Asymmetric setup: any beat/raise on April 22 = re-rate.",
-      "added": "2026-03-30"
-    }
-  ]
+  "user_flagged": {
+    "description": "Tickers selected by the user. Claude MUST NOT add, remove, or modify these. Always analyze these first in every report.",
+    "tickers": [
+      {
+        "ticker": "LNG",
+        "reason": "Cheniere Energy — LNG export leader, Iran escalation beneficiary, Henry Hub price sensitivity",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "EQT",
+        "reason": "EQT Corporation — Largest US natural gas producer, Permian volumes, earnings catalyst",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "STMG",
+        "reason": "Sitio Royalties — Mineral rights play, natural gas exposure, monitoring for thesis development",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "GLNG",
+        "reason": "Golar LNG — FLNG operator, Goldman strategic review, $17B EBITDA backlog, Jan 2027 LEAPS play",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "VG",
+        "reason": "Vonage/Volt Group — Monitoring for energy infrastructure thesis fit",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "ET",
+        "reason": "Energy Transfer — Cheapest midstream at 7.8x EV/EBITDA, $25B DC contracts, 7% yield, Truist upgrade to $23",
+        "added": "2026-03-30"
+      },
+      {
+        "ticker": "USO",
+        "reason": "United States Oil Fund — Oil price proxy, Iran escalation hedge, tracking crude for thesis monitoring",
+        "added": "2026-03-30"
+      }
+    ]
+  },
+  "claude_suggested": {
+    "description": "Tickers suggested by Claude's research agents. Claude CAN add, remove, and update these based on its analysis. Keep to 5 tickers max. Each must have a clear, evidence-based reason with a specific catalyst and timeframe.",
+    "tickers": [
+      {
+        "ticker": "UUUU",
+        "reason": "Energy Fuels: New CEO April 15, first domestic heavy REE production Q4 2026, uranium output doubling, HC Wainwright $27.25 Strong Buy (65% upside)",
+        "added": "2026-03-29",
+        "suggested_by": "opportunity-screener"
+      },
+      {
+        "ticker": "ETR",
+        "reason": "Entergy Corp: Meta deal — 10 gas plants (5.2 GW), 240-mile HV transmission, nuclear uprates. Q1 earnings April 29 = first EPS accretion math. Highest composite score (7.70)",
+        "added": "2026-03-30",
+        "suggested_by": "post-market-scorecard"
+      },
+      {
+        "ticker": "AGX",
+        "reason": "Argan Inc: Blowout FY2026 earnings (EPS $3.47 vs $2.05 est, +69% beat). Record $2.9B backlog (+114% YoY), 77% natural gas. Watching for pullback entry below $480",
+        "added": "2026-03-30",
+        "suggested_by": "post-market-scorecard"
+      },
+      {
+        "ticker": "GEV",
+        "reason": "GE Vernova: Q1 earnings April 22, added to S&P 100, $150B backlog. Pulled back -5% from ATH $948. Asymmetric setup: beat/raise = re-rate",
+        "added": "2026-03-30",
+        "suggested_by": "post-market-scorecard"
+      },
+      {
+        "ticker": "CIFR",
+        "reason": "Cipher Digital: 600MW contracted across AWS, Google/Anthropic, $8.5B+ lease value, AWS 300MW delivery July 2026",
+        "added": "2026-03-29",
+        "suggested_by": "opportunity-screener"
+      }
+    ]
+  }
 }
