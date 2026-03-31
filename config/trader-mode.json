@@ -4,78 +4,114 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $295/$310 bull call spread at $6.52 debit. Iran/Hormuz disruption + Qatar Ras Laffan offline 3-5 yrs. Earnings Apr 30 BMO. Goldman target $312. Spread at entry value as of 3/29. SMA20=$264.40, price=$296.91. Stop: LNG below $290. HIGH CONVICTION.",
+      "notes": "ACTIVE TRADE: Apr17 $295/$310 bull call spread at $6.52 debit. Current value ~$5.70 (-12.6%). Iran/Hormuz disruption + Qatar Ras Laffan offline 3-5 yrs. Corpus Christi Train 5 at full capacity (March 27). Earnings Apr 30 BMO. Goldman/JPMorgan/WF all bullish ($312-338 PTs). Stop: LNG below $290 (NOT BREACHED - closed $293.64). HIGH CONVICTION.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-03-29",
+      "last_reviewed": "2026-03-31",
       "structure": "Apr17 $295/$310 BCS",
       "debit": 6.52,
+      "current_value": 5.70,
       "max_profit": 8.48,
       "breakeven": 301.52,
-      "status": "HOLD"
+      "status": "HOLD - above $290 stop"
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $200/$210 bull call spread at $4.20 debit. WTI ~$99-100, Brent $112.57. Permian Basin pure-play, zero Hormuz exposure. Earnings ~May4 (after expiry). CAUTION: stock at Street consensus PT $201.84. Breakeven $204.20. Stop: WTI breaks below $90. MEDIUM CONVICTION.",
+      "notes": "ACTIVE TRADE: Apr17 $200/$210 bull call spread at $4.20 debit. Current value ~$3.90 (-7.1%). WTI $103.70, Permian Basin pure-play. FANG closed $198.65 — just below $200 lower strike. Breakeven $204.20. Stop: WTI closes below $90 (CLEAR). Earnings May 4 (after expiry). CAUTION: Avg analyst PT $187.61 is BELOW current price — stock running on Iran war premium. April 6 Iran deadline is key risk event. MEDIUM CONVICTION — CONDITIONAL HOLD.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-03-29",
+      "last_reviewed": "2026-03-31",
       "structure": "Apr17 $200/$210 BCS",
       "debit": 4.20,
+      "current_value": 3.90,
       "max_profit": 5.80,
       "breakeven": 204.20,
-      "status": "CONDITIONAL HOLD"
+      "status": "CONDITIONAL HOLD - exit if WTI breaks $90"
     },
     {
       "ticker": "CEG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Jun18 $300/$330 bull call spread at $12.20 debit. Analyst median target $406.50. TMI restart 2027 on track. Earnings May7 (within window). CAUTION: options very illiquid ($300c vol=6, $330c vol=1). SMA20=$309.18 above price=$301.49 (below 20-MA). 81 days runway. Stop: hyperscaler capex cut >20%. MEDIUM CONVICTION.",
+      "notes": "ACTIVE TRADE: Jun18 $300/$330 bull call spread at $12.20 debit. Current value ~$11.69 (-4.2%). Analyst median target $406.50. TMI restart 2027 on track. Earnings May 7 (within window). CAUTION: options very illiquid ($300c vol=12, $330c vol=2). 79 days runway. Stop: hyperscaler capex cut >20%. MEDIUM CONVICTION.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-03-29",
+      "last_reviewed": "2026-03-31",
       "structure": "Jun18 $300/$330 BCS",
       "debit": 12.20,
+      "current_value": 11.69,
       "max_profit": 17.80,
       "breakeven": 312.20,
-      "status": "HOLD"
+      "status": "HOLD - 79 days remaining"
     },
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $67.50/$72.50 bull call spread at $1.69 debit. ALERT: Henry Hub at $2.92, below $3 psychological. EIA storage Thursday April 2 is binary event. $72.50c is dangerously illiquid (vol=2). Breakeven $69.19. STOP: HH closes below $2.80 for 2 days → exit. Watch EIA Thursday. MEDIUM CONVICTION — ELEVATED RISK.",
+      "notes": "ACTIVE TRADE: Apr17 $67.50/$72.50 bull call spread at $1.69 debit. ALERT: Current value $0.86 (-49%). EQT closed $64.44, needs to recover to $69.19 breakeven (+7.4%) in 17 days. Henry Hub $2.94 (weak). Storage 90 Bcf above last year. EIA storage Thursday April 2 binary event. STOP: Close if EQT breaks below $63.50 OR HH closes below $2.80 for 2 days. MEDIUM CONVICTION — ELEVATED RISK — CONSIDER EXIT.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-03-29",
+      "last_reviewed": "2026-03-31",
       "structure": "Apr17 $67.50/$72.50 BCS",
       "debit": 1.69,
+      "current_value": 0.86,
       "max_profit": 3.31,
       "breakeven": 69.19,
-      "status": "HOLD WITH CAUTION - Monitor HH daily"
+      "status": "CONSIDER EXIT - deeply OTM, HH weak"
     },
     {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $850/$900 bull call spread at $23.10 debit. SPECULATIVE pre-earnings play. Earnings Apr22 AFTER expiry Apr17. Stock pulled back -10% from $948 peak to $853.16. At 20-SMA support. HARD STOP: GEV closes below $835 → exit next morning (~$810 recovery, limits loss to 35%). Breakeven $873.10 requires +2.3% recovery. SPECULATIVE.",
+      "notes": "ACTIVE TRADE — EXIT IMMEDIATELY: Apr17 $850/$900 bull call spread at $23.10 debit. Current value ~$16.25 (-29.7%). HARD STOP BREACHED: GEV closed $817.35 vs $835 stop. Earnings Apr22 AFTER expiry Apr17. EXIT AT MARKET OPEN — NO EXCEPTIONS.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-03-29",
+      "last_reviewed": "2026-03-31",
       "structure": "Apr17 $850/$900 BCS",
       "debit": 23.10,
+      "current_value": 16.25,
       "max_profit": 26.90,
       "breakeven": 873.10,
-      "status": "SPECULATIVE HOLD - Hard stop at $835"
+      "status": "EXIT IMMEDIATELY - hard stop $835 breached, closed $817.35"
+    },
+    {
+      "ticker": "ETR",
+      "bias": "bullish",
+      "notes": "NEW TRADE: May15 $110/$120 BCS at $3.49 debit. Meta Hyperion deal (10 gas plants, 5.2 GW, $2.65B customer savings). ETR closed $111.06. Jefferies $114 PT Buy. Earnings April 29 or May 5 (confirm before entry). Breakeven $113.49 requires only +2.2% move. IV ~28% (fairly priced). May 15 expiry captures earnings + aftermath. HIGH CONVICTION — NEW ENTRY TODAY.",
+      "trade_entered": "2026-03-31",
+      "last_reviewed": "2026-03-31",
+      "structure": "May15 $110/$120 BCS",
+      "debit": 3.49,
+      "max_profit": 6.51,
+      "breakeven": 113.49,
+      "status": "NEW - ENTER TODAY (confirm earnings date first)"
+    },
+    {
+      "ticker": "GLNG",
+      "bias": "bullish",
+      "notes": "NEW TRADE: Jun18 $55/$65 BCS at $2.94 debit. GLNG closed $54.08 (+33% from $40.59 Jan 30). Iran/Hormuz LNG shortage direct beneficiary. FLNG operator with $17B EBITDA backlog. Goldman $54 PT (at current price), Citi $51 PT. KEY RISK: Hilli FLNG contract expires July 2026 — re-contracting success is critical. Q1 earnings ~May 27-Jun 2 (within Jun18 window). Breakeven $57.94 (+7.1%). R/R 1:2.40 (best R/R of the day). IV ~50% (spread reduces vega). MEDIUM CONVICTION — NEW ENTRY TODAY.",
+      "trade_entered": "2026-03-31",
+      "last_reviewed": "2026-03-31",
+      "structure": "Jun18 $55/$65 BCS",
+      "debit": 2.94,
+      "max_profit": 7.06,
+      "breakeven": 57.94,
+      "status": "NEW - ENTER TODAY"
     }
   ],
   "watchlist_next_entry": [
     {
       "ticker": "WULF",
-      "notes": "If EQT exits: Enter Apr17 $15/$16 BCS at ~$0.41 debit. Jefferies conference March 31. Unusual 3470 contracts on Apr2 $16C. Avg PT $25.40 vs $14.89. Nuclear-powered AI data center. Hard stop below $14.00.",
+      "notes": "SPECULATIVE TRIGGER: Apr17 $15/$16 BCS at ~$0.32 debit. Jefferies conference March 31 (TODAY). Unusual volume: 8671 contracts on Apr17 $16C. Morgan Stanley Overweight PT $37. WULF closed $13.70 (down from $15.275 open — ugly reversal). Needs +11.8% recovery for breakeven. TINY position only (1-2% portfolio max). Wait for Jefferies conference headlines before entering.",
       "proposed_structure": "Apr17 $15/$16 BCS",
-      "est_debit": 0.41,
-      "trigger": "EQT exit OR HH below $2.80"
+      "est_debit": 0.32,
+      "trigger": "Jefferies conference catalyst today OR EQT exit"
     },
     {
       "ticker": "CIFR",
-      "notes": "Wait for CIFR above $14.65 (20-SMA). Third hyperscaler deal (AWS/Google/Anthropic) barely priced in. 600MW total. $8.5B+ value. Jun18 $15/$17 BCS at ~$0.62 debit, R/R 1:2.23.",
+      "notes": "Wait for CIFR above $14.65 (20-SMA). CIFR crashed -12.6% to $12.015 Monday. Third hyperscaler deal (AWS/Google/Anthropic) barely priced in. 600MW total. $8.5B+ value. Jun18 $15/$17 BCS at ~$0.62 debit, R/R 1:2.23. NOT ready — stock in freefall below trigger.",
       "proposed_structure": "Jun18 $15/$17 BCS",
       "est_debit": 0.62,
       "trigger": "CIFR close above $14.65"
+    },
+    {
+      "ticker": "AGX",
+      "notes": "Watching for pullback entry. Blowout FY2026 earnings (EPS $3.47 vs $2.05 est, +69% beat). Record $2.9B backlog (+114% YoY), 77% natural gas. AGX crashed -9.3% to $513.98 after earnings. Entry trigger: AGX retests $480-495 zone. Consider equity long or call spread at that level.",
+      "proposed_structure": "Equity long or May $490/$520 BCS",
+      "est_debit": null,
+      "trigger": "AGX below $495"
     }
   ],
   "max_ideas_per_day": 5,
