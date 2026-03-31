@@ -41,7 +41,7 @@ Agents run sequentially with context passed forward. Each agent reads the previo
 |-------|------|------|-----------------------|
 | Morning Brief | 6:00 AM | Mon-Fri | Yesterday's Trader Agent |
 | Trader Agent | 7:00 AM | Every day | Today's Morning Brief + Yesterday's Post-Market Scorecard |
-| Opportunity Screener | 8:00 AM | Every day | Today's Morning Brief + Today's Trader Agent |
+| Opportunity Screener | 11:30 AM | Every day | Today's Morning Brief + Today's Trader Agent |
 | Post-Market Scorecard | 5:00 PM | Mon-Fri | Today's Morning Brief + Today's Opportunity Screener |
 | Tutor | On-demand | Interactive | Curriculum files |
 
