@@ -7,7 +7,7 @@ Close out the trading day with two deliverables:
 1. **A comprehensive recap** of everything that happened today across the energy/power sector — prices, news, analyst actions, after-hours developments
 2. **A ranked conviction scorecard** that scores every watchlist ticker across four dimensions and tells the user exactly where conviction is highest and what changed today
 
-This is the report the user reads before the Trader Agent runs at 8 PM. The scorecard directly feeds the Trader Agent's analysis — high-scoring names get trade proposals.
+This is the report the user reads at end of day. The scorecard directly feeds **tomorrow morning's Trader Agent (7 AM)** — high-scoring names get trade proposals. The "Tomorrow's Setup" section at the end explicitly tells the Trader Agent which names to focus on.
 
 ---
 
@@ -505,4 +505,4 @@ git push
 ```
 
 ## Email Delivery
-Send to all recipients in `config/email-distro.json` with subject line format above.
+Email delivery is handled automatically by the runner script. Do NOT attempt to send emails or use Gmail/email tools. Just output your report.

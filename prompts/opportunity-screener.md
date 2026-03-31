@@ -41,10 +41,10 @@ Before diving into category-by-category discovery, figure out WHERE money is flo
 Use this to WEIGHT your discovery. If gas E&P is the hot sector today, spend more searches there. If nuclear is dead money this week, spend fewer searches there unless you have a specific catalyst lead. **Don't treat every sector equally — follow the money.**
 
 **1-FLAGGED. Flagged Ticker Supply Chain & Adjacency Discovery (run 3-4 searches)**
-Your user's flagged tickers (LNG, EQT, STMG, GLNG, VG, ET, USO and Claude's suggestions) represent the highest-conviction ideas. Find companies that ORBIT these names:
-- "Cheniere LNG suppliers contractors partners" — who builds for Cheniere? Who ships their LNG? Who supplies their equipment?
-- "Energy Transfer pipeline contractors suppliers" — who does ET's construction? Who makes their valves, compressors, meters?
-- "EQT natural gas Appalachian supply chain" — gathering companies, water disposal, sand suppliers, compression services near EQT's operations
+Read `config/flagged-tickers.json` — both `user_flagged` and `claude_suggested` tickers represent the highest-conviction ideas. Find companies that ORBIT these names:
+- For each flagged ticker, search: "[company name] suppliers contractors partners customers" — trace the value chain
+- Look for companies that build for, supply to, or depend on the flagged names
+- Example patterns: Who builds pipelines for midstream names? Who supplies fuel for nuclear names? Who manufactures equipment for grid names?
 - "[flagged ticker] partners customers suppliers" — trace the value chain for each flagged name
 These adjacent names are often overlooked small/mid-caps that benefit from the same thesis but trade at cheaper multiples. The user's flagged tickers are the center of gravity — find the satellites.
 
@@ -335,4 +335,4 @@ git push
 Only make changes when there is clear, evidence-based reasoning. Quality over quantity.
 
 ## Email Delivery
-Send to all recipients in `config/email-distro.json` with subject line format above.
+Email delivery is handled automatically by the runner script. Do NOT attempt to send emails or use Gmail/email tools. Just output your report.

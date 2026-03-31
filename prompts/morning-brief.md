@@ -46,7 +46,7 @@ For each ETF (XLU, XLE, URA, GRID), pull:
 - Volume comparison: compare previous day volume to the 20-day average (pull 20-day range and calculate)
 
 **2c. Flagged Tickers — PRIORITY (Pull First)**
-For EVERY ticker in `flagged-tickers.json` (3-5 tickers), pull DETAILED data:
+For EVERY ticker in `flagged-tickers.json` (both `user_flagged` and `claude_suggested` — up to 12 tickers), pull DETAILED data:
 - Previous day bar: `GET /v2/aggs/ticker/{ticker}/prev` — OHLC, volume, VWAP
 - 5-day range: `GET /v2/aggs/ticker/{ticker}/range/1/day/{5_days_ago}/{today}`
 - 30-day range: `GET /v2/aggs/ticker/{ticker}/range/1/day/{30_days_ago}/{today}` — for trend and moving average context
@@ -351,4 +351,4 @@ When making changes:
 Only make changes when there is a clear, evidence-based reason. Do not change tickers just for the sake of changing them.
 
 ## Email Delivery
-Send the formatted email to all recipients in `config/email-distro.json` with the subject line format above and reply-to set per config.
+Email delivery is handled automatically by the runner script. Do NOT attempt to send emails or use Gmail/email tools. Just output your report.
