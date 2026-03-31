@@ -11,6 +11,15 @@ This is the report the user reads before the Trader Agent runs at 8 PM. The scor
 
 ---
 
+## Pre-Research: Read Context From Earlier Agents
+
+Before starting your data gathering, read any context provided from today's Morning Brief and Opportunity Screener. Use it to:
+- **Track the Morning Brief's predictions** — did the market play out as expected? If the Brief said "watch EQT at $67 support," did it hold or break? These surprises are the most valuable insights.
+- **Incorporate new discoveries** — if the Opportunity Screener found new names today, you should score them alongside the existing watchlist. New discoveries with strong data deserve a scorecard entry.
+- **Follow the day's narrative** — what was the #1 story this morning? How did it actually play out by close? Did sentiment shift during the session?
+
+---
+
 ## Data Gathering — Complete ALL Phases Before Writing
 
 ### PHASE 1: Read Config Files
@@ -51,22 +60,29 @@ call_api: GET /v2/aggs/ticker/USO/prev → store_as: "oil_today"
 call_api: GET /v2/aggs/ticker/XLU/range/1/day/{20d_ago}/{today} → store_as: "xlu_20d"
 ```
 
-**2b. Full Watchlist Closing Data — EVERY SINGLE TICKER, NO EXCEPTIONS**
-For ALL 47 tickers in watchlist.json, you MUST pull:
+**2b. Tiered Watchlist Data Pull**
 
-1. **Today's bar**: `GET /v2/aggs/ticker/{ticker}/prev` — OHLC, volume, VWAP
-2. **20-day history**: `GET /v2/aggs/ticker/{ticker}/range/1/day/{20_days_ago}/{today}` — for moving averages, volume baselines, momentum calculations, and relative strength
+**Tier 1 — Flagged Tickers (PRIORITY, pull first with full depth):**
+For ALL tickers in both `user_flagged` and `claude_suggested` (up to 12 tickers):
+- Today's bar: `GET /v2/aggs/ticker/{ticker}/prev`
+- 20-day history: `GET /v2/aggs/ticker/{ticker}/range/1/day/{20_days_ago}/{today}`
+- 60-day history: `GET /v2/aggs/ticker/{ticker}/range/1/day/{60_days_ago}/{today}` — for deeper MA and trend analysis
+These get the deepest data because they get the deepest scoring commentary.
 
-Store each result with `store_as` using a consistent naming pattern:
-```
-call_api: GET /v2/aggs/ticker/CEG/prev → store_as: "ceg_prev"
-call_api: GET /v2/aggs/ticker/CEG/range/1/day/{20d_ago}/{today} → store_as: "ceg_hist"
-call_api: GET /v2/aggs/ticker/VST/prev → store_as: "vst_prev"
-call_api: GET /v2/aggs/ticker/VST/range/1/day/{20d_ago}/{today} → store_as: "vst_hist"
-... repeat for ALL 47 tickers
-```
+**Tier 2 — Full Watchlist (prev day for all):**
+For ALL 47 tickers in watchlist.json:
+- Today's bar: `GET /v2/aggs/ticker/{ticker}/prev` — OHLC, volume, VWAP
+This gives you enough to calculate daily performance, identify big movers, and compute sub-sector averages.
 
-**Do NOT skip any ticker.** The scorecard must have data for every name. If you skip a ticker, the scorecard is incomplete and the user cannot trust it.
+**Tier 3 — Deep Pull for Big Movers:**
+After reviewing Tier 2 results, identify any non-flagged tickers that moved >2% today. For these movers, ALSO pull:
+- 20-day history: `GET /v2/aggs/ticker/{ticker}/range/1/day/{20_days_ago}/{today}`
+Big movers deserve deeper analysis even if they're not flagged.
+
+**Tier 4 — New Discoveries from Opportunity Screener:**
+If the Opportunity Screener found new names today (from context), pull prev day data for those too:
+- `GET /v2/aggs/ticker/{new_discovery}/prev`
+These get a preliminary score entry at the bottom of the scorecard.
 
 **2c. Technical Indicators**
 Use `search_endpoints` to find technical indicator endpoints (RSI, SMA, EMA, MACD). For each watchlist ticker, pull:
@@ -150,10 +166,12 @@ Run **at least 15-20 web searches** to capture everything that moved markets tod
 - "utility stock price target change today"
 - Search specifically for any watchlist name with notable moves: "[ticker] analyst rating"
 
-**3d. After-Hours & Earnings (run 2-3 searches)**
+**3d. After-Hours & Earnings (run 3-4 searches) — CRITICAL, MANY ENERGY NAMES REPORT AFTER 4 PM**
 - "after hours stock movers energy" — catch any watchlist names moving after the close
 - "earnings report today energy" — any watchlist companies reporting after the bell
-- "[specific ticker] earnings" — for any watchlist name with a scheduled earnings release today
+- "[specific ticker] earnings results" — for any watchlist name with a scheduled earnings release today
+- "energy stock earnings after hours beat miss" — broad sweep for earnings surprises
+If ANY watchlist or flagged ticker reported earnings today, this is the #1 priority. Pull the results, the guidance, and the after-hours price reaction. **Adjust that ticker's scores accordingly** — an earnings beat can shift Sentiment and Catalyst Density by 2-3 points in a single day.
 
 **3e. Policy & Regulatory (run 1-2 searches)**
 - "FERC order today" / "NRC nuclear today"
@@ -217,15 +235,45 @@ Status: 🟢 All Clear / ⚠️ Approaching / 🔴 Breached — with specifics f
 | URA | Uranium | | | | | |
 | GRID | Grid Infra | | | | | |
 
-### Section 4: Full Watchlist Performance Table
-ALL 47 tickers, sorted by daily % change (biggest gainers first):
+### Section 4: Sub-Sector Performance Overview
+Instead of listing every ticker, show how each sub-sector performed as a group:
 
-| Rank | Sub-Theme | Ticker | Close | Daily % | 5-Day % | Vol vs Avg | After-Hours | Notable |
-|------|-----------|--------|-------|---------|---------|------------|-------------|---------|
+| Sub-Sector | Avg Daily % | Best Performer | Worst Performer | Key Driver |
+|------------|-------------|----------------|-----------------|------------|
+| DC Infrastructure | | | | |
+| Utilities w/ DC Exposure | | | | |
+| Nuclear Operators | | | | |
+| Nuclear Development/Fuel | | | | |
+| Natural Gas E&P | | | | |
+| Oil & Gas E&P | | | | |
+| Renewables & Storage | | | | |
+| Grid Construction | | | | |
+| Grid Equipment | | | | |
+| Midstream | | | | |
 
-The "Notable" column should contain: analyst action, earnings, news headline, or blank if nothing material.
+For each sub-sector, write 1-2 sentences explaining WHY it performed the way it did today. Connect to the day's macro narrative.
 
-### Section 5: Today's Big Movers (>2% either direction)
+### Section 4b: Top 5 Gainers & Top 5 Losers
+Only the biggest movers from the full watchlist — not all 47:
+
+**Top 5 Gainers:**
+| Ticker | Close | Daily % | Vol vs Avg | Why It Moved |
+|--------|-------|---------|------------|-------------|
+
+**Top 5 Losers:**
+| Ticker | Close | Daily % | Vol vs Avg | Why It Moved |
+|--------|-------|---------|------------|-------------|
+
+### Section 4c: What Surprised Us Today
+The most valuable insight is what DIDN'T go as expected. Compare today's actual results to the Morning Brief's predictions and flagged ticker expectations:
+- **Expected moves that didn't happen**: "Morning Brief expected gas E&P to rally on Henry Hub spike, but EQT was flat — why?"
+- **Unexpected moves**: "PWR surged 5% with no news — investigate what's driving it"
+- **Thesis challenges**: "Nuclear names sold off despite positive NRC news — is the market telling us something?"
+- **Sentiment shifts**: "Market opened risk-off but reversed to risk-on by close — what changed at 2 PM?"
+
+This section forces intellectual honesty. If our predictions were wrong, we need to understand why and adjust.
+
+### Section 5: Today's Big Movers — Deep Analysis (>2% either direction)
 For each ticker that moved more than 2% today:
 - **What happened**: The specific news, catalyst, or flow that drove the move
 - **Volume context**: Was this move on high or low volume? (High volume = conviction; low volume = noise)
@@ -354,12 +402,20 @@ For every ticker with a ±1.5+ point move in composite score:
 - **What changed**: Which dimension(s) drove the move and why
 - **Implication**: Does this change the investment thesis? Should the user act?
 
-### Top 5 Commentary
-For the 5 highest-scoring tickers, provide 3-5 sentences each:
-- Why this ticker is scoring highest right now
-- What's driving each dimension score
-- What would move it higher or lower
-- Whether the score is actionable (buy signal) or just confirming an existing position
+### Flagged Ticker Scoring Deep-Dive (3-5 sentences EACH)
+For EVERY ticker in both `user_flagged` and `claude_suggested`, provide detailed scoring commentary:
+- **Score breakdown**: Explain each of the 4 dimension scores with specific evidence
+- **What changed today**: Did any dimension shift meaningfully vs. yesterday?
+- **Catalyst update**: Is the flagged catalyst still on track? Closer? Further?
+- **Action signal**: Is this score actionable right now, or is it a "wait for X" setup?
+- **Risk flag**: Anything concerning in today's data?
+
+These are the user's highest-priority names. They deserve the deepest commentary. Non-flagged tickers get scores but don't need paragraphs.
+
+### Top 5 Non-Flagged Commentary
+For the 5 highest-scoring tickers that are NOT in the flagged list, provide 2-3 sentences each:
+- Why this ticker is scoring high — what's the market seeing?
+- Should it be added to `claude_suggested`?
 
 ### Bottom 5 Commentary
 For the 5 lowest-scoring tickers, provide 2-3 sentences each:
@@ -375,6 +431,47 @@ Average the composite scores within each sub-theme to show which area of the the
 | AI Power Demand | | | | |
 | Energy Generation | | | | |
 | Energy Infrastructure | | | | |
+
+### New Discovery Scores (from today's Opportunity Screener)
+If the Opportunity Screener found new names today, give each a preliminary score based on available data. These are first-look scores — they'll get refined in tomorrow's scorecard with a full data history.
+
+| Ticker | Company | Source | Preliminary Composite | Momentum | Sentiment | Valuation | Catalyst | Note |
+|--------|---------|--------|----------------------|----------|-----------|-----------|----------|------|
+
+Mark these with a 🆕 tag so the reader knows they're new entries.
+
+---
+
+## PART 3: TOMORROW'S SETUP
+
+This section directly feeds the Trader Agent. Be specific and actionable.
+
+### Trader Agent Focus List (5-7 Names)
+Based on today's scores, movers, and catalysts, recommend the **5-7 tickers the Trader Agent should build trade proposals around tonight**:
+
+| Priority | Ticker | Composite | Why the Trader Agent Should Focus Here |
+|----------|--------|-----------|---------------------------------------|
+
+For each name, specify:
+- **Short-term or long-term play?** — Does this setup call for weekly options or LEAPS?
+- **Direction**: Bullish, bearish, or volatility play?
+- **Key level to watch**: The price that triggers action
+- **Catalyst timing**: What event makes this timely?
+
+### Tomorrow's Key Events
+What's on the calendar for tomorrow that affects the portfolio:
+- Earnings reports (pre-market and after-hours)
+- Economic data releases (CPI, PPI, jobs, Fed speeches)
+- Regulatory events (FERC, NRC, DOE)
+- Geopolitical developments to monitor
+- Technical levels to watch across the portfolio
+
+### Overnight Risk Check
+What could go wrong overnight:
+- Asia/Europe market risks that could gap energy names
+- Commodity futures direction (overnight gas/oil trading)
+- Geopolitical flashpoints (Iran, Middle East, trade war)
+- Any after-hours earnings that could cascade into sector moves tomorrow
 
 ---
 
