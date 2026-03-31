@@ -143,6 +143,13 @@ For each surviving candidate, run a DEDICATED web search:
 - "[company name] insider buying selling" — insider transaction signals
 - "[company name] institutional ownership 13F" — who's buying/selling
 
+**MMD API Fallback — If the API Is Down or Unavailable:**
+If the MMD API is returning consistent errors (500/503, not just 429 rate limits) after 3 retries:
+1. Fall back to web research for prices — "Yahoo Finance [ticker] stock price" for each candidate
+2. Note prominently: "⚠️ MMD API unavailable — prices sourced from web. Data may be delayed."
+3. Continue Pass 2 validation using web-sourced prices — you can still calculate relative performance and identify movers
+4. Do NOT skip Pass 2 entirely — web-sourced validation is better than no validation
+
 **2e. Elimination Criteria**
 Remove candidates that fail ANY of these:
 - Market cap below $200M (too illiquid for meaningful position)

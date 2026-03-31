@@ -65,6 +65,14 @@ Then for EACH ticker, use `query_data` SQL to calculate:
 
 **You must repeat this full data pull for every ticker you plan to propose a trade on.** If you're analyzing 5 tickers for trade proposals, that's 10 API calls minimum (prev + 60-day for each) before you even get to options data.
 
+**MMD API Fallback — If the API Is Down or Unavailable:**
+If the MMD API is returning consistent errors (500/503, not just 429 rate limits) after 3 retries:
+1. Fall back to web research for stock prices — "Yahoo Finance [ticker]" or "Google Finance [ticker]"
+2. For options data, search "[ticker] options chain" on Yahoo Finance or Barchart — get approximate premiums and strikes
+3. Note prominently: "⚠️ MMD API unavailable — prices and options data sourced from web. Verify all premiums before trading."
+4. You can still propose trades using web-sourced data, but flag every price as approximate
+5. Do NOT skip the report — approximate trade ideas are better than no trade ideas
+
 **2b. Options Chain Discovery — THE CRITICAL STEP**
 For each trade candidate, pull the FULL available options chain:
 

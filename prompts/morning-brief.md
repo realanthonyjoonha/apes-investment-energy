@@ -75,6 +75,13 @@ These give you the technical levels for the flagged ticker deep-dive sections.
 **2e. Rate Limit Awareness**
 The API has per-minute rate limits. If you hit a 429 error, wait 60 seconds and retry. Batch your requests efficiently — pull multiple tickers in sequence within each burst, then pause if rate-limited. Do NOT skip tickers because of rate limits; wait and complete the full pull.
 
+**2g. MMD API Fallback — If the API Is Down or Unavailable**
+If the Massive Market Data API is returning consistent errors (not just 429 rate limits, but 500/503 server errors or connection failures) after 3 retry attempts:
+1. Switch to web research for prices — search "Yahoo Finance [ticker] stock price" or "Google Finance [ticker]" for each ticker
+2. Note prominently at the top of the report: "⚠️ MMD API unavailable — prices sourced from web (Yahoo Finance/Google Finance). Data may be delayed."
+3. Continue with all other phases (web research, analysis, scoring) using web-sourced prices
+4. Do NOT skip the report entirely — a report with web-sourced prices is far better than no report at all
+
 ---
 
 ### PHASE 3: Extensive Web Research

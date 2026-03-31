@@ -144,6 +144,14 @@ With 47 tickers × 2 calls each (prev + 20-day range) + ETFs + commodities + tec
 - Track your progress: "Pulled 23/47 tickers..." so you don't lose your place
 - Expect this phase to take multiple minutes with rate limit pauses — that's fine
 
+**2g. MMD API Fallback — If the API Is Down or Unavailable**
+If the MMD API is returning consistent errors (500/503, not just 429 rate limits) after 3 retries:
+1. Fall back to web research for prices — "Yahoo Finance [ticker] stock price" for each ticker
+2. Note prominently at the top: "⚠️ MMD API unavailable — prices sourced from web. Momentum scores are estimates based on web data."
+3. Continue all phases using web-sourced prices — the Scorecard must still be produced
+4. Momentum dimension scores will be less precise but still directionally useful from web data
+5. Do NOT skip the scorecard — the Trader Agent depends on it for tomorrow morning's trade proposals
+
 ### PHASE 3: Extensive Web Research
 
 Run **at least 15-20 web searches** to capture everything that moved markets today.
