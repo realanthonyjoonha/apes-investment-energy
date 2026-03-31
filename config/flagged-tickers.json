@@ -1,28 +1,23 @@
 {
   "flagged": [
     {
-      "ticker": "WULF",
-      "reason": "TeraWulf: Unusual options activity — 3,470 contracts on $16C April 2 expiry (expires in 4 days), Jefferies Virtual Power x Coin Conference March 31. Nuclear-powered (89% zero-carbon) AI data center; $20B+ in Google/Fluidstack contracted revenue; avg analyst PT $25.40 vs $14.89 current. Director Bucella buying repeatedly. Catalyst imminent.",
-      "added": "2026-03-29"
-    },
-    {
-      "ticker": "CORZ",
-      "reason": "Core Scientific AI pivot: 250MW CoreWeave delivery due Q2 2026, Q1 earnings (May) = first full HPC revenue quarter, $1B Morgan Stanley financing closed Mar 18 — imminent construction milestone and earnings catalyst",
-      "added": "2026-03-29"
-    },
-    {
       "ticker": "UUUU",
-      "reason": "Energy Fuels: New CEO Ross Bhappu takes over April 15 — strategic re-communication catalyst. First domestic commercial Dy/Tb heavy REE production circuit commissioning Q4 2026. Uranium output doubling to 1.5-2.5M lbs. Stock -17% from 30-day high, above 200 SMA support",
+      "reason": "Energy Fuels: New CEO Ross Bhappu takes over April 15 (16 days) — strategic re-communication catalyst. First domestic commercial Dy/Tb heavy REE production circuit commissioning Q4 2026. Uranium output doubling to 1.5-2.5M lbs. Stock at $16.46 vs HC Wainwright $27.25 Strong Buy target (65% upside). Analyst consensus Strong Buy.",
       "added": "2026-03-29"
     },
     {
       "ticker": "ETR",
-      "reason": "Entergy Corp: Meta signed deal March 27 to fund 7 new gas plants (5.2 GW) on Entergy's grid for the world's largest planned data center (Hyperion, Louisiana). $2.65B commitment, 240-mile transmission line, nuclear uprate studies. Stock broke out of multi-month base on 3.2x average volume. Q1 earnings April 29 will quantify EPS accretion — major re-rating catalyst imminent.",
+      "reason": "Entergy Corp: Meta deal confirmed — 10 gas plants (5.2 GW), 240-mile HV transmission, nuclear uprates, $2.65B total customer benefits. Meta bears all construction costs; ETR captures rate base. Jefferies Buy $114 PT. Q1 earnings April 29 = first quantification of EPS accretion math. Highest composite score (7.70) in watchlist.",
       "added": "2026-03-30"
     },
     {
       "ticker": "AGX",
-      "reason": "Argan Inc: Post-FY2026-earnings pullback (-4% today) on record results creates entry. $2.9B backlog (+114% YoY), $9.74 EPS (+58% YoY), zero debt/$895M cash. Pure-play gas power plant EPC — directly builds the plants hyperscalers are now funding. Next EPC contract announcement (likely Meta/ETR pipeline or similar) could be imminent given deal proliferation.",
+      "reason": "Argan Inc: Blowout FY2026 earnings (EPS $3.47 vs $2.05 est, +69% beat). Record $2.9B backlog (+114% YoY), 77% natural gas. Stock extended 25% above avg analyst target ($409.50) after +37.9% earnings surge. Watching for pullback entry below $480 and/or new contract announcement. Next EPC contract likely imminent given Meta/ETR gas plant proliferation.",
+      "added": "2026-03-30"
+    },
+    {
+      "ticker": "GEV",
+      "reason": "GE Vernova: Q1 earnings April 22 (23 days) — nearest major earnings catalyst in watchlist. Added to S&P 100 March 23. $150B backlog, $59B 2025 orders. Acquired remaining 50% of Prolec GE (transformer maker). Stock pulled back -5% today from ATH $948.38 set March 25. Asymmetric setup: any beat/raise on April 22 = re-rate.",
       "added": "2026-03-30"
     }
   ]
