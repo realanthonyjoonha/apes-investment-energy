@@ -44,31 +44,31 @@
     "tickers": [
       {
         "ticker": "UUUU",
-        "reason": "Energy Fuels: New CEO April 15, first domestic heavy REE production Q4 2026, uranium output doubling, HC Wainwright $27.25 Strong Buy (65% upside)",
+        "reason": "Energy Fuels: CEO transition April 15 (Ross Bhappu); March 25 milestone — first US heavy REE production (terbium/dysprosium 99.9% purity). Uranium + critical minerals dual catalyst. HC Wainwright $27.25 Strong Buy. $1B deployable capital via Goldman convertible at 0.75%.",
         "added": "2026-03-29",
         "suggested_by": "opportunity-screener"
       },
       {
         "ticker": "ETR",
-        "reason": "Entergy Corp: Meta deal — 10 gas plants (5.2 GW), 240-mile HV transmission, nuclear uprates. Q1 earnings April 29 = first EPS accretion math. Highest composite score (7.70)",
+        "reason": "Entergy Corp: Expanded Meta deal announced March 27 ($2.65B total customer savings, 5 GW DC potential, 5,200 MW new gas generation, 240-mi HV transmission). Q1 earnings April 29 = first full EPS accretion math on Meta deal. 22 analysts Strong Buy.",
         "added": "2026-03-30",
         "suggested_by": "post-market-scorecard"
       },
       {
         "ticker": "AGX",
-        "reason": "Argan Inc: Blowout FY2026 earnings (EPS $3.47 vs $2.05 est, +69% beat). Record $2.9B backlog (+114% YoY), 77% natural gas. Watching for pullback entry below $480",
+        "reason": "Argan Inc: Post-earnings hold at $544.65 (blowout FY2026: EPS $3.47 vs $2.05 est). $2.9B backlog (+114% YoY), 77% nat gas, no debt, $895M cash. New CPV Basin Ranch 1,350 MW contract. Entry on pullback to $520-530 support.",
         "added": "2026-03-30",
         "suggested_by": "post-market-scorecard"
       },
       {
         "ticker": "GEV",
-        "reason": "GE Vernova: Q1 earnings April 22, added to S&P 100, $150B backlog. Pulled back -5% from ATH $948. Asymmetric setup: beat/raise = re-rate",
+        "reason": "GE Vernova: Q1 earnings April 22 (before market open) — CEO guided 12-24 GW gas orders Q1 (vs 8 GW prior year). Bounced to $872.90 after hard stop hit at $817. Morgan Stanley PT $960. Beat/raise setup: full-year $44-45B rev, $5-5.5B FCF.",
         "added": "2026-03-30",
         "suggested_by": "post-market-scorecard"
       },
       {
         "ticker": "CIFR",
-        "reason": "Cipher Digital: 600MW contracted across AWS, Google/Anthropic, $8.5B+ lease value, AWS 300MW delivery July 2026",
+        "reason": "Cipher Digital: $5.5B 15-year AWS lease, 300MW delivery starting July 1 2026 (binary catalyst). $8.5B total contracted HPC revenue; 76% blended EBITDA margins. 1 GW Colchis West Texas site (AEP Direct Connect, 2028 energization). Execution risk: July delivery.",
         "added": "2026-03-29",
         "suggested_by": "opportunity-screener"
       }
