@@ -7,7 +7,7 @@
   },
   "energy_generation": {
     "nuclear_operators": ["CEG", "VST", "TLN"],
-    "nuclear_development": ["SMR", "OKLO", "BWXT"],
+    "nuclear_development": ["SMR", "OKLO", "BWXT", "CW", "AMTM"],
     "nuclear_fuel": ["CCJ", "LEU", "UEC", "NXE", "UUUU", "DNN"],
     "natural_gas_ep": ["EQT", "EXE", "CTRA", "CRK", "LNG", "AR", "RRC", "CNX", "GPOR"],
     "lng_operators": ["VG", "GLNG", "NEXT"],
@@ -17,8 +17,8 @@
     "sector_etfs": ["URA", "XLE"]
   },
   "energy_infrastructure": {
-    "grid_construction": ["PWR", "ETN", "HUBB", "MTZ", "PRIM", "MYRG", "AGX", "DY"],
-    "grid_equipment": ["GEV"],
+    "grid_construction": ["PWR", "ETN", "HUBB", "MTZ", "PRIM", "MYRG", "AGX", "DY", "WCC"],
+    "grid_equipment": ["GEV", "NVT"],
     "critical_metals": ["FCX", "MP"],
     "midstream": ["WMB", "KMI", "ET", "DTM", "TRGP", "OKE", "EPD", "AROC"],
     "sector_etfs": ["GRID"]
