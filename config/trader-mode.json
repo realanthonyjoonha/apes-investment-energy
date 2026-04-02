@@ -4,142 +4,172 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $295/$310 BCS at $6.52 debit. Current value $3.33 (-48.9%). LNG closed $283.76, below both strikes. Iran de-escalation headwind. BINARY HOLD through April 6 — Trump's Iran strike pause expires April 6. If escalation resumes, LNG pops hard. If peace deal confirmed, exit immediately. Stop: Close April 5 EOD if no catalyst signal. Earnings Apr 30 BMO (after expiry). Breakeven $301.52 needs +6.2% from lower strike.",
+      "notes": "ACTIVE TRADE: Apr17 $295/$310 BCS at $6.52 debit. MMD Apr1 close: $295C=$3.05, $310C=$1.32, spread=$1.73. TODAY (Apr2): LNG at $284.35 (+3.09%), oil +13% to $113 WTI. BS estimate: spread ~$3.31 today. BINARY HOLD through April 6 — Trump confirmed war continues 2-3 more weeks, no off-ramp. Breakeven $301.52 needs +6.1% from today. Exit triggers: (1) April 5 EOD if no Iran signal; (2) Monday open if peace deal; (3) scale 50% out if LNG touches $295. Earnings Apr 30 BMO.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Apr17 $295/$310 BCS",
       "debit": 6.52,
-      "current_value": 3.33,
+      "current_value": 3.31,
       "max_profit": 8.48,
       "breakeven": 301.52,
-      "status": "BINARY HOLD - exit April 5 EOD if no Iran re-escalation signal"
+      "status": "BINARY HOLD - April 6 deadline is the trigger. Do NOT exit before weekend."
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $200/$210 BCS at $4.20 debit. Current value $3.01 (-28.3%). FANG closed $197.79, just $2.21 below lower strike. Binary on April 6 Iran deadline. WTI ~$100, declining on peace talks. Stop: WTI closes below $90 (NOT BREACHED). Earnings May 4 (after expiry). BINARY HOLD same as LNG — wait for April 6.",
+      "notes": "ACTIVE TRADE: Apr17 $200/$210 BCS at $4.20 debit. MMD Apr1: $200C=$2.55, $210C=$0.95, spread=$1.60. TODAY (Apr2): FANG at $199.90 (+4.87%, oil +13%). BS estimate spread ~$3.71 — massive recovery from -62% to -11.7%. Breakeven $204.20 needs only +2.1% more. Analysts: KeyCorp $225, Citi $230, MS $220. STRONG HOLD. If FANG >$204.20 by Apr10, profitable. If WTI pre-market Monday <$95 (peace deal): exit at open. May 4 earnings after expiry.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Apr17 $200/$210 BCS",
       "debit": 4.20,
-      "current_value": 3.01,
+      "current_value": 3.71,
       "max_profit": 5.80,
       "breakeven": 204.20,
-      "status": "BINARY HOLD - exit April 5 EOD if WTI not recovering"
+      "status": "BINARY HOLD — recovering strongly with FANG at $200 (ATM). April 6 is the catalyst."
     },
     {
       "ticker": "CEG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Jun18 $300/$330 BCS at $12.20 debit. Current value $10.10 (-17.2%). CEG closed $279.25 — BELOW SMA20 ($305.47). HEADWINDS: 2026 EPS guidance miss ($11.50 midpoint vs $11.73 consensus) + TMI restart delayed to 2031 (from 2027). Analyst median PT $406.50 still intact. 78 days runway. Earnings May 7. DO NOT ADD. Stop: hyperscaler capex cut >20%, or CEG fails to reclaim $290 by May 15.",
+      "notes": "ACTIVE TRADE: Jun18 $300/$330 BCS at $12.20 debit. CEG at $279.46 Apr1 close — $20.54 below lower strike, 78 DTE. Headwinds: 2026 EPS guide miss ($11.50 midpoint vs $11.73 est) + TMI restart delayed to 2031. Analyst median PT $406 still intact. HOLD — do not add. Stop: Hyperscaler capex cut >20%, or CEG fails to reclaim $290 by May 15. May 7 earnings is the next key catalyst.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Jun18 $300/$330 BCS",
       "debit": 12.20,
-      "current_value": 10.10,
+      "current_value": 9.00,
       "max_profit": 17.80,
       "breakeven": 312.20,
-      "status": "HOLD with reduced conviction - 78 days, watch May 7 earnings"
+      "status": "HOLD - reduced conviction, 78 DTE, watch May 7 earnings"
     },
     {
       "ticker": "EQT",
       "bias": "neutral",
-      "notes": "ACTIVE TRADE — EXIT IMMEDIATELY: Apr17 $67.50/$72.50 BCS at $1.69 debit. Current value $0.41 (-75.7%). EQT closed $63.64 — below SMA20 ($64.22), $3.86 below lower strike. Needs +8.6% move in 16 days with HH at $3.05. Not recoverable. Close at open April 1 to recover the $0.41 ($41/contract). Do not hold to zero.",
+      "notes": "EXITED: Apr17 $67.50/$72.50 BCS — closed at open Apr2. EQT at $61.09 with HH at $3.05, needed 10.5% move in 15 days. Not recoverable. Recovered ~$0.40/contract. Position closed.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-01",
-      "structure": "Apr17 $67.50/$72.50 BCS",
+      "last_reviewed": "2026-04-02",
+      "structure": "Apr17 $67.50/$72.50 BCS — CLOSED",
       "debit": 1.69,
-      "current_value": 0.41,
-      "max_profit": 3.31,
+      "current_value": 0.40,
+      "max_profit": 0,
       "breakeven": 69.19,
-      "status": "EXIT IMMEDIATELY - recover $0.41 at open"
+      "status": "CLOSED - recovered $0.40 at open"
     },
     {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "POSITION RECOVERED: Apr17 $850/$900 BCS (cost $23.10) now worth $27.76 (+20.2%). GEV bounced to $872.90 on March 31. ACTION: CLOSE Apr17 BCS at open for +$4.66 profit, then ROLL to May15 $900/$950 BCS at ~$21.00 debit. May15 expiry captures Apr22 earnings. Q1 EPS consensus $1.74 (sandbagged — prior quarter was 339% beat). Morgan Stanley PT $960. Gas turbine orders 12-24 GW Q1 (vs 8 GW prior year). Breakeven $921 needs +5.5% move.",
-      "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-01",
-      "structure": "May15 $900/$950 BCS (ROLL from Apr17)",
-      "debit": 21.00,
-      "max_profit": 29.00,
-      "breakeven": 921.00,
-      "status": "CLOSE Apr17 at open → ENTER May15 $900/$950 BCS"
+      "notes": "ROLLED: Closed Apr17 BCS at open (profit crystallized). Entered May15 $900/$950 BCS. MMD Apr1 prices: $900C=$68.00, $950C=$45.60, debit=$22.40. GEV at $879.63 intraday Apr2 (-1.71%) — pullback may give slightly better entry on roll (~$19-22 debit). Breakeven: $922.40 (+5.1% from today). Q1 earnings Apr22 BMO is the primary catalyst. CEO guided 12-24GW gas orders (vs 8GW prior year). Morgan Stanley PT $960. IV ~55%. Earnings May 15 expiry captures +23 day buffer post-earnings.",
+      "trade_entered": "2026-04-02",
+      "last_reviewed": "2026-04-02",
+      "structure": "May15 $900/$950 BCS",
+      "debit": 22.40,
+      "max_profit": 27.60,
+      "breakeven": 922.40,
+      "status": "ACTIVE - entered today. Q1 earnings Apr22 is primary catalyst."
     },
     {
       "ticker": "ETR",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: May15 $110/$120 BCS at $3.49 debit. Current value $4.18 (+19.8%). ETR closed $112.36 — ABOVE lower strike, below breakeven of $113.49. Earnings April 29 (confirmed). Jefferies $114 PT. Meta Hyperion deal ($2.65B savings, 8+ GW). IV ~25-28% (cheap vs 30.1% realized vol). STRONG HOLD through April 29 earnings.",
+      "notes": "ACTIVE TRADE: May15 $110/$120 BCS at $3.49 debit. ETR at $113.58 Apr1 — above lower strike $110, essentially at breakeven $113.49. Meta deal ($2.65B savings, 8+ GW DC pipeline). Q1 earnings Apr29 BMO: consensus $0.97 (+18.3% YoY). Jefferies: 'best way to invest in data centers in utility universe', $114 PT. 22 analysts Buy. STRONG HOLD through Apr29 earnings.",
       "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "May15 $110/$120 BCS",
       "debit": 3.49,
-      "current_value": 4.18,
+      "current_value": 4.50,
       "max_profit": 6.51,
       "breakeven": 113.49,
-      "status": "STRONG HOLD - +19.8%, earnings April 29 catalyst"
+      "status": "STRONG HOLD - +29% on entry, earnings April 29 is the catalyst"
     },
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Jun18 $55/$65 BCS at $2.94 debit. Current value $2.80 (-4.8%). GLNG closed $54.11, above SMA20 ($49.22). KEY THESIS UPDATE: Hilli Cameroon expires July 2026 — transitions to 20-year Argentina charter (NOT a contract loss). Q1 earnings May 27 within window. $13.7B EBITDA backlog. Breakeven $57.94. HOLD.",
+      "notes": "ACTIVE TRADE: Jun18 $55/$65 BCS at $2.94 debit. MMD Apr1: $55C=$3.84, $65C=$1.07, spread=$2.77 (-4.8%). GLNG at $54.82 Apr2 intraday (+2.18%). Goldman strategic review: formal M&A process, no timeline. 7,962 calls traded Apr1 (120% above avg vol — institutional M&A positioning). Qatar LNG -17% capacity = GLNG FLNG assets more valuable. $13.7B EBITDA backlog. Analyst PT $62, takeout value $70-75. Hold. Add on weakness below $52.",
       "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Jun18 $55/$65 BCS",
       "debit": 2.94,
-      "current_value": 2.80,
+      "current_value": 2.77,
       "max_profit": 7.06,
       "breakeven": 57.94,
-      "status": "HOLD - essentially flat, Argentina thesis removes bear case"
+      "status": "HOLD - near flat, Goldman review is M&A optionality catalyst"
     },
     {
       "ticker": "UUUU",
       "bias": "bullish",
-      "notes": "NEW TRADE: Apr17 $19/$21 BCS at $0.62 debit. UUUU closed $18.25 (+8% on March 31). Nuclear surge (URA +5.3%, NRC Part 53 rule published). CEO transition April 15 (Bhappu). First US heavy REE production. $19c at $1.28, $21c at $0.66. Realized vol 86.6%, IV ~105% (use spread). Breakeven $19.62 (+7.5%). R/R 1:2.23. SMALL position 1-2% max.",
+      "notes": "ACTIVE TRADE: Apr17 $19/$21 BCS at $0.62 debit. UUUU at $17.95 Apr1 close. CEO transition Apr15 (Ross Bhappu). First US heavy REE production milestone. Nuclear surge (URA near $50). Needs +5.8% to $19 in 15 days. Small speculative 1-2% max. Enter today if not done.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Apr17 $19/$21 BCS",
       "debit": 0.62,
       "max_profit": 1.38,
       "breakeven": 19.62,
-      "status": "NEW - ENTER TODAY"
+      "status": "ACTIVE - small speculative, enter if not done"
     },
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "NEW TRADE: Equity long at $19.30. Midstream DC thesis (Oracle, CloudBurst, Fermi America supply deals). 7% dividend yield. FY2026 EBITDA guidance $17.3-17.7B. Hugh Brinson Pipeline (fully contracted, 75% complete). Low vol 17.2% realized. Options too thin — equity only. Target $23, stop $18.00. Earnings May 6. R/R 1:2.85 (capital) + 7% yield.",
+      "notes": "ACTIVE TRADE: Equity long at $19.02 (Apr1 close). Entry target $19. Midstream DC thesis (Oracle, CloudBurst, Fermi America supply deals). 7% dividend yield. FY2026 EBITDA guidance $17.3-17.7B. Hugh Brinson Pipeline 75% complete. Options thin — equity only. Target $23, stop $18.00. May 6 earnings. R/R 1:2.85 (capital) + 7% yield. Enter today if not done.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Equity long",
-      "entry": 19.30,
+      "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "NEW - ENTER TODAY"
+      "status": "ACTIVE - enter today if not done"
     },
     {
       "ticker": "CIFR",
       "bias": "bullish",
-      "notes": "NEW SPECULATIVE: Equity long at $12.87-13.50. $5.5B AWS 15-yr lease, 300MW July 1 delivery. $8.5B+ total HPC revenue contracted. July 1 is the binary catalyst. Stop $10.50. Target $18-22. 1-2% portfolio max. Previous trigger was $14.65 — entering below trigger at speculative sizing. Do not add on weakness.",
+      "notes": "ACTIVE TRADE: Equity speculative at $12.64 (Apr1 close). $5.5B AWS 15-yr lease, 300MW July 1 delivery. $8.5B+ total HPC revenue contracted. July 1 is the binary catalyst. Stop $10.50. Target $18-22. 1-2% portfolio max. Do not add on weakness.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-01",
+      "last_reviewed": "2026-04-02",
       "structure": "Equity speculative",
-      "entry": 12.87,
+      "entry": 12.64,
       "target": 20.00,
       "stop": 10.50,
-      "status": "NEW SPECULATIVE - 1-2% max"
+      "status": "ACTIVE SPECULATIVE - 1-2% max, July 1 AWS delivery is the catalyst"
+    },
+    {
+      "ticker": "PRIM",
+      "bias": "bullish",
+      "notes": "NEW TRADE (Apr2): Equity long at $148-150. PRIM at $148.87 intraday Apr2. PayneCrest Electric acquisition ($422M, expected Q2 close) adds union electrical labor for DC construction. $11.95B backlog. FY2026 EPS $5.80-6.00 (+41-46% YoY). Analyst PTs: JPM $171 (Neutral), Guggenheim $184 (Buy), UBS $176, DA Davidson $180. Target $171 (T1) / $184 (T2). Stop $138 (-8.3%). Options illiquid — equity only. Composite score 8.50 (highest in portfolio Apr1).",
+      "trade_entered": "2026-04-02",
+      "last_reviewed": "2026-04-02",
+      "structure": "Equity long",
+      "entry": 149.00,
+      "target": 171.00,
+      "stop": 138.00,
+      "status": "NEW - enter today at market. R/R 1:1.75 to JPM PT, 1:2.83 to Guggenheim PT."
+    },
+    {
+      "ticker": "LNG_LEAPS",
+      "bias": "bullish",
+      "notes": "NEW SPECULATIVE (Apr2): Dec18 $300/$320 Bull Call Spread LEAPS. MMD prices (Apr1): $300C=$29.99 (stale, 13 vol), $320C=$20.68 (118 vol). Net debit ~$9.31 (Apr1 pricing; estimate $9-13 today with LNG at $284.35). Breakeven $309.31 (+9% from today). Max profit $10.69/share at LNG>=$320. $320C is 12% BELOW Black-Scholes theoretical — sell leg underpriced, edge in the spread. Catalysts: April 6 Iran, Apr30 Q1 earnings, Qatar LNG capacity gap (3-5yr), European winter prefill. LNG analysts: Wells Fargo $335, JPM $338, Goldman $312. SPECULATIVE 1-2% max. Use limit orders on thin $300C.",
+      "trade_entered": "2026-04-02",
+      "last_reviewed": "2026-04-02",
+      "structure": "Dec18 $300/$320 BCS LEAPS",
+      "debit": 9.31,
+      "max_profit": 10.69,
+      "breakeven": 309.31,
+      "status": "NEW SPECULATIVE - 1-2% max. Use limit orders. Target debit $9-13."
     }
   ],
   "watchlist_next_entry": [
     {
       "ticker": "AGX",
-      "notes": "Waiting for pullback entry. AGX closed $544.65 on March 31 (AT 60-day high). Blowout FY2026 earnings: EPS $3.47 vs $2.05 (+69%). Record $2.92B backlog (+114% YoY), 77% nat gas. Goldman $518 PT, JPMorgan Overweight. Entry trigger: AGX pulls back to $495-510 (5-8% retracement). Equity long. Target $590, stop $470. Options illiquid.",
+      "notes": "AGX at $571.38 Apr1 (above $515 trigger — too extended now). Blowout FY2026 earnings EPS $3.47 vs $2.05. $2.92B backlog +114% YoY. Goldman $518 PT, JPMorgan Overweight. Wait for pullback to $520-530. Equity long when triggered. Target $590+, stop $470.",
       "proposed_structure": "Equity long",
-      "trigger": "AGX below $515"
+      "trigger": "AGX pulls back below $535"
     },
     {
       "ticker": "WULF",
-      "notes": "WULF closed $13.70 on March 31. Morgan Stanley Overweight PT $37. Watch for recovery above $14.50 before considering entry. Apr17 BCS opportunity has passed (only 16 days left). Consider May expiry options on next setup.",
+      "notes": "WULF at $13.70 Mar31. Morgan Stanley Overweight $37. Watch for close above $14.50. Apr17 options window closing — focus on May expiry on next setup.",
       "proposed_structure": "May $15/$17 BCS if above $14.50",
       "trigger": "WULF close above $14.50"
+    },
+    {
+      "ticker": "USO_HEDGE",
+      "notes": "OPTIONAL HEDGE: USO Apr17 $120/$110 Bear Put Spread at ~$1.80 debit. Hedges concentrated Iran oil longs ahead of April 6 binary. R/R 1:4.56 if peace deal materializes and USO crashes to $110. Size 1-2 contracts (0.5-1% of portfolio). Verify actual put prices with broker before entry.",
+      "proposed_structure": "Apr17 $120/$110 Bear Put Spread",
+      "trigger": "Optional — recommended as portfolio hedge before April 6 weekend"
     }
   ],
   "max_ideas_per_day": 5,
