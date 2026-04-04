@@ -4,28 +4,28 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $295/$310 BCS at $6.52 debit. MMD Apr2 close: $281.16. Spread estimated value $2.80-3.20. BINARY HOLD — April 6 Iran deadline. Escalation → LNG gaps to $295+. Peace → exit at Monday open (max loss). Citi PT $330, JPM $338. Earnings Apr 30 BMO. Do NOT exit before Monday open.",
+      "notes": "⚠️ EXIT Apr17 BCS Monday at open. MMD Apr2: $295C=$4.86, $310C=$2.20, spread=$2.66 (entry $6.52, -59%). Muscat Protocol = peace deal = LNG premium unwinding. $13.84 to lower strike, 15 DTE — no path. Accept loss. LEAPS (Dec18 $300/$320 BCS at $9.31) = HOLD — structural Qatar LNG outage 12.8 mtpa, 3-5yr repair. Apr30 Q1 earnings = LNG LEAPS catalyst. JPM $338, Citi $330.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-03",
-      "structure": "Apr17 $295/$310 BCS",
+      "last_reviewed": "2026-04-04",
+      "structure": "Apr17 $295/$310 BCS — EXIT; Dec18 $300/$320 BCS LEAPS — HOLD",
       "debit": 6.52,
-      "current_value": 3.31,
-      "max_profit": 8.48,
+      "current_value": 2.66,
+      "max_profit": 0,
       "breakeven": 301.52,
-      "status": "BINARY HOLD - April 6 deadline is the trigger. Do NOT exit before weekend."
+      "status": "EXIT Apr17 BCS at Monday open. HOLD Dec18 LEAPS."
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $200/$210 BCS at $4.20 debit. MMD Apr2 close: $193.88 (NOT $199.90 — closed below $200). Spread estimated value $2.50-2.80 (BS at σ=45%). Needs +3.2% to $200. BINARY HOLD through April 6. Escalation → FANG gaps to $200+. Peace → exit at Monday open. May 4 earnings (after expiry). Analysts: KeyCorp $225, Citi $230, MS $220.",
+      "notes": "CONDITIONAL HOLD: Apr17 $200/$210 BCS at $4.20 debit. MMD Apr2: $193.88. Spread ~$3.50-4.00. Muscat Protocol = oil correction risk Monday. RULE: Exit if FANG opens below $190. Hold if opens above $195. Permian FCF story intact at $85-95 WTI. 15 DTE, needs +3.2% to $200. KeyCorp $225, Citi $230, MS $220. May 4 earnings after expiry. SMA20=$189.48 = critical support.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "Apr17 $200/$210 BCS",
       "debit": 4.20,
       "current_value": 3.71,
       "max_profit": 5.80,
       "breakeven": 204.20,
-      "status": "BINARY HOLD — recovering strongly with FANG at $200 (ATM). April 6 is the catalyst."
+      "status": "CONDITIONAL: Exit if FANG < $190 at open. Hold if > $195."
     },
     {
       "ticker": "CEG",
@@ -56,9 +56,9 @@
     {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "ACTIVE: May15 $900/$950 BCS at $22.40 debit. MMD Apr2 close: $898.57. Spread current value: $68.80-$46.07=$22.73 (+$0.33, +1.5%). GEV is ATM on lower strike — perfectly positioned. Q1 earnings Apr22 BMO: consensus $9.29B rev (+15.6%), CEO guided 12-24GW orders vs 8GW prior. MS PT $960. IV ~55%. STRONG HOLD. Expected move ±$28-36 on earnings. Beat → GEV to $930-950 → max profit $27.60. Do NOT exit before Apr22.",
+      "notes": "ACTIVE: May15 $900/$950 BCS at $22.40 debit. MMD Apr2 confirmed: $900C=$68.80 (BS theoretical=$68.95), $950C=$46.07 (BS theoretical=$48.42). Spread $22.73 (+1.5%). ATM on lower strike. IV ~55% vs RV20=52.3% = fairly priced. Q1 earnings Apr22 BMO — BofA projecting 12-24GW orders vs 8GW prior. CEO: 100 GW under contract by end 2026. STRONG HOLD. Expected move ±$50-60 on earnings. Beat = GEV $930-960 = max profit $27.60.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "May15 $900/$950 BCS",
       "debit": 22.40,
       "max_profit": 27.60,
@@ -68,9 +68,9 @@
     {
       "ticker": "ETR",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: May15 $110/$120 BCS at $3.49 debit. ETR at $113.58 Apr1 — above lower strike $110, essentially at breakeven $113.49. Meta deal ($2.65B savings, 8+ GW DC pipeline). Q1 earnings Apr29 BMO: consensus $0.97 (+18.3% YoY). Jefferies: 'best way to invest in data centers in utility universe', $114 PT. 22 analysts Buy. STRONG HOLD through Apr29 earnings.",
+      "notes": "STRONG HOLD: May15 $110/$120 BCS. MMD Apr2: $110C=$7.30, $120C=$2.00. Spread value=$5.30 (+$1.81, +52%!). ETR at $114.90, above breakeven $113.49. IV ~25-27% (LOW — options cheap). Meta deal confirmed ($2.65B savings, 5,200 MW new gen, 240mi HV transmission, 20-yr term). Apr29 Q1 earnings BMO — first full EPS on Meta deal. Consider partial profits if ETR > $118 before earnings. Max profit $6.51 at $120+.",
       "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "May15 $110/$120 BCS",
       "debit": 3.49,
       "current_value": 4.50,
@@ -81,9 +81,9 @@
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Jun18 $55/$65 BCS at $2.94 debit. MMD Apr1: $55C=$3.84, $65C=$1.07, spread=$2.77 (-4.8%). GLNG at $54.82 Apr2 intraday (+2.18%). Goldman strategic review: formal M&A process, no timeline. 7,962 calls traded Apr1 (120% above avg vol — institutional M&A positioning). Qatar LNG -17% capacity = GLNG FLNG assets more valuable. $13.7B EBITDA backlog. Analyst PT $62, takeout value $70-75. Hold. Add on weakness below $52.",
+      "notes": "HOLD: Jun18 $55/$65 BCS. MMD Apr2 confirmed: $55C=$4.80, $65C=$1.59. Spread=$3.21 (+$0.27, +9%). GLNG at $55.29. Near 60d high $56.21 — breakout above = bullish. Goldman strategic review confirmed Mar25 (outright sale, merger, asset divestitures — full process). AGM May19 = M&A signal event. Qatar LNG 12.8 mtpa offline = FLNG assets MORE strategic. NOW ADDING Sep18 $60/$70 BCS as M&A optionality layer (trigger met). Takeout value $70-75.",
       "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "Jun18 $55/$65 BCS",
       "debit": 2.94,
       "current_value": 2.77,
@@ -154,33 +154,33 @@
     {
       "ticker": "HAL",
       "bias": "bullish",
-      "notes": "NEW TRADE (Apr3): May8 $38/$42 BCS. HAL at $38.17 Apr2. Buy $38C ~$2.19 (Apr1 price — verify Monday), Sell $42C at $1.28. Net debit ~$0.91. Max profit $3.09. R/R 1:3.4. Breakeven $38.91. Earnings April 21 AMC. Consensus EPS $0.50-0.51 (-15% YoY) but Q4 2025 beat +28%. Venezuela $110B contract wildcard. Oil at $112 drives international completions. IV ~45%. Enter Monday with limit orders.",
+      "notes": "REVISED: MMD Apr2 actual — $38C=$2.19 (Apr1 stale), $42C=$0.87. Net debit ~$1.32 (vs $0.91 estimate). Max profit $2.68. R/R 1:2.03. Breakeven $39.32. REDUCED SIZE: 2-3 contracts only (oil headwind). Use limit orders — wait for HAL pullback to $36.50-37 if oil corrects. Apr21 earnings AMC is catalyst. Venezuela $110B wildcard unpriced. SMA20=$36.79. Enter with limit $1.20 debit target.",
       "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "May8 $38/$42 BCS",
-      "debit": 0.91,
-      "max_profit": 3.09,
-      "breakeven": 38.91,
-      "status": "NEW - enter Monday April 7. Earnings April 21 catalyst. Confirm $38C price at open before entering."
+      "debit": 1.32,
+      "max_profit": 2.68,
+      "breakeven": 39.32,
+      "status": "Enter Monday April 7 with limit $1.20 debit. Wait for HAL pullback. 2-3 contracts max."
     },
     {
       "ticker": "USO",
       "bias": "bearish",
-      "notes": "NEW HEDGE (Apr3): Apr17 $130/$120 Bear Put Spread. MMD Apr2: $130P=$7.04 (1,141 vol), $120P=$3.50 (4,385 vol — institutional hedging!). Net debit $3.54. Max profit $6.46. R/R 1:1.83. Breakeven $126.46 (-8.3% USO). IV ~100% — spread fairly priced. Purpose: portfolio insurance for April 6 Iran binary. Peace deal → USO drops to $120-125 → spread profitable. Size 2-4 contracts (0.5-1.5% portfolio). Enter FIRST thing Monday before oil markets react.",
+      "notes": "⚡ PRIORITY #1 Monday: Apr17 $130/$120 BPS. MMD Apr2: $130P=$7.04 (1,141 vol), $120P=$3.50 (4,385 vol). Net debit $3.54. Max profit $6.46. R/R 1:1.83. Breakeven $126.46. Muscat Protocol signed Apr3 = oil war premium deflating. USO massively extended (SMA20=$117.93, spot=$137.92 = +16.9% above SMA). OPEC+ meets Apr5. Stop: Close if USO > $142 (escalation). 2-4 contracts max.",
       "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "Apr17 $130/$120 Bear Put Spread",
       "debit": 3.54,
       "max_profit": 6.46,
       "breakeven": 126.46,
-      "status": "NEW HEDGE - enter Monday morning BEFORE other trades. 2-4 contracts max. Portfolio insurance."
+      "status": "ENTER FIRST Monday morning. Priority #1. 2-4 contracts max."
     },
     {
       "ticker": "CCJ",
       "bias": "bullish",
-      "notes": "NEW TRADE (Apr3): May15 $115/$120 BCS. CCJ at $112.57 Apr2. MMD: $115C=$8.38 (59 vol), $120C=$6.25 (26 vol). Net debit $2.13. Max profit $2.87. R/R 1:1.35. Breakeven $117.13 (+4.1%). IVP=90 — spread is the correct structure. Nuclear bull market thesis: URA +4% Apr2, Iran war energy security premium, India $2.6B uranium deal, COP30 nuclear tripling commitment. Q1 earnings May 1 (within expiry window). Use limit orders — thin liquidity.",
+      "notes": "CONFIRMED: May15 $115/$120 BCS. MMD Apr2 verified: $115C=$8.38 (BS theoretical=$8.10), $120C=$6.25 (BS theoretical=$6.17). Net debit $2.13. Max profit $2.87. R/R 1:1.35. Breakeven $117.13. IV ~58-60% vs RV20=55.8% = fairly priced, spread structure correct. Nuclear thesis INDEPENDENT of Iran deal. Uranium spot $84.25/lb (below $120 trim threshold). Q1 earnings early May within window. Use limit orders — thin liquidity. SMA20=$109.51, support $100.11.",
       "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "May15 $115/$120 BCS",
       "debit": 2.13,
       "max_profit": 2.87,
@@ -190,14 +190,27 @@
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "NEW CONTRARIAN TRADE (Apr3): Sep18 $65/$70 BCS. EQT at $59.70 Apr2. MMD: $65C=$4.70 (57 vol — CHEAP vs $5.16 theoretical), $70C=$3.10 (95 vol). Net debit $1.60. Max profit $3.40. R/R 1:2.13. Breakeven $66.60 (+11.6% in 168 days). KEY EDGE: spread $0.57 below theoretical — options mispriced. HH at $2.88 is near-term bottom; summer recovery to $3.50+ is the thesis. EQT FCF $3.5B projected 2026. Earnings late July is re-rating catalyst. Stop: HH below $2.50 for 5+ days OR EQT below $55.",
+      "notes": "CONTRARIAN: Sep18 $65/$70 BCS. EQT at $59.70 Apr2. MMD verified: $65C=$4.70 (57 vol), $70C=$3.10 (95 vol). Net debit $1.60. Max profit $3.40. R/R 1:2.13. Breakeven $66.60 (+11.6% in 169 days). Both legs slightly rich vs BS theoretical (IV ~37-40% vs RV20=33%). EQT BELOW SMA20 ($64.11) — short-term bearish, but 169 DTE gives patience. Qatar LNG outage = structural HH floor support. Stop: HH < $2.50 for 5+ days OR EQT < $55.",
       "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-04",
       "structure": "Sep18 $65/$70 BCS",
       "debit": 1.60,
       "max_profit": 3.40,
       "breakeven": 66.60,
-      "status": "NEW CONTRARIAN - enter Monday April 7 with limits. Patient position — 168 DTE. Mispriced options = edge."
+      "status": "Enter Monday April 7 with limits. Wait for EQT to stabilize (may dip further). 169 DTE patient play."
+    }
+  ],
+    {
+      "ticker": "GLNG_SEP",
+      "bias": "bullish",
+      "notes": "SPECULATIVE (Apr4): Sep18 $60/$70 BCS. TRIGGER MET — Goldman advisor formally announced Mar25 (not rumor — confirmed). MMD Apr2: $60C=$5.10 (253 vol), $70C=$2.31 (204 vol). Net debit $2.79. Max profit $7.21. R/R 1:2.58. Breakeven $62.79 (+13.6%). GLNG at $55.29. Takeout value est $70-75. Goldman process typically 3-5 months. AGM May19 = signal event. Layer ON TOP of Jun18 $55/$65 BCS. Stop: GLNG 'remaining independent' announcement.",
+      "trade_entered": "2026-04-04",
+      "last_reviewed": "2026-04-04",
+      "structure": "Sep18 $60/$70 BCS",
+      "debit": 2.79,
+      "max_profit": 7.21,
+      "breakeven": 62.79,
+      "status": "NEW SPECULATIVE - enter Monday April 7. 1-2 contracts max (1-2% portfolio). M&A trigger met."
     }
   ],
   "watchlist_next_entry": [
