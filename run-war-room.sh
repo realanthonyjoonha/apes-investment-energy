@@ -31,11 +31,10 @@ echo "$PROMPT" | claude --print --dangerously-skip-permissions --model claude-so
 RAW_SIZE=$(wc -c < "$RAW_OUTPUT")
 echo "[$(date)] Sonnet output: ${RAW_SIZE} bytes" >> $LOG_FILE
 
-# Check if NO ALERT
+# Check if NO ALERT — still send email but with different subject
 if grep -q "NO ALERT" "$RAW_OUTPUT"; then
-    echo "[$(date)] No alert triggered. Skipping email." >> $LOG_FILE
-    echo "[$(date)] $(grep 'NO ALERT' "$RAW_OUTPUT")" >> $LOG_FILE
-    exit 0
+    echo "[$(date)] No alert triggered. Sending all-clear update." >> $LOG_FILE
+    SUBJECT="✅ War Room — $TIME_DISPLAY PT — All Clear"
 fi
 
 # Alert was triggered — extract subject and send
