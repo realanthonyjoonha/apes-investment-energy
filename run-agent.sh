@@ -3,7 +3,7 @@
 # Direct stdout capture — no Write tool dependency
 # Features: retry on failure, auth-failure detection, size validation
 
-export PATH=$PATH:/usr/local/bin:/opt/homebrew/bin
+export PATH=$PATH:/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin
 
 AGENT_NAME=$1
 PROMPT_FILE=$2
