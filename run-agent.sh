@@ -21,7 +21,12 @@ REPORT_FILE="$REPORT_DIR/${AGENT_NAME}_${TIMESTAMP}.html"
 RESEARCH_FILE="$TMP_DIR/${AGENT_NAME}_${TIMESTAMP}_research.md"
 
 # Minimum acceptable report size in bytes. Anything smaller is considered a failure.
-MIN_VALID_SIZE=20000
+# Pulse is a smaller agent (10-15 min target) so threshold is lower for it.
+if [ "$1" = "post-market-pulse" ] || [ "$1" = "war-room" ]; then
+    MIN_VALID_SIZE=10000
+else
+    MIN_VALID_SIZE=20000
+fi
 
 # Max runtime for Claude --print in seconds (45 minutes)
 CLAUDE_TIMEOUT=2700
@@ -193,13 +198,14 @@ run_claude_attempt() {
     echo "[$(date)] Attempt $attempt: Running Claude (timeout ${CLAUDE_TIMEOUT}s)..." >> $LOG_FILE
     cd $BASE_DIR
     # Background + kill pattern for timeout (macOS doesn't have GNU timeout)
-    (cat "$TMP_DIR/prompt_${TIMESTAMP}.txt" | claude --print --dangerously-skip-permissions > "$RESEARCH_FILE" 2>> "$LOG_FILE") &
+    # CRITICAL: redirect all FDs of background subshells to avoid hanging command substitution
+    (cat "$TMP_DIR/prompt_${TIMESTAMP}.txt" | claude --print --dangerously-skip-permissions > "$RESEARCH_FILE" 2>> "$LOG_FILE") </dev/null >/dev/null 2>/dev/null &
     local claude_pid=$!
-    (sleep $CLAUDE_TIMEOUT && kill -9 $claude_pid 2>/dev/null && echo "[$(date)] Attempt $attempt: TIMEOUT killed at ${CLAUDE_TIMEOUT}s" >> $LOG_FILE) &
+    (sleep $CLAUDE_TIMEOUT && kill -9 $claude_pid 2>/dev/null && echo "[$(date)] Attempt $attempt: TIMEOUT killed at ${CLAUDE_TIMEOUT}s" >> "$LOG_FILE") </dev/null >/dev/null 2>/dev/null &
     local watcher_pid=$!
     wait $claude_pid 2>/dev/null
     kill $watcher_pid 2>/dev/null
-    wait 2>/dev/null
+    wait $watcher_pid 2>/dev/null
     local size=$(wc -c < "$RESEARCH_FILE")
     echo "[$(date)] Attempt $attempt: Captured ${size} bytes" >> $LOG_FILE
     echo $size
