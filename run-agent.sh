@@ -23,10 +23,46 @@ RESEARCH_FILE="$TMP_DIR/${AGENT_NAME}_${TIMESTAMP}_research.md"
 # Minimum acceptable report size in bytes. Anything smaller is considered a failure.
 MIN_VALID_SIZE=20000
 
-echo "[$(date)] Starting $AGENT_NAME (v8 — stdout capture)" >> $LOG_FILE
+# Max runtime for Claude --print in seconds (30 minutes)
+CLAUDE_TIMEOUT=1800
 
-# Pull latest from GitHub
-cd $BASE_DIR && git pull >> $LOG_FILE 2>&1
+# Who to send to: "all" = full distro, "admin" = anthonyjoonha only
+# Set via env var for testing: SEND_TARGET=admin /path/to/run-agent.sh ...
+SEND_TARGET="${SEND_TARGET:-all}"
+
+# Lock file to prevent overlapping agent runs
+LOCK_FILE="$TMP_DIR/${AGENT_NAME}.lock"
+if [ -f "$LOCK_FILE" ]; then
+    LOCK_PID=$(cat "$LOCK_FILE" 2>/dev/null)
+    if [ -n "$LOCK_PID" ] && kill -0 "$LOCK_PID" 2>/dev/null; then
+        echo "[$(date)] $AGENT_NAME already running (PID $LOCK_PID). Aborting." >> $LOG_FILE
+        exit 0
+    else
+        echo "[$(date)] Stale lock file found. Removing." >> $LOG_FILE
+        rm -f "$LOCK_FILE"
+    fi
+fi
+echo $$ > "$LOCK_FILE"
+trap 'rm -f "$LOCK_FILE"' EXIT
+
+echo "[$(date)] Starting $AGENT_NAME (v9 — stdout capture + lock + timeout)" >> $LOG_FILE
+
+# Pull latest from GitHub with retry and conflict recovery
+pull_attempts=0
+max_attempts=3
+until git -C $BASE_DIR pull >> $LOG_FILE 2>&1; do
+    pull_attempts=$((pull_attempts + 1))
+    if [ $pull_attempts -ge $max_attempts ]; then
+        echo "[$(date)] git pull failed after $max_attempts attempts — attempting recovery" >> $LOG_FILE
+        # Stash any local changes, reset to remote, re-apply
+        git -C $BASE_DIR stash >> $LOG_FILE 2>&1
+        git -C $BASE_DIR fetch origin >> $LOG_FILE 2>&1
+        git -C $BASE_DIR reset --hard origin/main >> $LOG_FILE 2>&1
+        break
+    fi
+    echo "[$(date)] git pull retry $pull_attempts" >> $LOG_FILE
+    sleep 2
+done
 
 # Build context from previous agent reports
 CONTEXT=""
@@ -128,9 +164,16 @@ PROMPTEOF
 ########################################
 run_claude_attempt() {
     local attempt=$1
-    echo "[$(date)] Attempt $attempt: Running Claude..." >> $LOG_FILE
+    echo "[$(date)] Attempt $attempt: Running Claude (timeout ${CLAUDE_TIMEOUT}s)..." >> $LOG_FILE
     cd $BASE_DIR
-    cat "$TMP_DIR/prompt_${TIMESTAMP}.txt" | claude --print --dangerously-skip-permissions > "$RESEARCH_FILE" 2>> $LOG_FILE
+    # Timeout wrapper using perl (macOS doesn't have GNU timeout by default)
+    perl -e "alarm $CLAUDE_TIMEOUT; exec \$ARGV[0] or die 'exec failed: \$!\n'" \
+        "cat '$TMP_DIR/prompt_${TIMESTAMP}.txt' | claude --print --dangerously-skip-permissions > '$RESEARCH_FILE' 2>> '$LOG_FILE'" \
+        2>> $LOG_FILE
+    local exit_code=$?
+    if [ $exit_code -eq 142 ] || [ $exit_code -eq 124 ]; then
+        echo "[$(date)] Attempt $attempt: TIMEOUT after ${CLAUDE_TIMEOUT}s" >> $LOG_FILE
+    fi
     local size=$(wc -c < "$RESEARCH_FILE")
     echo "[$(date)] Attempt $attempt: Captured ${size} bytes" >> $LOG_FILE
     echo $size
@@ -188,6 +231,9 @@ if [ "$SIZE" -lt "$MIN_VALID_SIZE" ] || grep -qi "AUTH FAILURE" "$RESEARCH_FILE"
     SUBJECT="🚨 [FAILED] $SUBJECT"
     echo "[$(date)] Report failed validation — sending alert to admin only" >> $LOG_FILE
     python3 $BASE_DIR/scripts/send_email.py --admin-only "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
+elif [ "$SEND_TARGET" = "admin" ]; then
+    echo "[$(date)] SEND_TARGET=admin — sending to admin only (testing mode)" >> $LOG_FILE
+    python3 $BASE_DIR/scripts/send_email.py --admin-only "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 else
     echo "[$(date)] Report validated — sending to full distro" >> $LOG_FILE
     python3 $BASE_DIR/scripts/send_email.py "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
@@ -196,10 +242,17 @@ fi
 # Push config changes if any
 cd $BASE_DIR
 if ! git diff --quiet config/ 2>/dev/null; then
-    echo "[$(date)] Config files changed — committing and pushing" >> $LOG_FILE
+    echo "[$(date)] Config files changed — committing" >> $LOG_FILE
     git add config/ >> $LOG_FILE 2>&1
     git commit -m "$AGENT_NAME auto-update: config changes — $DATE_DISPLAY" >> $LOG_FILE 2>&1
-    git push origin main >> $LOG_FILE 2>&1
+    # Push with retry and rebase-on-conflict
+    push_attempts=0
+    until git push origin main >> $LOG_FILE 2>&1 || [ $push_attempts -ge 3 ]; do
+        push_attempts=$((push_attempts + 1))
+        echo "[$(date)] git push conflict — attempt $push_attempts rebase" >> $LOG_FILE
+        git pull --rebase origin main >> $LOG_FILE 2>&1
+        sleep 1
+    done
 fi
 
 echo "[$(date)] Finished $AGENT_NAME — emailed (${REPORT_SIZE} bytes)" >> $LOG_FILE
