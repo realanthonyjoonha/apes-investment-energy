@@ -7,11 +7,11 @@ import urllib.request
 import urllib.error
 import time
 
-def send_email(subject, html_body=None, html_file=None):
+def send_email(subject, html_body=None, html_file=None, admin_only=False):
     if html_file and os.path.exists(html_file):
         with open(html_file) as f:
             html_body = f.read()
-    
+
     if not html_body:
         print("Error: No HTML content provided")
         return False
@@ -19,8 +19,12 @@ def send_email(subject, html_body=None, html_file=None):
     config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config', 'email-distro.json')
     with open(config_path) as f:
         config = json.load(f)
-    
-    recipients = config['recipients']
+
+    if admin_only:
+        # Failed reports / alerts: send only to the primary admin (reply_to)
+        recipients = [config['reply_to']]
+    else:
+        recipients = config['recipients']
     sender = config['reply_to']
     api_key = os.environ.get('RESEND_API_KEY', 're_GksxetM4_FrXbJJZmxCfHmBk4gm1s2wpK')
     
@@ -67,11 +71,19 @@ def send_email(subject, html_body=None, html_file=None):
     return failed == 0
 
 if __name__ == '__main__':
-    if len(sys.argv) >= 3:
-        subject = sys.argv[1]
-        if os.path.exists(sys.argv[2]):
-            send_email(subject, html_file=sys.argv[2])
+    # Flag-based: python3 send_email.py [--admin-only] "Subject" /path/to/report.html
+    args = sys.argv[1:]
+    admin_only = False
+    if args and args[0] == '--admin-only':
+        admin_only = True
+        args = args[1:]
+
+    if len(args) >= 2:
+        subject = args[0]
+        content = args[1]
+        if os.path.exists(content):
+            send_email(subject, html_file=content, admin_only=admin_only)
         else:
-            send_email(subject, html_body=sys.argv[2])
+            send_email(subject, html_body=content, admin_only=admin_only)
     else:
-        print('Usage: python3 send_email.py "Subject" /path/to/report.html')
+        print('Usage: python3 send_email.py [--admin-only] "Subject" /path/to/report.html')

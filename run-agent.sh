@@ -183,13 +183,15 @@ grep -v "^SUBJECT:" "$RESEARCH_FILE" | python3 $BASE_DIR/scripts/format_report.p
 REPORT_SIZE=$(wc -c < "$REPORT_FILE")
 echo "[$(date)] Final HTML report: ${REPORT_SIZE} bytes" >> $LOG_FILE
 
-# Tag partial reports
-if [ "$SIZE" -lt "$MIN_VALID_SIZE" ]; then
-    SUBJECT="[PARTIAL] $SUBJECT"
+# Determine send target: full distro vs admin-only
+if [ "$SIZE" -lt "$MIN_VALID_SIZE" ] || grep -qi "AUTH FAILURE" "$RESEARCH_FILE" 2>/dev/null; then
+    SUBJECT="🚨 [FAILED] $SUBJECT"
+    echo "[$(date)] Report failed validation — sending alert to admin only" >> $LOG_FILE
+    python3 $BASE_DIR/scripts/send_email.py --admin-only "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
+else
+    echo "[$(date)] Report validated — sending to full distro" >> $LOG_FILE
+    python3 $BASE_DIR/scripts/send_email.py "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 fi
-
-# Send email
-python3 $BASE_DIR/scripts/send_email.py "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 
 # Push config changes if any
 cd $BASE_DIR
