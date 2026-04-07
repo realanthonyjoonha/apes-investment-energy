@@ -23,8 +23,8 @@ RESEARCH_FILE="$TMP_DIR/${AGENT_NAME}_${TIMESTAMP}_research.md"
 # Minimum acceptable report size in bytes. Anything smaller is considered a failure.
 MIN_VALID_SIZE=20000
 
-# Max runtime for Claude --print in seconds (30 minutes)
-CLAUDE_TIMEOUT=1800
+# Max runtime for Claude --print in seconds (45 minutes)
+CLAUDE_TIMEOUT=2700
 
 # Who to send to: "all" = full distro, "admin" = anthonyjoonha only
 # Set via env var for testing: SEND_TARGET=admin /path/to/run-agent.sh ...
