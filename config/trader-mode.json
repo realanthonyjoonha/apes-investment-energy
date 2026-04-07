@@ -4,28 +4,48 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "⚠️ EXIT Apr17 BCS Monday at open. MMD Apr2: $295C=$4.86, $310C=$2.20, spread=$2.66 (entry $6.52, -59%). Muscat Protocol = peace deal = LNG premium unwinding. $13.84 to lower strike, 15 DTE — no path. Accept loss. LEAPS (Dec18 $300/$320 BCS at $9.31) = HOLD — structural Qatar LNG outage 12.8 mtpa, 3-5yr repair. Apr30 Q1 earnings = LNG LEAPS catalyst. JPM $338, Citi $330.",
-      "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-04",
-      "structure": "Apr17 $295/$310 BCS — EXIT; Dec18 $300/$320 BCS LEAPS — HOLD",
-      "debit": 6.52,
-      "current_value": 2.66,
-      "max_profit": 0,
-      "breakeven": 301.52,
-      "status": "EXIT Apr17 BCS at Monday open. HOLD Dec18 LEAPS."
+      "notes": "EXITED Apr17 BCS at Apr7 open (accepted loss). NEW Apr7: May15 $300C at ~$8.60 (est. $11-14 at open with Kharg Island gap-up). Trade of the Day — highest composite 8.50, Kharg Island + Qatar force majeure + Apr30 Q1 earnings catalyst. IV ~39-40% = fairly priced. Delta 0.37. Stop: LNG < $270 or ceasefire. HOLD Dec18 $300/$320 BCS LEAPS ($9.31 entry) — structural Qatar LNG outage 3-5yr. Sep18 $320C at $16.05 = new LEAPS position (C1). JPM $338, Citi $330, Jefferies $330, Wells Fargo $335.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "May15 $300C NEW (Trade of Day); Sep18 $320C LEAPS; Dec18 $300/$320 BCS HOLD",
+      "status": "ACTIVE — entered at Apr7 open. Monitor Apr30 Q1 earnings."
+    },
+    {
+      "ticker": "OXY",
+      "bias": "bullish",
+      "notes": "NEW Apr7: May15 $65/$70 BCS. MMD Apr4: $65C=$2.66 (878 vol), $67.50C=$1.76 (1,453 vol), $70C=$1.28 (414 vol). Confirmed prices. Net debit $1.38 at Apr4 pricing; est. $2.32 at today's $67 gap-up. Kharg Island strikes Iran's #1 oil export hub (90% of Iranian crude). At $116 WTI, OXY FCF is maximum. Q1 earnings May 5-12 within option window. Morgan Stanley PT $73. Stop: OXY < $60 or ceasefire.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "May15 $65/$70 BCS",
+      "debit": 1.38,
+      "max_profit": 3.62,
+      "breakeven": 66.38,
+      "status": "NEW — enter at Apr7 open. Use limit near mid-market."
+    },
+    {
+      "ticker": "VG",
+      "bias": "bullish",
+      "notes": "NEW Apr7: May8 $17/$20 BCS. VG at $15.94 MMD Apr4; gapping to ~$16.50 today. MMD confirmed prices: May8 $17C=$1.18 (2 contracts, thin), May8 $18C=$0.70 (1 contract). IV ~100% = BCS required. Est. spread at $16.50: Buy $17C ~$1.72, Sell $20C ~$0.82, net debit ~$0.90. Max profit $2.10 at $20+. Morgan Stanley PT $22, JPM $19. CP2 fully financed. Qatar force majeure = structural LNG demand. Breakeven $17.90 (+8.5%). Stop: VG < $14 or ceasefire.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "May8 $17/$20 BCS",
+      "debit": 0.90,
+      "max_profit": 2.10,
+      "breakeven": 17.90,
+      "status": "NEW — use limit orders, options are thin. Very high IV (~100%) = spread structure mandatory."
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "CONDITIONAL HOLD: Apr17 $200/$210 BCS at $4.20 debit. MMD Apr2: $193.88. Spread ~$3.50-4.00. Muscat Protocol = oil correction risk Monday. RULE: Exit if FANG opens below $190. Hold if opens above $195. Permian FCF story intact at $85-95 WTI. 15 DTE, needs +3.2% to $200. KeyCorp $225, Citi $230, MS $220. May 4 earnings after expiry. SMA20=$189.48 = critical support.",
+      "notes": "HOLD: Apr17 $200/$210 BCS at $4.20 debit. Conditional rule triggered: WTI at $116 = FANG gapping above $200, hold rule (>$195) met. 10 DTE, needs $4 more from $200 lower strike. KeyCorp $225, Citi $230, MS $220. May 4 earnings after expiry. Do NOT add. Exit if FANG closes below $200.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-04",
+      "last_reviewed": "2026-04-07",
       "structure": "Apr17 $200/$210 BCS",
       "debit": 4.20,
-      "current_value": 3.71,
+      "current_value": 5.00,
       "max_profit": 5.80,
       "breakeven": 204.20,
-      "status": "CONDITIONAL: Exit if FANG < $190 at open. Hold if > $195."
+      "status": "HOLD — oil spike triggered hold rule. 10 DTE watch closely."
     },
     {
       "ticker": "CEG",
@@ -41,29 +61,16 @@
       "status": "HOLD - reduced conviction, 78 DTE, watch May 7 earnings"
     },
     {
-      "ticker": "EQT",
-      "bias": "neutral",
-      "notes": "EXITED: Apr17 $67.50/$72.50 BCS — closed at open Apr2. EQT at $61.09 with HH at $3.05, needed 10.5% move in 15 days. Not recoverable. Recovered ~$0.40/contract. Position closed.",
-      "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-03",
-      "structure": "Apr17 $67.50/$72.50 BCS — CLOSED",
-      "debit": 1.69,
-      "current_value": 0.40,
-      "max_profit": 0,
-      "breakeven": 69.19,
-      "status": "CLOSED - recovered $0.40 at open"
-    },
-    {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "ACTIVE: May15 $900/$950 BCS at $22.40 debit. MMD Apr2 confirmed: $900C=$68.80 (BS theoretical=$68.95), $950C=$46.07 (BS theoretical=$48.42). Spread $22.73 (+1.5%). ATM on lower strike. IV ~55% vs RV20=52.3% = fairly priced. Q1 earnings Apr22 BMO — BofA projecting 12-24GW orders vs 8GW prior. CEO: 100 GW under contract by end 2026. STRONG HOLD. Expected move ±$50-60 on earnings. Beat = GEV $930-960 = max profit $27.60.",
+      "notes": "ACTIVE STRONG HOLD: May15 $900/$950 BCS at $22.40 debit. MMD Apr4 confirmed: $897.36. Near ATM on lower strike. IV ~53-54% vs RV20=52.3% = fairly priced. Q1 earnings Apr22 BMO — BofA projecting 12-24GW orders vs 8GW prior. CEO: 100 GW under contract by end 2026. STRONG HOLD. Expected move ±$50-60 on earnings. Beat = GEV $930-960 = max profit $27.60. Iran sensitivity LOW — structural AI thesis independent of conflict.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-04",
+      "last_reviewed": "2026-04-07",
       "structure": "May15 $900/$950 BCS",
       "debit": 22.40,
       "max_profit": 27.60,
       "breakeven": 922.40,
-      "status": "ACTIVE - entered today. Q1 earnings Apr22 is primary catalyst."
+      "status": "STRONG HOLD — Q1 earnings Apr22 BMO is primary binary catalyst in 15 days."
     },
     {
       "ticker": "ETR",
@@ -73,144 +80,148 @@
       "last_reviewed": "2026-04-04",
       "structure": "May15 $110/$120 BCS",
       "debit": 3.49,
-      "current_value": 4.50,
+      "current_value": 5.30,
       "max_profit": 6.51,
       "breakeven": 113.49,
-      "status": "STRONG HOLD - +29% on entry, earnings April 29 is the catalyst"
+      "status": "STRONG HOLD - +52% on entry, earnings April 29 is the next catalyst"
     },
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "HOLD: Jun18 $55/$65 BCS. MMD Apr2 confirmed: $55C=$4.80, $65C=$1.59. Spread=$3.21 (+$0.27, +9%). GLNG at $55.29. Near 60d high $56.21 — breakout above = bullish. Goldman strategic review confirmed Mar25 (outright sale, merger, asset divestitures — full process). AGM May19 = M&A signal event. Qatar LNG 12.8 mtpa offline = FLNG assets MORE strategic. NOW ADDING Sep18 $60/$70 BCS as M&A optionality layer (trigger met). Takeout value $70-75.",
-      "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-04",
-      "structure": "Jun18 $55/$65 BCS",
-      "debit": 2.94,
-      "current_value": 2.77,
-      "max_profit": 7.06,
-      "breakeven": 57.94,
-      "status": "HOLD - near flat, Goldman review is M&A optionality catalyst"
+      "notes": "HOLD Jun18 $55/$65 BCS (entry $2.94). ENTERING Sep18 $60/$70 BCS today. Goldman strategic review confirmed Mar25. AGM May19 = M&A signal event. Qatar LNG 12.8 mtpa offline = FLNG assets MORE strategic. MMD Apr4 from trader-mode: $60C=$5.10 (253 vol), $70C=$2.31 (204 vol). Net debit $2.79 at Apr4; est. $3.20 at today's gap-up. Max profit $7.21/$6.80. R/R 1:2.58/2.13. Breakeven $62.79/$63.20. Takeout value $70-75. Goldman process 3-5 months. Stop: 'remaining independent' announcement.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "Jun18 $55/$65 BCS (HOLD) + Sep18 $60/$70 BCS (NEW TODAY)",
+      "debit": 2.79,
+      "max_profit": 7.21,
+      "breakeven": 62.79,
+      "status": "ENTERING Sep18 BCS today with limit ~$2.79-3.20. Use limit orders — 1-2 contracts max."
     },
     {
       "ticker": "UUUU",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Apr17 $19/$21 BCS at $0.62 debit. UUUU at $17.95 Apr1 close. CEO transition Apr15 (Ross Bhappu). First US heavy REE production milestone. Nuclear surge (URA near $50). Needs +5.8% to $19 in 15 days. Small speculative 1-2% max. Enter today if not done.",
+      "notes": "ACTIVE TRADE: Apr17 $19/$21 BCS at $0.62 debit. UUUU at $17.95 Apr1 close. CEO transition Apr15 (Ross Bhappu). First US heavy REE production milestone. Nuclear surge (URA near $50). Needs +5.8% to $19 in 15 days. Small speculative 1-2% max. HOLD existing position only — no new adds.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-07",
       "structure": "Apr17 $19/$21 BCS",
       "debit": 0.62,
       "max_profit": 1.38,
       "breakeven": 19.62,
-      "status": "ACTIVE - small speculative, enter if not done"
+      "status": "HOLD SMALL — speculative position only."
     },
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "ACTIVE TRADE: Equity long at $19.02 (Apr1 close). Entry target $19. Midstream DC thesis (Oracle, CloudBurst, Fermi America supply deals). 7% dividend yield. FY2026 EBITDA guidance $17.3-17.7B. Hugh Brinson Pipeline 75% complete. Options thin — equity only. Target $23, stop $18.00. May 6 earnings. R/R 1:2.85 (capital) + 7% yield. Enter today if not done.",
+      "notes": "ACTIVE TRADE: Equity long at $19.02 (Apr1 close). MMD Apr4 confirmed $18.96. Midstream DC thesis (Oracle, CloudBurst, Fermi America supply deals). 7% dividend yield. FY2026 EBITDA guidance $17.3-17.7B. Hugh Brinson Pipeline 75% complete. Options thin — equity only. Target $23, stop $18.00. May 6 earnings. R/R 1:2.85 (capital) + 7% yield.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-07",
       "structure": "Equity long",
       "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "ACTIVE - enter today if not done"
+      "status": "ACTIVE — hold. Iran conflict boosts pipeline throughput volumes."
     },
     {
       "ticker": "CIFR",
       "bias": "bullish",
       "notes": "ACTIVE TRADE: Equity speculative at $12.64 (Apr1 close). $5.5B AWS 15-yr lease, 300MW July 1 delivery. $8.5B+ total HPC revenue contracted. July 1 is the binary catalyst. Stop $10.50. Target $18-22. 1-2% portfolio max. Do not add on weakness.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-07",
       "structure": "Equity speculative",
       "entry": 12.64,
       "target": 20.00,
       "stop": 10.50,
-      "status": "ACTIVE SPECULATIVE - 1-2% max, July 1 AWS delivery is the catalyst"
+      "status": "ACTIVE SPECULATIVE — 1-2% max, July 1 AWS delivery is the catalyst"
     },
     {
       "ticker": "PRIM",
       "bias": "bullish",
-      "notes": "NEW TRADE (Apr2): Equity long at $148-150. PRIM at $148.87 intraday Apr2. PayneCrest Electric acquisition ($422M, expected Q2 close) adds union electrical labor for DC construction. $11.95B backlog. FY2026 EPS $5.80-6.00 (+41-46% YoY). Analyst PTs: JPM $171 (Neutral), Guggenheim $184 (Buy), UBS $176, DA Davidson $180. Target $171 (T1) / $184 (T2). Stop $138 (-8.3%). Options illiquid — equity only. Composite score 8.50 (highest in portfolio Apr1).",
+      "notes": "ACTIVE: Equity long at $148-150 (entered Apr2). PayneCrest Electric acquisition ($422M, Q2 close expected) adds union electrical labor for DC construction. $11.95B backlog. FY2026 EPS $5.80-6.00 (+41-46% YoY). Analyst PTs: JPM $171, Guggenheim $184, UBS $176, DA Davidson $180. Target $171/$184. Stop $138.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-07",
       "structure": "Equity long",
       "entry": 149.00,
       "target": 171.00,
       "stop": 138.00,
-      "status": "NEW - enter today at market. R/R 1:1.75 to JPM PT, 1:2.83 to Guggenheim PT."
+      "status": "ACTIVE — hold. Iran conflict adds upside via grid/DC buildout thesis."
     },
     {
       "ticker": "LNG_LEAPS",
       "bias": "bullish",
-      "notes": "NEW SPECULATIVE (Apr2): Dec18 $300/$320 Bull Call Spread LEAPS. MMD prices (Apr1): $300C=$29.99 (stale, 13 vol), $320C=$20.68 (118 vol). Net debit ~$9.31 (Apr1 pricing; estimate $9-13 today with LNG at $284.35). Breakeven $309.31 (+9% from today). Max profit $10.69/share at LNG>=$320. $320C is 12% BELOW Black-Scholes theoretical — sell leg underpriced, edge in the spread. Catalysts: April 6 Iran, Apr30 Q1 earnings, Qatar LNG capacity gap (3-5yr), European winter prefill. LNG analysts: Wells Fargo $335, JPM $338, Goldman $312. SPECULATIVE 1-2% max. Use limit orders on thin $300C.",
+      "notes": "HOLD: Dec18 $300/$320 Bull Call Spread LEAPS at $9.31 entry. Breakeven $309.31. Max profit $10.69. Structural Qatar LNG capacity gap (3-5yr). Apr30 Q1 earnings = LNG LEAPS catalyst. JPM $338, Citi $330. SEPARATE from May15 $300C (Trade of Day) and Sep18 $320C (C1 LEAPS). All three LNG positions serve different time horizons.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-03",
+      "last_reviewed": "2026-04-07",
       "structure": "Dec18 $300/$320 BCS LEAPS",
       "debit": 9.31,
       "max_profit": 10.69,
       "breakeven": 309.31,
-      "status": "HOLD SPECULATIVE - 1-2% max. LNG at $281.16 Apr2. Breakeven $309.31 (+10%). Dec18 gives 8.5 months for thesis."
+      "status": "HOLD — structural 8-month position. Do not exit on daily noise."
     },
     {
       "ticker": "HAL",
       "bias": "bullish",
-      "notes": "REVISED: MMD Apr2 actual — $38C=$2.19 (Apr1 stale), $42C=$0.87. Net debit ~$1.32 (vs $0.91 estimate). Max profit $2.68. R/R 1:2.03. Breakeven $39.32. REDUCED SIZE: 2-3 contracts only (oil headwind). Use limit orders — wait for HAL pullback to $36.50-37 if oil corrects. Apr21 earnings AMC is catalyst. Venezuela $110B wildcard unpriced. SMA20=$36.79. Enter with limit $1.20 debit target.",
-      "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-04",
+      "notes": "ENTERING TODAY: May8 $38/$42 BCS. MMD Apr4 CONFIRMED: $38C=$2.00 (6 vol), $42C=$0.69 (1 vol, very thin). Net debit $1.31 (target $1.20 with limit order — wait for HAL pullback to $37.50-38 if oil enthusiasm fades). Max profit $2.69. R/R 1:2.05. Breakeven $39.31. Apr21 Q1 earnings AMC is catalyst (14 days). Venezuela $110B wildcard unpriced. IV ~46-47% = BCS appropriate.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
       "structure": "May8 $38/$42 BCS",
-      "debit": 1.32,
-      "max_profit": 2.68,
-      "breakeven": 39.32,
-      "status": "Enter Monday April 7 with limit $1.20 debit. Wait for HAL pullback. 2-3 contracts max."
+      "debit": 1.31,
+      "max_profit": 2.69,
+      "breakeven": 39.31,
+      "status": "ENTERING TODAY — limit order at $1.20-$1.31 debit. 2-3 contracts max. Wait for pullback."
     },
     {
       "ticker": "USO",
       "bias": "bearish",
-      "notes": "⚡ PRIORITY #1 Monday: Apr17 $130/$120 BPS. MMD Apr2: $130P=$7.04 (1,141 vol), $120P=$3.50 (4,385 vol). Net debit $3.54. Max profit $6.46. R/R 1:1.83. Breakeven $126.46. Muscat Protocol signed Apr3 = oil war premium deflating. USO massively extended (SMA20=$117.93, spot=$137.92 = +16.9% above SMA). OPEC+ meets Apr5. Stop: Close if USO > $142 (escalation). 2-4 contracts max.",
-      "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-04",
-      "structure": "Apr17 $130/$120 Bear Put Spread",
-      "debit": 3.54,
-      "max_profit": 6.46,
-      "breakeven": 126.46,
-      "status": "ENTER FIRST Monday morning. Priority #1. 2-4 contracts max."
+      "notes": "⚠️ DO NOT ENTER Apr17 $130/$120 BPS — thesis REVERSED by Kharg Island strikes. USO gapping to ~$143-147 today. Apr17 BPS breakeven $126.46 is $17+ away with 10 DTE. INSTEAD: Buy USO May16 $130P as de-escalation insurance (Section D1). Est. premium ~$3.00-3.50 at S=$145. Ceasefire → USO to $105-110 = 4-7x. 1-2% portfolio max as insurance only.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "May16 $130P (replace Apr17 BPS — DO NOT ENTER BPS)",
+      "status": "DE-ESCALATION HEDGE — enter May16 $130P only. 1-2% portfolio max."
     },
     {
       "ticker": "CCJ",
       "bias": "bullish",
-      "notes": "CONFIRMED: May15 $115/$120 BCS. MMD Apr2 verified: $115C=$8.38 (BS theoretical=$8.10), $120C=$6.25 (BS theoretical=$6.17). Net debit $2.13. Max profit $2.87. R/R 1:1.35. Breakeven $117.13. IV ~58-60% vs RV20=55.8% = fairly priced, spread structure correct. Nuclear thesis INDEPENDENT of Iran deal. Uranium spot $84.25/lb (below $120 trim threshold). Q1 earnings early May within window. Use limit orders — thin liquidity. SMA20=$109.51, support $100.11.",
-      "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-04",
+      "notes": "ENTERING TODAY: May15 $115/$120 BCS. MMD Apr2 verified: $115C=$8.38 (BS theoretical=$8.10), $120C=$6.25 (BS theoretical=$6.17). Net debit $2.13. Max profit $2.87. R/R 1:1.35. Breakeven $117.13. CCJ at $110.48 (MMD Apr4 confirmed — down from $114.36 session high, gap-down). IV ~58-60% vs RV20=55.8% = fairly priced, spread structure correct. Nuclear thesis INDEPENDENT of Iran deal. Use limit orders — thin liquidity.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
       "structure": "May15 $115/$120 BCS",
       "debit": 2.13,
       "max_profit": 2.87,
       "breakeven": 117.13,
-      "status": "NEW - enter Monday April 7 with limit orders. Thin liquidity — be patient with fills."
+      "status": "ENTERING TODAY with limit orders. CCJ at $110.48 — needs +6% to $117. Nuclear structural thesis."
     },
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "CONTRARIAN: Sep18 $65/$70 BCS. EQT at $59.70 Apr2. MMD verified: $65C=$4.70 (57 vol), $70C=$3.10 (95 vol). Net debit $1.60. Max profit $3.40. R/R 1:2.13. Breakeven $66.60 (+11.6% in 169 days). Both legs slightly rich vs BS theoretical (IV ~37-40% vs RV20=33%). EQT BELOW SMA20 ($64.11) — short-term bearish, but 169 DTE gives patience. Qatar LNG outage = structural HH floor support. Stop: HH < $2.50 for 5+ days OR EQT < $55.",
-      "trade_entered": "2026-04-03",
-      "last_reviewed": "2026-04-04",
+      "notes": "ENTERING TODAY: Sep18 $65/$70 BCS. MMD Apr4 CONFIRMED: $65C=$4.86 (190 contracts, 72 trades — strong institutional signal, closed near session highs). $70C est. $3.30 (prior pull). Net debit $1.56. Max profit $3.44. R/R 1:2.21. Breakeven $66.56 (+10.2% in 165 days). IV ~39-40% vs RV20=33-35% = slightly rich, BCS appropriate. Structural Henry Hub floor from Qatar LNG outage. Stop: HH < $2.50 for 5+ days OR EQT < $55.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
       "structure": "Sep18 $65/$70 BCS",
-      "debit": 1.60,
-      "max_profit": 3.40,
-      "breakeven": 66.60,
-      "status": "Enter Monday April 7 with limits. Wait for EQT to stabilize (may dip further). 169 DTE patient play."
-    }
-  ],
+      "debit": 1.56,
+      "max_profit": 3.44,
+      "breakeven": 66.56,
+      "status": "ENTERING TODAY with limits. Patient 165-DTE play. Institutional accumulation signal on $65C."
+    },
     {
       "ticker": "GLNG_SEP",
       "bias": "bullish",
-      "notes": "SPECULATIVE (Apr4): Sep18 $60/$70 BCS. TRIGGER MET — Goldman advisor formally announced Mar25 (not rumor — confirmed). MMD Apr2: $60C=$5.10 (253 vol), $70C=$2.31 (204 vol). Net debit $2.79. Max profit $7.21. R/R 1:2.58. Breakeven $62.79 (+13.6%). GLNG at $55.29. Takeout value est $70-75. Goldman process typically 3-5 months. AGM May19 = signal event. Layer ON TOP of Jun18 $55/$65 BCS. Stop: GLNG 'remaining independent' announcement.",
-      "trade_entered": "2026-04-04",
-      "last_reviewed": "2026-04-04",
-      "structure": "Sep18 $60/$70 BCS",
-      "debit": 2.79,
-      "max_profit": 7.21,
-      "breakeven": 62.79,
-      "status": "NEW SPECULATIVE - enter Monday April 7. 1-2 contracts max (1-2% portfolio). M&A trigger met."
+      "notes": "See GLNG entry above — Sep18 $60/$70 BCS merged into GLNG entry.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "See GLNG",
+      "status": "See GLNG"
+    },
+    {
+      "ticker": "XOP_HEDGE",
+      "bias": "bearish",
+      "notes": "NEW DE-ESCALATION HEDGE (Apr7): XOP May16 $165/$150 BPS. XOP at $179.06 (MMD Apr4). Est. debit ~$3.50-4.00 (verify with broker — not MMD confirmed). Max profit ~$11 at XOP <= $150. Breakeven $161 (XOP needs -10% from current). Ceasefire scenario → XOP -20-25% to $140-145 = full max profit. R/R est. 1:2.75. Insurance only — 1-2% portfolio max.",
+      "trade_entered": "2026-04-07",
+      "last_reviewed": "2026-04-07",
+      "structure": "May16 $165/$150 BPS",
+      "debit": 3.75,
+      "max_profit": 11.25,
+      "breakeven": 161.25,
+      "status": "NEW HEDGE — enter with limit. Verify premiums with broker before entering (prices estimated)."
     }
   ],
   "watchlist_next_entry": [
@@ -225,12 +236,6 @@
       "notes": "WULF at $13.70 Mar31. Morgan Stanley Overweight $37. Watch for close above $14.50. Focus on May expiry on next setup.",
       "proposed_structure": "May $15/$17 BCS if above $14.50",
       "trigger": "WULF close above $14.50"
-    },
-    {
-      "ticker": "GLNG_SPEC",
-      "notes": "SPECULATIVE EXTENSION: Sep18 $60/$70 BCS at ~$2.85 est debit (BS theoretical — verify with broker). Max profit $7.15. R/R 1:2.5. Goldman M&A review ongoing. Takeout value $70-75. 7,962 calls Apr1 (120% above avg vol). Add 1-2 contracts ONLY if Jun18 $55/$65 BCS shows profit. Use as longer-dated M&A optionality layer.",
-      "proposed_structure": "Sep18 $60/$70 BCS (estimated pricing)",
-      "trigger": "Enter if Jun18 BCS at 50%+ profit OR if M&A rumor emerges"
     }
   ],
   "max_ideas_per_day": 5,
