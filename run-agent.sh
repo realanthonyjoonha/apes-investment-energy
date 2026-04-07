@@ -109,13 +109,39 @@ The Trader Agent already proposed trades on these names. Avoid duplicating disco
 $(head -c 5000 $PREV_TA)"
         fi
         ;;
-    post-market-scorecard)
+    post-market-pulse)
+        # 5:00 PM: Reads today's Morning Brief and Opportunity Screener
         PREV_MB=$(get_latest_report morning-brief)
         PREV_OS=$(get_latest_report opportunity-screener)
         if [ -n "$PREV_MB" ] && [ -f "$PREV_MB" ] && [ $(wc -c < "$PREV_MB") -gt 2000 ]; then
             CONTEXT="## Context: Today's Morning Brief (6 AM)
-Compare the Morning Brief's predictions to what actually happened today.
+Compare the Morning Brief's predictions to what actually played out today.
 $(head -c 5000 $PREV_MB)"
+        fi
+        if [ -n "$PREV_OS" ] && [ -f "$PREV_OS" ] && [ $(wc -c < "$PREV_OS") -gt 2000 ]; then
+            CONTEXT="$CONTEXT
+
+## Context: Today's Opportunity Screener (11:30 AM)
+Note any new names the Screener found — mention them in Top Movers if they moved.
+$(head -c 5000 $PREV_OS)"
+        fi
+        ;;
+    post-market-scorecard)
+        # 5:30 PM: Reads today's Post-Market Pulse (primary) + Morning Brief + Opportunity Screener
+        PREV_PULSE=$(get_latest_report post-market-pulse)
+        PREV_MB=$(get_latest_report morning-brief)
+        PREV_OS=$(get_latest_report opportunity-screener)
+        if [ -n "$PREV_PULSE" ] && [ -f "$PREV_PULSE" ] && [ $(wc -c < "$PREV_PULSE") -gt 2000 ]; then
+            CONTEXT="## Context: Today's Post-Market Pulse (5:00 PM) — PRIMARY FOUNDATION
+This is the market recap you are building on. Do NOT repeat the commodity dashboard, sector performance, or top movers — those are in the Pulse. Your job is to score flagged tickers and produce tomorrow's focus list.
+$(head -c 10000 $PREV_PULSE)"
+        fi
+        if [ -n "$PREV_MB" ] && [ -f "$PREV_MB" ] && [ $(wc -c < "$PREV_MB") -gt 2000 ]; then
+            CONTEXT="$CONTEXT
+
+## Context: Today's Morning Brief (6 AM)
+Reference only for the escalation assessment and threshold alerts from this morning.
+$(head -c 3000 $PREV_MB)"
         fi
         if [ -n "$PREV_OS" ] && [ -f "$PREV_OS" ] && [ $(wc -c < "$PREV_OS") -gt 2000 ]; then
             CONTEXT="$CONTEXT
@@ -166,14 +192,14 @@ run_claude_attempt() {
     local attempt=$1
     echo "[$(date)] Attempt $attempt: Running Claude (timeout ${CLAUDE_TIMEOUT}s)..." >> $LOG_FILE
     cd $BASE_DIR
-    # Timeout wrapper using perl (macOS doesn't have GNU timeout by default)
-    perl -e "alarm $CLAUDE_TIMEOUT; exec \$ARGV[0] or die 'exec failed: \$!\n'" \
-        "cat '$TMP_DIR/prompt_${TIMESTAMP}.txt' | claude --print --dangerously-skip-permissions > '$RESEARCH_FILE' 2>> '$LOG_FILE'" \
-        2>> $LOG_FILE
-    local exit_code=$?
-    if [ $exit_code -eq 142 ] || [ $exit_code -eq 124 ]; then
-        echo "[$(date)] Attempt $attempt: TIMEOUT after ${CLAUDE_TIMEOUT}s" >> $LOG_FILE
-    fi
+    # Background + kill pattern for timeout (macOS doesn't have GNU timeout)
+    (cat "$TMP_DIR/prompt_${TIMESTAMP}.txt" | claude --print --dangerously-skip-permissions > "$RESEARCH_FILE" 2>> "$LOG_FILE") &
+    local claude_pid=$!
+    (sleep $CLAUDE_TIMEOUT && kill -9 $claude_pid 2>/dev/null && echo "[$(date)] Attempt $attempt: TIMEOUT killed at ${CLAUDE_TIMEOUT}s" >> $LOG_FILE) &
+    local watcher_pid=$!
+    wait $claude_pid 2>/dev/null
+    kill $watcher_pid 2>/dev/null
+    wait 2>/dev/null
     local size=$(wc -c < "$RESEARCH_FILE")
     echo "[$(date)] Attempt $attempt: Captured ${size} bytes" >> $LOG_FILE
     echo $size
