@@ -32,14 +32,22 @@ until git -C $BASE_DIR pull >> $LOG_FILE 2>&1 || [ $pull_attempts -ge 3 ]; do
     sleep 2
 done
 
-# Build the prompt
-PROMPT=$(cat $BASE_DIR/prompts/war-room-alert.md)
+# Build the prompt — tell Sonnet to read and execute the file, not just look at it
+PROMPT="Read prompts/war-room-alert.md and execute it fully right now. Do all required web searches and MMD API calls. Your entire text response is the final deliverable — the runner script will capture stdout, convert to HTML, and email it. If no triggers, output 'NO ALERT' per the prompt instructions. If triggered, output the 4-5 paragraph alert. Do not output anything else — no preamble, no meta-commentary, no questions back to the user. Start your response with the report content or NO ALERT."
 
 echo "[$(date)] Running Sonnet scan..." >> $LOG_FILE
 
-# Run Sonnet with 10-minute timeout
+# Run Sonnet with 10-minute timeout (background + kill pattern)
+# CRITICAL: redirect all FDs of background subshells to /dev/null to prevent hangs
 cd $BASE_DIR
-perl -e 'alarm 600; exec @ARGV' bash -c "echo \"$PROMPT\" | claude --print --dangerously-skip-permissions --model claude-sonnet-4-6 > $RAW_OUTPUT 2>> $LOG_FILE"
+CLAUDE_TIMEOUT=600
+(echo "$PROMPT" | claude --print --dangerously-skip-permissions --model claude-sonnet-4-6 > "$RAW_OUTPUT" 2>> "$LOG_FILE") </dev/null >/dev/null 2>/dev/null &
+CLAUDE_PID=$!
+( sleep $CLAUDE_TIMEOUT && kill -9 $CLAUDE_PID 2>/dev/null && echo "[$(date)] TIMEOUT after ${CLAUDE_TIMEOUT}s — killed" >> "$LOG_FILE" ) </dev/null >/dev/null 2>/dev/null &
+WATCHER_PID=$!
+wait $CLAUDE_PID 2>/dev/null
+kill $WATCHER_PID 2>/dev/null
+wait $WATCHER_PID 2>/dev/null
 
 RAW_SIZE=$(wc -c < "$RAW_OUTPUT")
 echo "[$(date)] Sonnet output: ${RAW_SIZE} bytes" >> $LOG_FILE
