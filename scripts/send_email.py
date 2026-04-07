@@ -7,7 +7,7 @@ import urllib.request
 import urllib.error
 import time
 
-def send_email(subject, html_body=None, html_file=None, admin_only=False):
+def send_email(subject, html_body=None, html_file=None, admin_only=False, distro_file='email-distro.json'):
     if html_file and os.path.exists(html_file):
         with open(html_file) as f:
             html_body = f.read()
@@ -16,16 +16,25 @@ def send_email(subject, html_body=None, html_file=None, admin_only=False):
         print("Error: No HTML content provided")
         return False
 
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config', 'email-distro.json')
+    config_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config')
+    config_path = os.path.join(config_dir, distro_file)
+    if not os.path.exists(config_path):
+        print(f"Error: Distro file not found: {config_path}")
+        return False
     with open(config_path) as f:
         config = json.load(f)
 
+    # Always resolve reply_to from the primary distro for consistency
+    primary_path = os.path.join(config_dir, 'email-distro.json')
+    with open(primary_path) as f:
+        primary_config = json.load(f)
+
     if admin_only:
         # Failed reports / alerts: send only to the primary admin (reply_to)
-        recipients = [config['reply_to']]
+        recipients = [primary_config['reply_to']]
     else:
         recipients = config['recipients']
-    sender = config['reply_to']
+    sender = primary_config['reply_to']
     api_key = os.environ.get('RESEND_API_KEY', 're_GksxetM4_FrXbJJZmxCfHmBk4gm1s2wpK')
     
     success = 0
@@ -71,19 +80,29 @@ def send_email(subject, html_body=None, html_file=None, admin_only=False):
     return failed == 0
 
 if __name__ == '__main__':
-    # Flag-based: python3 send_email.py [--admin-only] "Subject" /path/to/report.html
+    # Flag-based: python3 send_email.py [--admin-only] [--distro <file>] "Subject" /path/to/report.html
     args = sys.argv[1:]
     admin_only = False
-    if args and args[0] == '--admin-only':
-        admin_only = True
-        args = args[1:]
+    distro_file = 'email-distro.json'
+
+    # Parse flags (order-independent)
+    while args and args[0].startswith('--'):
+        if args[0] == '--admin-only':
+            admin_only = True
+            args = args[1:]
+        elif args[0] == '--distro' and len(args) >= 2:
+            distro_file = args[1]
+            args = args[2:]
+        else:
+            print(f'Unknown flag: {args[0]}')
+            sys.exit(1)
 
     if len(args) >= 2:
         subject = args[0]
         content = args[1]
         if os.path.exists(content):
-            send_email(subject, html_file=content, admin_only=admin_only)
+            send_email(subject, html_file=content, admin_only=admin_only, distro_file=distro_file)
         else:
-            send_email(subject, html_body=content, admin_only=admin_only)
+            send_email(subject, html_body=content, admin_only=admin_only, distro_file=distro_file)
     else:
-        print('Usage: python3 send_email.py [--admin-only] "Subject" /path/to/report.html')
+        print('Usage: python3 send_email.py [--admin-only] [--distro <file>] "Subject" /path/to/report.html')

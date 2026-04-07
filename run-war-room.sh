@@ -94,13 +94,13 @@ grep -v "^🚨" "$RAW_OUTPUT" | python3 $BASE_DIR/scripts/format_report.py > "$R
 REPORT_SIZE=$(wc -c < "$REPORT_FILE")
 echo "[$(date)] Alert report: ${REPORT_SIZE} bytes" >> $LOG_FILE
 
-# Send email — failures go admin-only, everything else follows SEND_TARGET
+# Send email — failures go admin-only, everything else goes to war-room-distro (4 recipients)
 if [ "$IS_FAILURE" = "1" ] || [ "$SEND_TARGET" = "admin" ]; then
     echo "[$(date)] Sending admin-only" >> $LOG_FILE
     python3 $BASE_DIR/scripts/send_email.py --admin-only "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 else
-    echo "[$(date)] Sending to full distro" >> $LOG_FILE
-    python3 $BASE_DIR/scripts/send_email.py "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
+    echo "[$(date)] Sending to war-room-distro (4 recipients)" >> $LOG_FILE
+    python3 $BASE_DIR/scripts/send_email.py --distro war-room-distro.json "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 fi
 
 echo "[$(date)] War Room complete (${REPORT_SIZE} bytes)" >> $LOG_FILE
