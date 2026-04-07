@@ -4,47 +4,47 @@
     "tickers": [
       {
         "ticker": "LNG",
-        "reason": "Cheniere Energy — LNG export leader, Iran escalation beneficiary, Henry Hub price sensitivity",
+        "reason": "Cheniere Energy \u2014 LNG export leader, Iran escalation beneficiary, Henry Hub price sensitivity",
         "added": "2026-03-30"
       },
       {
         "ticker": "EQT",
-        "reason": "EQT Corporation — Largest US natural gas producer, Permian volumes, earnings catalyst",
+        "reason": "EQT Corporation \u2014 Largest US natural gas producer, Permian volumes, earnings catalyst",
         "added": "2026-03-30"
       },
       {
         "ticker": "STMG",
-        "reason": "Sitio Royalties — Mineral rights play, natural gas exposure, monitoring for thesis development",
+        "reason": "Sitio Royalties \u2014 Mineral rights play, natural gas exposure, monitoring for thesis development",
         "added": "2026-03-30"
       },
       {
         "ticker": "GLNG",
-        "reason": "Golar LNG — FLNG operator, Goldman Sachs strategic review announced March 25 2026, $4.3B adjusted EBITDA backlog (70% ownership in FLNG Gimi with bp), Jan 2027 LEAPS play, AGM May 19",
+        "reason": "Golar LNG \u2014 FLNG operator, Goldman Sachs strategic review announced March 25 2026, $4.3B adjusted EBITDA backlog (70% ownership in FLNG Gimi with bp), Jan 2027 LEAPS play, AGM May 19",
         "added": "2026-03-30"
       },
       {
         "ticker": "VG",
-        "reason": "Venture Global LNG — US LNG exporter (IPO'd January 2026). Key Iran war beneficiary alongside Cheniere after Qatar force majeure removed 12.8 mtpa of global LNG supply. Calcasieu Pass and Plaquemines operational, Delta and CP2 in development.",
+        "reason": "Venture Global LNG \u2014 US LNG exporter (IPO'd January 2026). Key Iran war beneficiary alongside Cheniere after Qatar force majeure removed 12.8 mtpa of global LNG supply. Calcasieu Pass and Plaquemines operational, Delta and CP2 in development.",
         "added": "2026-03-30"
       },
       {
         "ticker": "ET",
-        "reason": "Energy Transfer — Cheapest midstream at 7.8x EV/EBITDA, $25B DC contracts, 7% yield, Truist upgrade to $23",
+        "reason": "Energy Transfer \u2014 Cheapest midstream at 7.8x EV/EBITDA, $25B DC contracts, 7% yield, Truist upgrade to $23",
         "added": "2026-03-30"
       },
       {
         "ticker": "USO",
-        "reason": "United States Oil Fund — Oil price proxy, Iran escalation hedge, tracking crude for thesis monitoring",
+        "reason": "United States Oil Fund \u2014 Oil price proxy, Iran escalation hedge, tracking crude for thesis monitoring",
         "added": "2026-03-30"
       },
       {
         "ticker": "XOP",
-        "reason": "SPDR S&P Oil & Gas Exploration & Production ETF — Broad oil E&P exposure, tracks Permian/shale producers, Iran war beneficiary across the entire E&P sector",
+        "reason": "SPDR S&P Oil & Gas Exploration & Production ETF \u2014 Broad oil E&P exposure, tracks Permian/shale producers, Iran war beneficiary across the entire E&P sector",
         "added": "2026-04-05"
       },
       {
         "ticker": "XLE",
-        "reason": "Energy Select Sector SPDR — Broad energy sector ETF (integrated oils, E&P, midstream, equipment), benchmark for overall energy sector performance during Iran conflict",
+        "reason": "Energy Select Sector SPDR \u2014 Broad energy sector ETF (integrated oils, E&P, midstream, equipment), benchmark for overall energy sector performance during Iran conflict",
         "added": "2026-04-05"
       }
     ]
@@ -53,32 +53,32 @@
     "description": "Tickers suggested by Claude's research agents. Claude CAN add, remove, and update these based on its analysis. Keep to 5 tickers max. Each must have a clear, evidence-based reason with a specific catalyst and timeframe.",
     "tickers": [
       {
-        "ticker": "FRO",
-        "reason": "Frontline — VLCC tanker, +63% YTD, day rates at record $423K/day. Purest Hormuz closure play. Every day the strait stays closed, FRO prints money. Q1 earnings will be a blowout on record charter rates.",
-        "added": "2026-04-05",
-        "suggested_by": "manual-research"
+        "ticker": "LBRT",
+        "reason": "Liberty Energy \u2014 OFS-to-DC-power pivot via Liberty Power Innovations (LPI). Vantage Data Centers 1GW framework deal + 330MW unnamed TX DC + Oklo nuclear bridge partnership. Q1 earnings April 22 = first public LPI pipeline disclosure. Market still pricing at OFS multiples (~8-9x EV/EBITDA) vs AI infrastructure peers (15-25x).",
+        "added": "2026-04-06",
+        "suggested_by": "opportunity-screener"
       },
       {
-        "ticker": "DVN",
-        "reason": "Devon Energy — Permian low-cost E&P, 12% FCF yield at current oil prices, Morgan Stanley $59 PT (20% upside from $49). Cheapest high-quality Permian name. Undervalued relative to $100+ WTI.",
-        "added": "2026-04-05",
-        "suggested_by": "manual-research"
+        "ticker": "URG",
+        "reason": "Ur-Energy \u2014 Shirley Basin first yellowcake production Q2 2026 (weeks away). $85/lb contracted price vs $43/lb cash cost = $42/lb locked gross margin regardless of uranium spot. Binary first-production catalyst: uranium juniors typically re-rate 40-80% on producer reclassification.",
+        "added": "2026-04-06",
+        "suggested_by": "opportunity-screener"
       },
       {
-        "ticker": "OXY",
-        "reason": "Occidental Petroleum — Berkshire-backed, +29% YTD, heavily leveraged to WTI above $100. Permian production powerhouse. Every $1 increase in oil = massive earnings uplift.",
-        "added": "2026-04-05",
-        "suggested_by": "manual-research"
+        "ticker": "MP",
+        "reason": "MP Materials \u2014 NdPr prices surged +136% YTD to $124/kg driven by China export controls and tariffs. Only US rare earth producer with integrated mine-to-magnet capability. Q1 2026 earnings May 7 = next catalyst. Structural Western sourcing tailwind.",
+        "added": "2026-04-06",
+        "suggested_by": "opportunity-screener"
       },
       {
         "ticker": "HAL",
-        "reason": "Halliburton — Q1 earnings April 21 (soonest catalyst). Oilfield services boom at $100+ oil drives rig activity. Venezuela wildcard ($110B unpriced opportunity). Goldman $35 PT Strong Buy.",
+        "reason": "Halliburton \u2014 Q1 earnings April 21 (soonest catalyst). Oilfield services boom at $100+ oil drives rig activity. Venezuela wildcard ($110B unpriced opportunity). Goldman $35 PT Strong Buy.",
         "added": "2026-04-02",
         "suggested_by": "opportunity-screener"
       },
       {
         "ticker": "GEV",
-        "reason": "GE Vernova — Q1 earnings April 22. Gas turbine orders 12-24 GW guided. Morgan Stanley PT $960. Grid infrastructure is structural regardless of conflict. Beat/raise setup.",
+        "reason": "GE Vernova \u2014 Q1 earnings April 22. Gas turbine orders 12-24 GW guided. Morgan Stanley PT $960. Grid infrastructure is structural regardless of conflict. Beat/raise setup.",
         "added": "2026-03-30",
         "suggested_by": "post-market-scorecard"
       }
