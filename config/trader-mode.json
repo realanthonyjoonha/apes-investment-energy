@@ -91,11 +91,11 @@
       "notes": "HOLD Jun18 $55/$65 BCS (entry $2.94). ENTERING Sep18 $60/$70 BCS today. Goldman strategic review confirmed Mar25. AGM May19 = M&A signal event. Qatar LNG 12.8 mtpa offline = FLNG assets MORE strategic. MMD Apr4 from trader-mode: $60C=$5.10 (253 vol), $70C=$2.31 (204 vol). Net debit $2.79 at Apr4; est. $3.20 at today's gap-up. Max profit $7.21/$6.80. R/R 1:2.58/2.13. Breakeven $62.79/$63.20. Takeout value $70-75. Goldman process 3-5 months. Stop: 'remaining independent' announcement.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-04-07",
-      "structure": "Jun18 $55/$65 BCS (HOLD) + Jun18 $60/$70 BCS (NEW TODAY — Sep18 does not exist per MMD chain)",
-      "debit": 2.79,
-      "max_profit": 7.21,
-      "breakeven": 62.79,
-      "status": "ENTERING Jun18 $60/$70 BCS today (NOT Sep18 — GLNG chain only goes to Jun18). Use limit orders — 1-2 contracts max."
+      "structure": "Jun18 $55/$65 BCS (HOLD) + Sep18 $60/$70 BCS (NEW TODAY)",
+      "debit": 2.55,
+      "max_profit": 7.45,
+      "breakeven": 62.55,
+      "status": "ENTERING Sep18 $60/$70 BCS today. MMD Apr6 confirmed: $60C=$4.80 (31 vol), $70C=$2.25 (20 vol). Net debit $2.55. Thin — use limit orders, 1-2 contracts max. Sep18 preferred over Jun18: 5 months for Goldman M&A process vs 2 months."
     },
     {
       "ticker": "UUUU",
