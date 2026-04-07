@@ -258,6 +258,25 @@ grep -v "^SUBJECT:" "$RESEARCH_FILE" | python3 $BASE_DIR/scripts/format_report.p
 REPORT_SIZE=$(wc -c < "$REPORT_FILE")
 echo "[$(date)] Final HTML report: ${REPORT_SIZE} bytes" >> $LOG_FILE
 
+# Select per-agent distro:
+# - Morning Brief + Post-Market Scorecard → email-distro.json (all 11)
+# - Trader Agent + Opportunity Screener + Post-Market Pulse → core-distro.json (10, surken00 excluded)
+# - War Room uses its own runner (run-war-room.sh → war-room-distro.json, 4 people)
+case $AGENT_NAME in
+    morning-brief|post-market-scorecard)
+        DISTRO_FLAG=""
+        DISTRO_LABEL="full distro (11)"
+        ;;
+    trader-agent|opportunity-screener|post-market-pulse)
+        DISTRO_FLAG="--distro core-distro.json"
+        DISTRO_LABEL="core distro (10, surken00 excluded)"
+        ;;
+    *)
+        DISTRO_FLAG=""
+        DISTRO_LABEL="full distro (default)"
+        ;;
+esac
+
 # Determine send target: full distro vs admin-only
 if [ "$SIZE" -lt "$MIN_VALID_SIZE" ] || grep -qi "AUTH FAILURE" "$RESEARCH_FILE" 2>/dev/null; then
     SUBJECT="🚨 [FAILED] $SUBJECT"
@@ -267,8 +286,8 @@ elif [ "$SEND_TARGET" = "admin" ]; then
     echo "[$(date)] SEND_TARGET=admin — sending to admin only (testing mode)" >> $LOG_FILE
     python3 $BASE_DIR/scripts/send_email.py --admin-only "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 else
-    echo "[$(date)] Report validated — sending to full distro" >> $LOG_FILE
-    python3 $BASE_DIR/scripts/send_email.py "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
+    echo "[$(date)] Report validated — sending to $DISTRO_LABEL" >> $LOG_FILE
+    python3 $BASE_DIR/scripts/send_email.py $DISTRO_FLAG "$SUBJECT" "$REPORT_FILE" 2>> $LOG_FILE
 fi
 
 # Push config changes if any
