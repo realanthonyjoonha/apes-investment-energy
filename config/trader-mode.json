@@ -4,11 +4,11 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "EXITED Apr17 BCS at Apr7 open (accepted loss). NEW Apr7: May15 $300C at ~$8.60 (est. $11-14 at open with Kharg Island gap-up). Trade of the Day — highest composite 8.50, Kharg Island + Qatar force majeure + Apr30 Q1 earnings catalyst. IV ~39-40% = fairly priced. Delta 0.37. Stop: LNG < $270 or ceasefire. HOLD Dec18 $300/$320 BCS LEAPS ($9.31 entry) — structural Qatar LNG outage 3-5yr. Sep18 $320C at $16.05 = new LEAPS position (C1). JPM $338, Citi $330, Jefferies $330, Wells Fargo $335.",
+      "notes": "ACTIVE Apr7: May15 $300C (est. $11-14 at open). Trade of the Day. Kharg Island strikes Iran 90% oil exports + Qatar 12.8 mtpa offline 3-5yr = dual catalyst stack. IV ~42% (fairly priced, BS theoretical $9.34 at $284 close). Delta ~0.48 at $300. Stop: LNG<$270 or ceasefire. Q1 earnings May 7 BMO = secondary catalyst. HOLD Dec18 $300/$320 BCS LEAPS ($9.31 entry, breakeven $309.31). Sep18 $320C at $16.05 = C1 LEAPS (hold). JPM $338, Citi $330, Jefferies $330. 20 Buy/3 Hold consensus.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-04-07",
-      "structure": "May15 $300C NEW (Trade of Day); Sep18 $320C LEAPS; Dec18 $300/$320 BCS HOLD",
-      "status": "ACTIVE — entered at Apr7 open. Monitor Apr30 Q1 earnings."
+      "structure": "May15 $300C ACTIVE; Sep18 $320C LEAPS HOLD; Dec18 $300/$320 BCS HOLD",
+      "status": "ACTIVE — all three positions live. May15 $300C is primary. Monitor 8PM ET Trump deadline tonight."
     },
     {
       "ticker": "OXY",
@@ -172,11 +172,11 @@
     {
       "ticker": "USO",
       "bias": "bearish",
-      "notes": "⚠️ DO NOT ENTER Apr17 $130/$120 BPS — thesis REVERSED by Kharg Island strikes. USO gapping to ~$143-147 today. Apr17 BPS breakeven $126.46 is $17+ away with 10 DTE. INSTEAD: Buy USO May16 $130P as de-escalation insurance (Section D1). Est. premium ~$3.00-3.50 at S=$145. Ceasefire → USO to $105-110 = 4-7x. 1-2% portfolio max as insurance only.",
+      "notes": "ENTERING Apr7: May16 $130P as de-escalation insurance only. USO last close $138.94 (MMD Apr4). Estimated premium $3.50-5.00 at gap-up open. BS at $138.94, K=$130, T=39/365, σ=50%: theoretical ~$5.08. Ceasefire → USO to $105-110 = +$20-25 on put = 4-7x return. Portfolio insurance only — 1-2% max. Do NOT enter Apr17 BPS (breakeven too far, 10 DTE).",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-04-07",
-      "structure": "May16 $130P (replace Apr17 BPS — DO NOT ENTER BPS)",
-      "status": "DE-ESCALATION HEDGE — enter May16 $130P only. 1-2% portfolio max."
+      "structure": "May16 $130P (DE-ESCALATION HEDGE)",
+      "status": "ACTIVE HEDGE — entered at Apr7 open. Insurance against ceasefire. 1-2% portfolio max only."
     },
     {
       "ticker": "CCJ",
