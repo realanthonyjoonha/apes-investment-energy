@@ -5,7 +5,7 @@
 
 export PATH=$PATH:/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin
 
-BASE_DIR=/Users/anthonyha/Desktop/Trading
+BASE_DIR=/Users/anthonyha/Trading
 LOG_DIR=$BASE_DIR/outputs/logs
 TMP_DIR=$BASE_DIR/outputs/tmp
 mkdir -p $LOG_DIR $TMP_DIR

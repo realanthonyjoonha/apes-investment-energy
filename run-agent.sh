@@ -7,7 +7,7 @@ export PATH=$PATH:/usr/local/bin:/opt/homebrew/bin:$HOME/.local/bin
 
 AGENT_NAME=$1
 PROMPT_FILE=$2
-BASE_DIR=/Users/anthonyha/Desktop/Trading
+BASE_DIR=/Users/anthonyha/Trading
 LOG_DIR=$BASE_DIR/outputs/logs
 REPORT_DIR=$BASE_DIR/outputs/reports
 TMP_DIR=$BASE_DIR/outputs/tmp

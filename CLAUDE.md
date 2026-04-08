@@ -144,13 +144,13 @@ The system runs **6 agents** total: 5 automated on cron, 1 on-demand.
 - **Sleep prevention:** `caffeinate -s` running as launch agent (`~/Library/LaunchAgents/com.trading.caffeinate.plist`)
 - **Permissions:** `/usr/sbin/cron` granted Full Disk Access in System Settings → Privacy & Security
 - **Cron jobs:** Mac user crontab (see Schedule above)
-- **Runner:** `/Users/anthonyha/Desktop/Trading/run-agent.sh` (v9)
-- **War Room runner:** `/Users/anthonyha/Desktop/Trading/run-war-room.sh` (v2)
+- **Runner:** `/Users/anthonyha/Trading/run-agent.sh` (v9)
+- **War Room runner:** `/Users/anthonyha/Trading/run-war-room.sh` (v2)
 - **MCP servers:** Massive Market Data (paid tier), plus Gmail/Calendar/Chrome/Computer Use available for interactive sessions
-- **Logs:** `/Users/anthonyha/Desktop/Trading/outputs/logs/`
-- **Reports:** `/Users/anthonyha/Desktop/Trading/outputs/reports/`
-- **Tmp:** `/Users/anthonyha/Desktop/Trading/outputs/tmp/` (research files, prompts, raw output)
-- **Repo:** `/Users/anthonyha/Desktop/Trading/` — auto-pulls latest on each agent run
+- **Logs:** `/Users/anthonyha/Trading/outputs/logs/`
+- **Reports:** `/Users/anthonyha/Trading/outputs/reports/`
+- **Tmp:** `/Users/anthonyha/Trading/outputs/tmp/` (research files, prompts, raw output)
+- **Repo:** `/Users/anthonyha/Trading/` — auto-pulls latest on each agent run
 - **Timezone:** Pacific (PDT/PST)
 
 **Backup host: DigitalOcean Droplet (209.38.70.60)**
@@ -326,11 +326,11 @@ GitHub apes-investment-energy (SOURCE OF TRUTH)
 
 - Run any agent manually with admin-only routing for testing:
   ```
-  SEND_TARGET=admin /Users/anthonyha/Desktop/Trading/run-agent.sh post-market-pulse post-market-pulse.md
+  SEND_TARGET=admin /Users/anthonyha/Trading/run-agent.sh post-market-pulse post-market-pulse.md
   ```
-- Check agent logs: `/Users/anthonyha/Desktop/Trading/outputs/logs/{agent}_{timestamp}.log`
-- Check raw output: `/Users/anthonyha/Desktop/Trading/outputs/tmp/{agent}_{timestamp}_research.md`
-- Check rendered HTML: `/Users/anthonyha/Desktop/Trading/outputs/reports/{agent}_{timestamp}.html`
+- Check agent logs: `/Users/anthonyha/Trading/outputs/logs/{agent}_{timestamp}.log`
+- Check raw output: `/Users/anthonyha/Trading/outputs/tmp/{agent}_{timestamp}_research.md`
+- Check rendered HTML: `/Users/anthonyha/Trading/outputs/reports/{agent}_{timestamp}.html`
 - Verify auth: `echo "test" | claude --print --dangerously-skip-permissions`
 - Check cron is firing: look for `morning-brief_*.log` files at expected times
 - Check Resend delivery: https://resend.com/logs (requires Resend dashboard login)
