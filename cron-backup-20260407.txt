@@ -1,0 +1,10 @@
+# Investment Research Agents - Pacific Time (Mac)
+0 6 * * 1-5 /Users/anthonyha/Desktop/Trading/run-agent.sh morning-brief morning-brief.md
+0 7 * * * /Users/anthonyha/Desktop/Trading/run-agent.sh trader-agent trader-agent.md
+30 11 * * * /Users/anthonyha/Desktop/Trading/run-agent.sh opportunity-screener opportunity-screener.md
+0 17 * * 1-5 /Users/anthonyha/Desktop/Trading/run-agent.sh post-market-pulse post-market-pulse.md
+30 17 * * 1-5 /Users/anthonyha/Desktop/Trading/run-agent.sh post-market-scorecard post-market-scorecard.md
+# War Room Alert Agent (Sonnet 4.6 — lightweight, only emails if triggered)
+30 9 * * 1-5 /Users/anthonyha/Desktop/Trading/run-war-room.sh
+30 12 * * 1-5 /Users/anthonyha/Desktop/Trading/run-war-room.sh
+30 15 * * 1-5 /Users/anthonyha/Desktop/Trading/run-war-room.sh
