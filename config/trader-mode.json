@@ -4,186 +4,186 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: CLOSE May15 $300C (near-worthless, LNG at $265, $35 OTM). NEW TODAY: May15 $270C pre-earnings play (Trade of Day). Q1 earnings May 7 BMO. Consensus PT $303, 21 analysts Strong Buy. TTF-HH spread at ~$14/MMBtu drives massive margin expansion. Qatar 12.8 mtpa offline 3-5yr = structural. HOLD Sep18 $320C LEAPS + Dec18 $300/$320 BCS LEAPS — both underwater but 141/233 DTE respectively.",
-      "trade_entered": "2026-04-30",
-      "last_reviewed": "2026-04-30",
-      "structure": "NEW: May15 $270C (TOTD); CLOSE: May15 $300C; HOLD: Sep18 $320C LEAPS; HOLD: Dec18 $300/$320 BCS LEAPS",
-      "status": "CLOSE dead $300C, open $270C for earnings. LNG at $264.98."
+      "notes": "May1 UPDATE: LNG at $274.40 (+$9 from yesterday). CLOSED May15 $300C (worthless). NEW TOTD: May15 $275C (~$10.00) pre-earnings. Q1 earnings May 7 BMO. Consensus EPS $3.15-$4.51, Rev $5.34B. Stage 3 ramp + Qatar gap + $300M tax credit = beat/raise setup. HOLD Sep18 $320C LEAPS + Dec18 $300/$320 BCS LEAPS. NEW LEAPS: Dec18 $280C (~$23) for uncapped upside.",
+      "trade_entered": "2026-05-01",
+      "last_reviewed": "2026-05-01",
+      "structure": "NEW: May15 $275C (TOTD); NEW: Dec18 $280C LEAPS; HOLD: Sep18 $320C LEAPS; HOLD: Dec18 $300/$320 BCS LEAPS",
+      "status": "Enter May15 $275C today. CLOSED dead $300C. LNG at $274.40."
     },
     {
       "ticker": "COP",
       "bias": "bullish",
-      "notes": "NEW Apr30: Jun20 $130/$135/$140 calls. COP beat Q1 — EPS $1.89 vs $1.62 est, Rev $16.05B vs $15.57B. At $128.25 (Apr29 close). Post-earnings momentum + $118 Brent. 30 Buy/3 Hold/1 Sell consensus. Jun20 expiry gives 51 DTE through May conflict catalysts. Stop: COP < $120 or ceasefire.",
+      "notes": "May1 UPDATE: COP at $125.56 — sold off 1.57% post-Q1 beat due to Qatar production guidance cut. Post-beat dip = entry. Jun20 $130C (~$5.50) primary. 50 DTE. 30 Buy/3 Hold/1 Sell. Stop: COP < $120 or ceasefire.",
       "trade_entered": "2026-04-30",
-      "last_reviewed": "2026-04-30",
-      "structure": "Jun20 $130C (primary) + Jun20 $135C (base)",
-      "status": "NEW — enter today on post-earnings gap-up."
+      "last_reviewed": "2026-05-01",
+      "structure": "Jun20 $130C (primary) + Jun20 $135C (speculative)",
+      "status": "HOLD — enter dip today. COP at $125.56."
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: Apr17 $200/$210 BCS EXPIRED (likely max loss -$4.20). NEW: May15 $200/$205/$210 calls. FANG at $197.78, earnings May 4-5. KeyCorp $225, Citi $230, MS $220. Pre-earnings IV buildup. Oil at $118 = Permian cash machine. Exit rule: sell 50% on earnings day if +30%.",
-      "trade_entered": "2026-04-30",
-      "last_reviewed": "2026-04-30",
-      "structure": "NEW: May15 $200C + May15 $210C (speculative)",
-      "status": "NEW — enter before May 4. Prior Apr17 BCS expired."
+      "notes": "May1 UPDATE: FANG at $205.63. Earnings May 4 AMC (3 trading days!). Consensus EPS $2.96, Rev $3.58B. COP Q1 beat is bullish read-through for Permian. KeyCorp PT $225, Citi $230. NEW: May15 $205C (~$8.50 base) + May15 $210C (~$5.50 spec). Exit 50% on earnings day if +30%.",
+      "trade_entered": "2026-05-01",
+      "last_reviewed": "2026-05-01",
+      "structure": "NEW: May15 $205C (base) + May15 $210C (spec)",
+      "status": "NEW — enter today pre-earnings. FANG at $205.63."
     },
     {
       "ticker": "OXY",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: May15 $65/$70 BCS entered Apr7 at $1.38. OXY at $60.76 — below $65 strike, needs +7% in 15 DTE. At risk. GF Value $45.22 implies overvaluation. Hold but prepare for loss. Do NOT average down. Stop: OXY < $57.",
+      "notes": "May1 UPDATE: OXY at $60.37 — $4.63 below $65 strike. May15 $65/$70 BCS at risk. Earnings May 5 AMC is only hope. Do NOT add. Stop: OXY < $57.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May15 $65/$70 BCS",
       "debit": 1.38,
       "max_profit": 3.62,
       "breakeven": 66.38,
-      "status": "AT RISK — OXY $4.24 below strike. Hold, needs oil spike."
+      "status": "AT RISK — needs earnings gap to $65+. OXY at $60.37."
     },
     {
       "ticker": "CEG",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: Jun18 $300/$330 BCS at $12.20. CEG at $297 — $3 below lower strike, 49 DTE. Q1 earnings May 7. TMI restart delayed 2031. Median PT $406. Do NOT add. HOLD through May 7 earnings.",
+      "notes": "May1 UPDATE: CEG at $297. Jun18 $300/$330 BCS at $12.20. Earnings May 7. TMI restart delayed 2031. 48 DTE. HOLD through earnings.",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "Jun18 $300/$330 BCS",
       "debit": 12.20,
       "max_profit": 17.80,
       "breakeven": 312.20,
-      "status": "HOLD — CEG $297, just below $300 strike. Earnings May 7 is binary catalyst."
+      "status": "HOLD — CEG $297, $3 below strike. Earnings May 7."
     },
     {
       "ticker": "GEV",
       "bias": "bullish",
-      "notes": "Apr30 ACTION: CLOSE FOR MAX PROFIT. GEV at $1,069-1,119 after blowout Q1 (EPS $1.98 beat, orders +71% YoY to $18.3B, guidance raised). Spread value = $50 (both legs deep ITM). Profit = $27.60/share (+123%). Set limit sell at $49.80-50.00.",
+      "notes": "May1 ACTION: CLOSE FOR MAX PROFIT. GEV at $1,085. May15 $900/$950 BCS — both legs deep ITM. Profit = +$27.60/share (+123%). Set limit sell $49.80-50.00.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May15 $900/$950 BCS",
       "debit": 22.40,
       "max_profit": 27.60,
       "breakeven": 922.40,
-      "status": "CLOSE TODAY — MAX PROFIT ACHIEVED. +$27.60/share (+123%)."
+      "status": "CLOSE TODAY — MAX PROFIT. +$27.60 (+123%)."
     },
     {
       "ticker": "ETR",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: Q1 earnings reported Apr29 — EPS $0.86 missed $0.87 by $0.01. BUT raised 2029 EPS outlook $0.50 to $6.40 (Meta deal). CapEx +$14B to $57B. ETR at $110.64, right at $110 lower strike. Spread alive but fragile. 15 DTE.",
+      "notes": "May1 UPDATE: ETR at $110.64, right at $110 lower strike. 14 DTE. Q1 miss was $0.01 — negligible. Meta deal structural. HOLD.",
       "trade_entered": "2026-03-31",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May15 $110/$120 BCS",
       "debit": 3.49,
       "max_profit": 6.51,
       "breakeven": 113.49,
-      "status": "HOLD — at lower strike after slight Q1 miss. Meta deal is structural."
+      "status": "HOLD — at lower strike. 14 DTE."
     },
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: GLNG at ~$53.53. Jun18 $55/$65 BCS (entry $2.94) below strike. Sep18 $60/$70 BCS (entry $2.55) well below strike. Both underwater but Goldman strategic review active, AGM May 19. NEW: Adding Sep18 $55C naked calls (~$7.00 est) for uncapped M&A upside. Unusual call buying +120-265% above avg. Takeout value $70-75.",
+      "notes": "May1 UPDATE: GLNG at $52.54. Goldman strategic review active, AGM May 19, Q1 earnings May 20. Unusual call buying 120-265% above avg. Jun18 $55/$65 BCS + Sep18 $60/$70 BCS both underwater. NEW: Sep18 $55C (~$6-7) for uncapped M&A upside. Takeout value $70-75.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
-      "structure": "Jun18 $55/$65 BCS HOLD + Sep18 $60/$70 BCS HOLD + NEW Sep18 $55C",
-      "status": "HOLD existing + ADD Sep18 $55C for M&A upside. AGM May 19."
+      "last_reviewed": "2026-05-01",
+      "structure": "HOLD: Jun18 $55/$65 BCS + Sep18 $60/$70 BCS; NEW: Sep18 $55C",
+      "status": "HOLD existing + ADD Sep18 $55C. AGM May 19."
     },
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: ET at $19.08, flat vs $19.02 entry. Near 52-wk high $19.85. Q1 earnings May 5, EPS $0.39e, Rev $25.33Be (+39% YoY). Dividend raised to $0.3375/q. Analyst PT $21.67. HOLD through earnings.",
+      "notes": "May1 UPDATE: ET at $19.95 — pennies from $20. Hit 52-wk high $20.20. Q1 earnings May 5 BMO. EPS $0.38e, Rev $29.28B (+39% YoY). 6.69% yield. 15.2K call OI at $21 strike. NEW: Jun18 $20C (~$0.90) + Jun18 $21C (~$0.50). HOLD equity long at $19.02.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-30",
-      "structure": "Equity long",
+      "last_reviewed": "2026-05-01",
+      "structure": "Equity long $19.02 HOLD + NEW: Jun18 $20C + Jun18 $21C",
       "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "HOLD — earnings May 5. Near 52-wk highs."
+      "status": "HOLD equity + ADD Jun18 calls for earnings leverage. ET at $19.95."
     },
     {
       "ticker": "CIFR",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: CIFR at $18.42 (+45.7% from $12.64 entry). Morgan Stanley raised PT to $40.50. Earnings May 5. TRIM 50% to lock in gains. Raise stop to $15. Let remainder ride to $20-22 through AWS July 1 catalyst.",
+      "notes": "May1 UPDATE: CIFR at $18.42 (+45.7% from $12.64). TRIM 50% to lock in gains. Raise stop to $15. Let remainder ride to $20-22 through AWS July 1 catalyst.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "Equity speculative — TRIM 50%",
       "entry": 12.64,
       "target": 22.00,
       "stop": 15.00,
-      "status": "TRIM 50% at $18.42. +45.7% gain. Raise stop to $15."
+      "status": "TRIM 50% at $18.42. +45.7%. Raise stop $15."
     },
     {
       "ticker": "PRIM",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: PRIM at $166.19 (+11.5% from $149 entry). Approaching $171 target. Guggenheim raised PT to $195. Consider selling 30-40% at $170+. Let rest ride to $184.",
+      "notes": "May1 UPDATE: PRIM at $166.19 (+11.5% from $149). PWR +15.8% confirms grid construction thesis. Sell 30-40% at $170+. Let rest ride to $184. Guggenheim PT $195.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "Equity long",
       "entry": 149.00,
       "target": 184.00,
       "stop": 138.00,
-      "status": "HOLD — approaching initial $171 target. Partial profits at $170+."
+      "status": "HOLD — partial profits at $170+. PRIM at $166."
     },
     {
       "ticker": "LNG_LEAPS",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: HOLD Dec18 $300/$320 BCS LEAPS at $9.31 entry. LNG at $265 — underwater but 233 DTE. Q1 earnings May 7 is next catalyst. Structural Qatar LNG gap (3-5yr) thesis intact.",
+      "notes": "May1 UPDATE: HOLD Dec18 $300/$320 BCS LEAPS at $9.31. LNG at $274 — underwater but 231 DTE. Structural Qatar gap thesis. Adding Dec18 $280C for uncapped upside.",
       "trade_entered": "2026-04-02",
-      "last_reviewed": "2026-04-30",
-      "structure": "Dec18 $300/$320 BCS LEAPS",
+      "last_reviewed": "2026-05-01",
+      "structure": "Dec18 $300/$320 BCS LEAPS + NEW Dec18 $280C",
       "debit": 9.31,
       "max_profit": 10.69,
       "breakeven": 309.31,
-      "status": "HOLD — structural 8-month position. Earnings May 7."
+      "status": "HOLD — structural 8-month position. Adding $280C."
     },
     {
       "ticker": "HAL",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: HAL at $37.80 after Q1 beat (EPS $0.55 vs $0.50, +10.5%). BUT flagged Q2 Middle East drag $0.07-0.09/share. May8 $38/$42 BCS at $1.31 — below $38 strike with 8 DTE. AT RISK.",
+      "notes": "May1 ACTION: CLOSE May8 $38/$42 BCS for near-max profit. HAL at $42.20 — AT upper strike. 52-week high $42.39. Capture ~$3.50-3.80 of $4.00 spread. 7 DTE.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May8 $38/$42 BCS",
       "debit": 1.31,
       "max_profit": 2.69,
       "breakeven": 39.31,
-      "status": "AT RISK — HAL $0.20 below strike, 8 DTE. Hold, needs oil push."
+      "status": "CLOSE TODAY — near max profit. HAL at $42.20, AT upper strike."
     },
     {
       "ticker": "USO",
-      "bias": "bearish",
-      "notes": "Apr30 UPDATE: May16 $130P (entered Apr7) is deep OTM — USO at $150.63. Hold as residual insurance. NEW: Jun20 $140P at ~$7.00 est. Refreshed de-escalation hedge. Ceasefire = USO to $105-110 = $140P worth $30-35 (4-5x). 1-2% portfolio max.",
-      "trade_entered": "2026-04-30",
-      "last_reviewed": "2026-04-30",
-      "structure": "HOLD May16 $130P + NEW Jun20 $140P",
-      "status": "Refreshed hedge. Jun20 $140P replaces fading May16 $130P as primary insurance."
+      "bias": "mixed",
+      "notes": "May1 UPDATE: USO at $147.09. LONG: NEW Jun20 $150C (~$8.00) for oil momentum. SHORT: HOLD Jun20 $140P (~$6.50) as de-escalation hedge. CLOSE May16 $130P (dead). Net: directional long oil with insurance.",
+      "trade_entered": "2026-05-01",
+      "last_reviewed": "2026-05-01",
+      "structure": "NEW: Jun20 $150C (long) + HOLD: Jun20 $140P (hedge); CLOSE: May16 $130P",
+      "status": "Dual positioning. Long calls + put hedge. USO at $147."
     },
     {
       "ticker": "CCJ",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: CCJ at $116.31 — above $115 strike, near breakeven $117.13. 15 DTE. Uranium at $87/lb supports thesis. Volatile — dropped 5.5% on Apr28. HOLD, do not add.",
+      "notes": "May1 ACTION: CLOSE May15 $115/$120 BCS for near-max profit. CCJ at $123 — $3 ABOVE upper strike. Both legs ITM. Capture ~$4.70-4.90 of $5.00 spread.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May15 $115/$120 BCS",
       "debit": 2.13,
       "max_profit": 2.87,
       "breakeven": 117.13,
-      "status": "HOLD — CCJ $116.31, near breakeven. 15 DTE."
+      "status": "CLOSE TODAY — near max profit. CCJ at $123, above upper $120 strike."
     },
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "Apr30 UPDATE: EQT at $59.42 after blowout Q1 (Rev +94%, EPS $2.36 vs $2.14). Pulled back 13% from ATH $68.24. Sep18 $65/$70 BCS at $1.56 — below strike but 141 DTE. Jefferies raised PT to $77. CEO bullish on 60 BCF/day surplus capacity. HH at $2.65 supports. HOLD — patient structural play.",
+      "notes": "May1 UPDATE: EQT at $60.43. Pulled back 11.4% from ATH $68.24 post-Q1 beat (EPS $2.36 vs $2.14, record $1.8B FCF). Jefferies PT $77. HOLD Sep18 $65/$70 BCS. NEW: Sep18 $62C (~$4.50) for uncapped upside on dip buy.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
-      "structure": "Sep18 $65/$70 BCS",
+      "last_reviewed": "2026-05-01",
+      "structure": "HOLD: Sep18 $65/$70 BCS ($1.56 debit) + NEW: Sep18 $62C",
       "debit": 1.56,
       "max_profit": 3.44,
       "breakeven": 66.56,
-      "status": "HOLD — underwater but 141 DTE. Q1 beat confirmed, stock pulling back = dip buy potential."
+      "status": "HOLD BCS + ADD Sep18 $62C on pullback. EQT at $60.43."
     },
     {
       "ticker": "XOP_HEDGE",
       "bias": "bearish",
-      "notes": "Apr30 UPDATE: XOP at $171.65. May16 $165/$150 BPS at $3.75 debit. XOP needs to fall below $165 for profit — 3.6% downside. 16 DTE. Insurance position. HOLD.",
+      "notes": "May1 UPDATE: XOP at $171.65. May16 $165/$150 BPS at $3.75. Insurance. HOLD.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-04-30",
+      "last_reviewed": "2026-05-01",
       "structure": "May16 $165/$150 BPS",
       "debit": 3.75,
       "max_profit": 11.25,
@@ -196,22 +196,29 @@
       "ticker": "FANG",
       "structure": "Apr17 $200/$210 BCS",
       "debit": 4.20,
-      "result": "EXPIRED — likely max loss (-$4.20/share). FANG below $200 on Apr17 post-ceasefire.",
+      "result": "EXPIRED — max loss (-$4.20/share).",
       "expired_date": "2026-04-17"
     },
     {
       "ticker": "UUUU",
       "structure": "Apr17 $19/$21 BCS",
       "debit": 0.62,
-      "result": "EXPIRED — small speculative loss (-$0.62/share).",
+      "result": "EXPIRED — max loss (-$0.62/share).",
       "expired_date": "2026-04-17"
     },
     {
       "ticker": "VG",
       "structure": "May8 $17/$20 BCS",
       "debit": 0.90,
-      "result": "EXPIRING WORTHLESS — VG at $13.08, $4 below strike. Max loss (-$0.90/share).",
+      "result": "EXPIRING WORTHLESS — VG at $13.08. Max loss (-$0.90/share).",
       "expired_date": "2026-05-08"
+    },
+    {
+      "ticker": "LNG",
+      "structure": "May15 $300C",
+      "debit": "unknown",
+      "result": "CLOSED May1 — near-worthless, LNG $35+ OTM.",
+      "expired_date": "2026-05-01"
     }
   ],
   "watchlist_next_entry": [
@@ -223,7 +230,7 @@
     },
     {
       "ticker": "BE",
-      "notes": "Bloom Energy at $281.88 after +24% Q1 blowout. Don't chase. Wait for 5-7% pullback to $260-265. Revenue +130% YoY, EPS 3x beat, raised guidance $3.4-3.8B.",
+      "notes": "Bloom Energy at $281.88 after +24% Q1 blowout. Don't chase. Wait for 5-7% pullback to $260-265.",
       "proposed_structure": "Jun calls on pullback",
       "trigger": "BE pulls back to $260-265"
     }
