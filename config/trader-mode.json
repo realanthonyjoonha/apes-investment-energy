@@ -4,32 +4,32 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "May2 UPDATE: LNG at $274.40. ENTER May15 $275C (~$9.00) pre-earnings. Q1 earnings May 7 BMO. Consensus EPS $3.15-$4.51, Rev $5.34B. Stage 3 ramp + Qatar gap = beat/raise setup. NEW LEAPS: Dec18 $280C (~$23) for uncapped upside. HOLD Sep18 $320C + Dec18 $300/$320 BCS LEAPS.",
+      "notes": "May2 CONFIRMED: LNG at $274. May15 $275C confirmed $4.80 (was est $9 — CHEAPER). Jun18 $280C confirmed $10.30. Q1 earnings May 7 BMO. EPS $3.91-$4.51e (+149% YoY). BofA PT $322. 15 Strong Buy. Qatar 12.8 mtpa offline = structural. HOLD Sep18 $320C + Dec18 $300/$320 BCS LEAPS.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-02",
-      "structure": "NEW: May15 $275C; NEW: Dec18 $280C LEAPS; HOLD: Sep18 $320C LEAPS; HOLD: Dec18 $300/$320 BCS LEAPS",
-      "status": "Enter May15 $275C + Dec18 $280C Monday. LNG at $274.40."
+      "structure": "NEW: May15 $275C ($4.80) + Jun18 $280C ($10.30); HOLD: Sep18 $320C LEAPS; HOLD: Dec18 $300/$320 BCS LEAPS",
+      "status": "ENTER May15 $275C + Jun18 $280C Monday. Confirmed premiums."
     },
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "May2 UPDATE: TRADE OF THE DAY. ET at $19.95. Scorecard 8.5 composite (#1). 52-wk high $20.20. Q1 earnings May 5 BMO. EPS $0.38e, Rev $29.28B (+39% YoY). 6.69% yield. CloudBurst 1.2GW Q3. NEW: Jun18 $20C (~$0.90) primary + Jun18 $21C (~$0.50) speculative. HOLD equity long at $19.02.",
+      "notes": "May2 CONFIRMED: TRADE OF THE DAY. ET at $19.94. Scorecard 8.5 (#1). Jun18 $20C confirmed $0.44 (was est $0.90 — HALF PRICE). Jun18 $21C confirmed $0.16. Jun18 $22C at $0.06 (lottery). Put/call 0.19 = ultra-bullish. 39,647 OI on $20 strike. Q1 earnings May 5. EPS $0.38e revised UP 5.2%. Jefferies PT $20. Truist PT $23.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-02",
-      "structure": "NEW: Jun18 $20C (TOTD) + Jun18 $21C (spec); HOLD equity long $19.02",
+      "structure": "NEW: Jun18 $20C ($0.44) TOTD + Jun18 $21C ($0.16) spec + Jun18 $22C ($0.06) lottery; HOLD equity long $19.02",
       "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "TOTD — Enter Jun18 $20C + $21C Monday. ET at $19.95."
+      "status": "TOTD — ENTER Jun18 $20/$21/$22 calls Monday. Confirmed premiums."
     },
     {
       "ticker": "FANG",
       "bias": "bullish",
-      "notes": "May2 UPDATE: FANG at $203.18. Earnings May 4 AMC (MONDAY!). COP Q1 beat = positive Permian read-through. KeyCorp PT $225, Citi $230. IV 67th percentile. NEW: May15 $205C (~$8.00) base + May15 $210C (~$5.50) spec. Exit 50% on earnings gap if +30%.",
+      "notes": "May2 CONFIRMED: FANG at $203. Earnings May 4 AMC (MONDAY!). $205 strike DOES NOT EXIST — use $210C confirmed at $5.60. Raymond James PT $242, UBS $246, Wells $262. COP Q1 beat = positive Permian read-through. Exit 50% on earnings gap if +5%.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-02",
-      "structure": "NEW: May15 $205C (base) + May15 $210C (spec)",
-      "status": "ENTER Monday pre-earnings. FANG at $203.18."
+      "structure": "NEW: May15 $210C ($5.60)",
+      "status": "ENTER May15 $210C Monday pre-earnings. $205 strike unavailable."
     },
     {
       "ticker": "COP",
@@ -84,11 +84,11 @@
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May2 UPDATE: GLNG at $52.54. Goldman strategic review active. AGM May 19. Q1 earnings May 20. Unusual call buying. Takeout value $70-75. NEW: Sep18 $55C (~$6.00) for uncapped M&A upside. HOLD Jun18 $55/$65 BCS + Sep18 $60/$70 BCS.",
+      "notes": "May2 CONFIRMED: GLNG at $55.70. Sep18 $55C confirmed $5.60. Sep18 $60C has 44,007 OI — massive institutional positioning. Goldman strategic review active. AGM May 19 + Q1 earnings May 20. $14B new contracts 2025. EBITDA backlog $17B. HOLD Jun18 $55/$65 BCS + Sep18 $60/$70 BCS.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-05-02",
-      "structure": "NEW: Sep18 $55C; HOLD: Jun18 $55/$65 BCS + Sep18 $60/$70 BCS",
-      "status": "ENTER Sep18 $55C Monday. AGM May 19."
+      "structure": "NEW: Sep18 $55C ($5.60); HOLD: Jun18 $55/$65 BCS + Sep18 $60/$70 BCS",
+      "status": "ENTER Sep18 $55C Monday. 44K OI on $60 strike. AGM May 19."
     },
     {
       "ticker": "CIFR",
@@ -146,11 +146,11 @@
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "May2 UPDATE: EQT at $58.86. Pulled back 14% from $68.24 ATH post-Q1 monster beat (EPS $2.33, record $1.8B FCF). Jefferies PT $77. NEW: Sep18 $62C (~$4.00) for uncapped upside on dip buy. HOLD Sep18 $65/$70 BCS.",
+      "notes": "May2 CONFIRMED: EQT at $58.86. Sep18 $60C confirmed $4.86. Sep18 $62.50C confirmed $4.00 (note: $62 not avail, use $62.50). Sep18 $65C confirmed $3.10. CEO awarded 1M options at $90/$95/$100 strikes — mgmt implicit PT. Jefferies PT $77. Dip buy after -14% from ATH.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-02",
-      "structure": "NEW: Sep18 $62C; HOLD: Sep18 $65/$70 BCS ($1.56 debit)",
-      "status": "ENTER Sep18 $62C Monday. EQT at $58.86."
+      "structure": "NEW: Sep18 $60C ($4.86) primary + Sep18 $62.50C ($4.00) base; HOLD: Sep18 $65/$70 BCS ($1.56 debit)",
+      "status": "ENTER Sep18 $60C + $62.50C Monday. Confirmed premiums."
     },
     {
       "ticker": "XOP_HEDGE",
@@ -216,9 +216,9 @@
     },
     {
       "ticker": "MP",
-      "notes": "Scorecard 8.0. Earnings May 7. Would enter Jun18 calls on pullback to $60. Wedbush PT $90.",
-      "proposed_structure": "Jun18 $65C or $70C on pullback",
-      "trigger": "MP pulls back to $60 or post-earnings dip"
+      "notes": "PROMOTED to active pick. Scorecard 8.0 (#2). At $66.32 — enter Jun18 $70C (~$4.00) pre-earnings May 7. Wedbush PT $90.",
+      "proposed_structure": "Jun18 $70C",
+      "trigger": "ENTER Monday — don't wait for pullback, earnings May 7 is the catalyst"
     }
   ],
   "max_ideas_per_day": 5,
