@@ -4,7 +4,7 @@
     {
       "ticker": "INSW",
       "bias": "bullish",
-      "notes": "May9 TRADE OF THE DAY. INSW at ~$83. Record Q1: EPS $3.90 vs $2.64 est (+48% beat), record $4.55 dividend, VLCC $86.7K/day. Post-earnings IV crush = cheap calls. Scorecard 7.8 (#1). Jun20 $85C est ~$5.50. Jun20 $95C est ~$2.50.",
+      "notes": "May9 TRADE OF THE DAY. INSW at ~$86-88. Record Q1: EPS $5.75 GAAP / $3.90 adj vs $2.64 est, revenue $325M vs $280M est. Record $4.55 dividend. VLCC bookings Q2 at $189.5K/day. Scorecard 7.8 (#1). Post-earnings IV crush = cheap calls.",
       "trade_entered": "2026-05-09",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $85C (~$5.50) base + Jun20 $95C (~$2.50) spec",
@@ -13,16 +13,16 @@
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "May9 UPDATE: LNG at $243.94 (down from $274 on May2). Q1 beat $4.77 vs $4.23, guidance raised $500M. Stock sold off -5.6% = dip buy. Post-earnings IV crush. Jun20 $245C est ~$12. Consensus PT $310. HOLD Sep18 $320C + Dec18 $300/$320 BCS LEAPS. May15 $275C likely expiring worthless.",
+      "notes": "May9 UPDATE: LNG at ~$243 (down from $274). Q1 EBITDA $2.33B (+25% YoY), rev $5.87B, 187 cargoes (record), guidance raised $500M to $7.25-7.75B. GAAP loss = derivative noise. Consensus PT $310. Dip buy.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $245C (~$12); HOLD: Sep18 $320C LEAPS; HOLD: Dec18 $300/$320 BCS LEAPS; EXPIRING: May15 $275C",
-      "status": "ENTER Jun20 $245C Monday. HOLD LEAPS."
+      "status": "ENTER Jun20 $245C Monday. HOLD LEAPS. Let May15 $275C expire."
     },
     {
       "ticker": "MPC",
       "bias": "bullish",
-      "notes": "May9 NEW POSITION. MPC at $245.09. Q1 EPS $1.65 vs $0.75 est (+118% beat). R&M margin $17.74/bbl. Goldman PT $291, TD Cowen $320. $5B buyback. Fills critical refining gap in portfolio. Jun20 $250C est ~$11.",
+      "notes": "May9 NEW POSITION. MPC at ~$245. Q1 EPS $1.65 vs $0.75 est (+118% beat). R&M margin $17.74/bbl at 89% util. Goldman PT $291, TD Cowen $320. $5B buyback. Fills refining gap.",
       "trade_entered": "2026-05-09",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $250C (~$11)",
@@ -31,19 +31,19 @@
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "May9 UPDATE: ET at $19.36 (down -2.9%). Q1 EBITDA $4.94B (+20% YoY), guidance raised $750M to $18.2-18.6B. Record volumes. Scorecard 7.5 (#3). Put/call 0.19. HOLD Jun18 $20/$21/$22C + equity long $19.02.",
+      "notes": "May9 UPDATE: ET at ~$19.36-19.87. Q1 EBITDA $4.94B (+20% YoY), guidance raised $750M to $18.2-18.6B. Record volumes. Scorecard 7.5 (#3). Put/call 0.19. HOLD all positions.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-09",
       "structure": "HOLD: Jun18 $20C ($0.44) + Jun18 $21C ($0.16) + Jun18 $22C ($0.06); HOLD equity long $19.02",
       "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "HOLD. Q1 validated thesis. $20C needs 3.3% move."
+      "status": "HOLD. Q1 validated thesis."
     },
     {
       "ticker": "VG",
       "bias": "bullish",
-      "notes": "May9 CATALYST PLAY. VG at $11.54. Earnings May 12 BMO (MONDAY). Morgan Stanley PT $22 (Overweight), Goldman $18.50 (Buy), consensus $15.70. Jun20 $12C est ~$1.00. Jun20 $14C est ~$0.40. Pre-earnings lottery.",
+      "notes": "May9 CATALYST PLAY. VG at ~$11.69. Earnings May 12 BMO (MONDAY). MS PT $22, GS $18.50, consensus $15.70. IV ~91% = expensive. Jun20 $12C ($1.00) + $14C ($0.40). Small size — lottery ticket.",
       "trade_entered": "2026-05-09",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $12C (~$1.00) + Jun20 $14C (~$0.40) pre-earnings",
@@ -52,7 +52,7 @@
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May9 UPDATE: GLNG at ~$52.63. AGM May 19 + Q1 earnings May 20 = dual catalyst. Goldman strategic review active. 44K OI on Sep $60 strike. HOLD existing positions. ADD Jun20 $50C est ~$5.50 or Jun20 $55C est ~$3.00.",
+      "notes": "May9 UPDATE: GLNG at ~$52.63-55.22. AGM May 19 + Q1 May 20 = dual catalyst. Goldman strategic review active. 44K OI on Sep $60. Call volume 120% above avg.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $55C (~$3.00); HOLD: Sep18 $55C ($5.60) + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS",
@@ -61,16 +61,16 @@
     {
       "ticker": "EQT",
       "bias": "bullish",
-      "notes": "May9 UPDATE: EQT at $58.66. Down -14% from $68.24 ATH. Q1 EPS $2.33 (+8.9% beat), record FCF $1.8B. CEO options at $90/$95/$100. Consensus PT $68.38, Jefferies $77. HOLD Sep18 $60/$62.50/$65 calls.",
+      "notes": "May9 UPDATE: EQT at ~$55-57. Down -14% from $68.24 ATH. Q1 EPS $2.33 (+8.9% beat), record FCF $1.8B. CEO options at $90/$95/$100. Consensus PT $68.38, Jefferies $77.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-09",
       "structure": "HOLD: Sep18 $60C ($4.86) + Sep18 $62.50C ($4.00); HOLD: Sep18 $65/$70 BCS ($1.56 debit)",
-      "status": "HOLD. $60C needs 2.3% to get ITM. 133 DTE."
+      "status": "HOLD. 133 DTE. Patience."
     },
     {
       "ticker": "USO",
       "bias": "mixed",
-      "notes": "May9 UPDATE: USO at $134.08. US fired on 2 Iranian tankers today. Dual positioning. Jun20 $135C est ~$7 (upside). HOLD Jun20 $140P (hedge). ADD Jun20 $125P est ~$4 (additional hedge). Let May16 $130P expire worthless.",
+      "notes": "May9 UPDATE: USO at ~$134. Brent $100.53, WTI $94.36. US fired on 2 Iranian tankers May 8. Dual positioning: calls for escalation, puts for hedge.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-09",
       "structure": "NEW: Jun20 $135C (~$7); HOLD: Jun20 $140P; NEW: Jun20 $125P (~$4); EXPIRING: May16 $130P",
@@ -79,7 +79,7 @@
     {
       "ticker": "XOP_HEDGE",
       "bias": "bearish",
-      "notes": "May9 UPDATE: XOP at ~$164. May16 $165/$150 BPS about to expire. ROLL to Jun20. ADD Jun20 $155P est ~$4.50.",
+      "notes": "May9 UPDATE: XOP at ~$164. ROLL expiring May16 BPS to Jun20 $155P (~$4.50).",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-05-09",
       "structure": "EXPIRING: May16 $165/$150 BPS; NEW: Jun20 $155P (~$4.50)",
@@ -88,16 +88,16 @@
     {
       "ticker": "COP",
       "bias": "bullish",
-      "notes": "May9 STATUS: HOLD Jun20 $130C. COP at ~$125.56. 42 DTE. Needs 3.5% move. Stop: COP < $120 or ceasefire.",
+      "notes": "May9 STATUS: COP at ~$115-125. HOLD Jun20 $130C. 42 DTE. Needs recovery. Consider cutting if COP doesn't reclaim $120 by May 16.",
       "trade_entered": "2026-04-30",
       "last_reviewed": "2026-05-09",
       "structure": "HOLD: Jun20 $130C",
-      "status": "HOLD. Monitor."
+      "status": "HOLD. Monitor. Cut if below $120 by May 16."
     },
     {
       "ticker": "CEG",
       "bias": "bullish",
-      "notes": "May9 STATUS: CEG at $306.85. Jun18 $300/$330 BCS. Earnings May 11 (MONDAY). Above lower strike. HOLD through earnings. TMI Crane delayed 2031 = overhang.",
+      "notes": "May9 STATUS: CEG at ~$302. Jun18 $300/$330 BCS. Earnings May 11 (MONDAY). Above lower strike. TMI Crane delay 2031 = overhang.",
       "trade_entered": "2026-03-28",
       "last_reviewed": "2026-05-09",
       "structure": "HOLD: Jun18 $300/$330 BCS",
@@ -106,27 +106,25 @@
     },
     {
       "ticker": "PRIM",
-      "bias": "bullish",
-      "notes": "May9 STATUS: PRIM equity long at $149. Target $184. Trim 30-40% at $170+. Guggenheim PT $195.",
+      "bias": "bearish",
+      "notes": "May9 EMERGENCY EXIT. PRIM crashed to ~$104 from $149 entry. Earnings miss + guidance cut. Down 40% in 1 week. Stop ($155) blown through. CLOSE IMMEDIATELY.",
       "trade_entered": "2026-04-02",
       "last_reviewed": "2026-05-09",
-      "structure": "Equity long",
+      "structure": "Equity long — CLOSE",
       "entry": 149.00,
-      "target": 184.00,
-      "stop": 155.00,
-      "status": "HOLD — trim 30% at $170+."
+      "status": "CLOSE AT OPEN MONDAY. Accept ~30% loss. Thesis broken."
     },
     {
       "ticker": "CIFR",
       "bias": "bullish",
-      "notes": "May9 STATUS: TRIM 50% at $18+. Lock gains. Raise stop to $15. Let remainder ride to $20-22 through AWS July 1 catalyst.",
+      "notes": "May9 STATUS: CIFR at ~$20.52. TRIM 50% Monday. Raise stop to $15. Let remainder ride to AWS July 1 catalyst.",
       "trade_entered": "2026-04-01",
       "last_reviewed": "2026-05-09",
-      "structure": "Equity — TRIM 50%",
+      "structure": "Equity — TRIM 50% Monday",
       "entry": 12.64,
       "target": 22.00,
       "stop": 15.00,
-      "status": "TRIM 50%. Raise stop $15."
+      "status": "TRIM 50% at ~$20.50. Raise stop $15."
     }
   ],
   "expired_positions": [
