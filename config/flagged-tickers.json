@@ -53,9 +53,9 @@
     "description": "Tickers suggested by Claude's research agents. Claude CAN add, remove, and update these based on its analysis. Keep to 5 tickers max. Each must have a clear, evidence-based reason with a specific catalyst and timeframe.",
     "tickers": [
       {
-        "ticker": "LBRT",
-        "reason": "Liberty Energy \u2014 OFS-to-DC-power pivot via Liberty Power Innovations (LPI). Vantage Data Centers 1GW framework deal + 330MW unnamed TX DC + Oklo nuclear bridge partnership. Q1 earnings April 22 = first public LPI pipeline disclosure. Market still pricing at OFS multiples (~8-9x EV/EBITDA) vs AI infrastructure peers (15-25x).",
-        "added": "2026-04-06",
+        "ticker": "DHT",
+        "reason": "DHT Holdings — VLCC pure-play tanker (27 vessels). Q1 2026 EPS $1.02 vs $0.53 est (92% beat). Q2 spot bookings: 88% of days at $168,300/day (record). Einhorn/Greenlight holds 3.78M shares, never sold. 5.5% dividend yield (100% ordinary income payout). Most direct Hormuz beneficiary — VLCC rerouting adds 3 weeks per voyage.",
+        "added": "2026-05-10",
         "suggested_by": "opportunity-screener"
       },
       {
