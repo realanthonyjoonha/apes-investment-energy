@@ -4,11 +4,11 @@
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May21 TRADE OF THE DAY (2nd day). Q1 beat confirmed. Earnings call 8AM ET today — KEY: watch for strategic review update from Goldman. $1B cash. 4th FLNG order targeted 2026. Qatar 12.8 mtpa offline 3-5 years = structural FLNG scarcity. Stock ~$55.65.",
+      "notes": "May21 TRADE OF THE DAY (2nd day). Q1 beat: $0.49 EPS vs $0.31 est, rev $137.6M vs $134.1M. Earnings call 8AM ET today — watch for strategic review + 4th FLNG order. Gimi 19% above capacity. $0.25 div payable Jun10. 84K call options traded (2159% above avg). Stock hit $58 52wk high.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-05-21",
-      "structure": "HOLD: Sep18 $55C ($5.60) + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. Consider Sep18 $57.50C add on positive earnings call.",
-      "status": "HOLD all. Monitor earnings call. Consider Sep18 $57.50C add on positive call."
+      "structure": "HOLD: Sep18 $55C ($5.60) + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $57.50C (~$3.80) on positive earnings call.",
+      "status": "ADD Sep18 $57.50C on positive call. HOLD all existing."
     },
     {
       "ticker": "LNG",
@@ -22,11 +22,11 @@
     {
       "ticker": "DHT",
       "bias": "bullish",
-      "notes": "May21 UPDATE: Ex-div TODAY ($0.41). Stock should dip ~$0.41 at open — BUY THE DIP. Q2 booked 88% at $168,300/day RECORD. VLCC rates normalized from $424K peak but still elevated. Einhorn holds 3.78M shares. 14.29% forward yield.",
-      "trade_entered": "2026-05-20",
+      "notes": "May21 ENTERED on ex-div dip. BTIG PT $23. Evercore downgraded to In Line. Q2 spot 88% at $168,300/day record. Options VERY illiquid (2 contracts Jul17) — shares better if fills bad. Stock ~$18.35 pre-dip.",
+      "trade_entered": "2026-05-21",
       "last_reviewed": "2026-05-21",
-      "structure": "ENTER: Jul17 $19C (~$1.50) base + Jul17 $21C (~$0.60) spec",
-      "status": "ENTER Jul17 $19C + $21C on ex-div dip today."
+      "structure": "ENTER: Jul17 $19C (~$1.50) + Jul17 $21C (~$0.60). ALT: shares ~$17.70 dip, stop $16, target $23.",
+      "status": "ENTER today on ex-div dip. Limit orders only."
     },
     {
       "ticker": "VLO",
@@ -34,8 +34,8 @@
       "notes": "May21 UPDATE: VLO at ~$254.50. ATH $263.75. Record-date for $1.20 div TODAY. Q1 EPS $4.22 beat $3.16 est by 33%. Crack spreads $41.75/bbl. Scotiabank PT $226 (exceeded), Morgan Stanley $232 (exceeded), UBS $280, Wells Fargo $292. Memorial Day weekend = summer driving season starts.",
       "trade_entered": "2026-05-15",
       "last_reviewed": "2026-05-21",
-      "structure": "HOLD: Jun18 $250C (ITM ~$4.50). Consider roll to Jul $270C.",
-      "status": "HOLD. Profitable. Roll to Jul $270C at $270 level."
+      "structure": "ROLL: Sell Jun18 $250C (~$8-10) → Buy Jul17 $270C (~$4.50). Net cash positive.",
+      "status": "ROLL today. Lock profit on Jun18, extend to Jul17 for summer driving season."
     },
     {
       "ticker": "MPC",
@@ -52,11 +52,11 @@
       "notes": "May21 UPDATE: ET at ~$20.42. Near 52-wk high $20.67. Raised 2026 EBITDA guidance to $18.2-18.6B. Q1 EBITDA $4.94B (+20% YoY). Options flow 75% bullish. Raymond James PT $26, consensus $23.32. IV ~25-30% = CHEAP options.",
       "trade_entered": "2026-05-02",
       "last_reviewed": "2026-05-21",
-      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02; ADD: Sep18 $20C (~$1.90)",
+      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.90). Total ET allocation ~10-12%.",
       "entry": 19.02,
       "target": 23.00,
       "stop": 18.00,
-      "status": "ADD Sep18 $20C today. HOLD all existing."
+      "status": "ADD Sep18 $20C today. HOLD all existing. IV ~33% = cheap calls."
     },
     {
       "ticker": "VG",
@@ -91,8 +91,8 @@
       "notes": "May21 UPDATE: XOP at ~$178.54. VIX at 17.26 makes puts cheap. Jun18 $165P is the preferred strike — 7.6% OTM, captures ceasefire selloff scenario.",
       "trade_entered": "2026-04-07",
       "last_reviewed": "2026-05-21",
-      "structure": "ENTER: Jun18 $165P (~$3.25)",
-      "status": "ENTER Jun18 $165P today if not already done."
+      "structure": "ENTER: Jun18 $165P (~$3.25). VIX 17.44 = cheap puts. 7.6% OTM.",
+      "status": "ENTER Jun18 $165P today. De-escalation hedge — 1-2% allocation."
     },
     {
       "ticker": "INSW",
