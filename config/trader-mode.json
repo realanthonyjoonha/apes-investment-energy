@@ -2,137 +2,137 @@
   "mode": "hybrid",
   "my_picks": [
     {
+      "ticker": "ET",
+      "bias": "bullish",
+      "notes": "May25 TRADE OF THE DAY. ET at ~$20.30. Record Q1 EBITDA $4.94B (+20% YoY). Raised guidance $18.2-18.6B. 5 analyst upgrades: Raymond James $26, BofA $24, Stifel $25, UBS $24, Barclays $23. IV 25-33% = cheapest vol in portfolio. LOW Iran sensitivity — survives ceasefire. Ex-div Jun10 ($0.325).",
+      "trade_entered": "2026-05-02",
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.90) + Jan27 $20C LEAPS (~$2.80). Total ET allocation ~12-15%.",
+      "entry": 19.02,
+      "target": 24.00,
+      "stop": 18.50,
+      "status": "ADD Sep18 $20C + Jan27 $20C LEAPS Tuesday. HOLD all existing. #1 priority add."
+    },
+    {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May22 TRADE OF THE DAY (3rd day). Earnings call confirmed: Q1 beat ($138M rev vs $128M est), strategic review with Goldman Sachs as advisor, 4th FLNG order expected 2026, Gimi 19% above capacity, Mark II on budget. Run-rate EBITDA >$800M. Stock ~$57.50 near 52wk high $58. Div $0.25 payable Jun10.",
+      "notes": "May25 UPDATE: GLNG at ~$57.50 near 52wk high $58. Goldman strategic review ongoing — exploring sale, merger, or asset divestiture. Q1 rev $137.55M (+120% YoY), net income $83.58M. AGM May19 completed. Div $0.25 payable Jun10. 4th FLNG order expected 2026.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-22",
+      "last_reviewed": "2026-05-25",
       "structure": "HOLD: Sep18 $55C ($5.60) + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $57.50C (~$3.80).",
-      "status": "ADD Sep18 $57.50C today. Strategic review is primary catalyst. HOLD all existing."
+      "status": "ADD Sep18 $57.50C Tuesday. Strategic review is primary non-conflict catalyst. HOLD all existing."
     },
     {
       "ticker": "LNG",
       "bias": "bullish",
-      "notes": "May22 UPDATE: LNG at ~$240.40. Scotiabank PT $290, TD Cowen $270. Q1 beat confirmed. EBITDA guidance $7.25-7.75B. IV at 79th — still too expensive for new adds. Train 6 at Corpus Christi started up.",
+      "notes": "May25 UPDATE: LNG at ~$240. Scotiabank PT $290, TD Cowen $270, median analyst PT $307. Q1 beat ($4.77 vs $4.23). EBITDA guidance $7.25-7.75B. Train 6 started. IV at 79th percentile — too expensive for new adds. Qatar 12.8 mtpa offline 3-5 years = structural tailwind.",
       "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $240C (ITM) + Sep18 $260C + Sep18 $320C LEAPS + Dec18 $300/$320 BCS",
-      "status": "HOLD all. No new adds at 79th percentile IV."
-    },
-    {
-      "ticker": "DHT",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: DHT at ~$17.27 post ex-div. BTIG PT $23. Evercore downgraded to In Line. Q2 spot 88% at $168,300/day record. Q1 EPS $1.02 vs $0.53 est (92% beat). Options VERY illiquid — shares preferred if fills bad. Einhorn holds 3.78M shares.",
-      "trade_entered": "2026-05-21",
-      "last_reviewed": "2026-05-22",
-      "structure": "ENTER: Jul17 $19C (~$1.50) + Jul17 $21C (~$0.60). ALT: shares ~$17.27, stop $16, target $23.",
-      "status": "ENTER today. Limit orders only. Shares preferred given illiquid options."
-    },
-    {
-      "ticker": "VLO",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: VLO at ~$241-248 (down 5% intraday). SVP insider sold $1.89M May 18. Q1 EPS $4.22 beat. Crack spreads $41.75/bbl. UBS $280, Wells Fargo $292. Summer driving season starts Memorial Day. IEA flagged historically high refining margins.",
-      "trade_entered": "2026-05-15",
-      "last_reviewed": "2026-05-22",
-      "structure": "ROLL: Sell Jun18 $250C (~$8-10) → Buy Jul17 $270C (~$4.50). Net cash positive.",
-      "status": "ROLL today. VLO dip is profit-taking, not thesis change. Lock Jun gain, extend Jul."
-    },
-    {
-      "ticker": "MPC",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: MPC at ~$248.34 (pullback from ATH $264.14). Goldman PT $291. Q1 EPS $1.73 beat $0.75 est (118%). $5B buyback. Summer driving season. IEA flagged historically high refining margins globally.",
-      "trade_entered": "2026-05-09",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $250C (near ATM ~$3-5)",
-      "status": "HOLD. Pullback is sector-wide profit-taking, not thesis change."
-    },
-    {
-      "ticker": "ET",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: ET at ~$20.15-20.42. Near 52-wk high $20.67. Record Q1 EBITDA $4.94B (+20% YoY). Raised guidance to $18.2-18.6B. 5 analyst upgrades in May: Raymond James $26, BofA $24, Stifel $25, UBS/Scotiabank/JPMorgan $24. IV ~25-33% = cheapest vol in portfolio. Options flow 75% bullish.",
-      "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.90). Total ET allocation ~10-12%.",
-      "entry": 19.02,
-      "target": 23.00,
-      "stop": 18.00,
-      "status": "ADD Sep18 $20C today. HOLD all existing. Cheapest IV = buy premium."
-    },
-    {
-      "ticker": "VG",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: VG at ~$14.17-14.32. Citi upgrade to Buy PT $17, Raymond James $16. EBITDA guidance $8.2-8.5B. IV at 91% — still too expensive. BP arbitration risk remains thesis killer. Q1 rev surged 58.6% YoY to $4.6B but EPS missed ($0.19 vs $0.36).",
-      "trade_entered": "2026-05-09",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $12C + $14C. NEXT: Dec18 $15C when IV < 70%.",
-      "status": "HOLD. Do NOT add — IV 91% too high."
-    },
-    {
-      "ticker": "EQT",
-      "bias": "bullish",
-      "notes": "May22 UPDATE: EQT at ~$57.76. Henry Hub $3.02. EIA lowered HH forecast for 2026-2027 — bearish near-term. Bullish options flow: 6,145 calls at 1.3x expected volume, IV 34.92%. Citi PT $70, consensus $69.55. $1.8B FCF in Q1. No adds — wait HH >$3.50 or pullback to $52.",
-      "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Sep18 $60C ($4.86) + Sep18 $62.50C ($4.00) + Sep18 $65/$70 BCS ($1.56)",
-      "status": "HOLD. No adds. Wait for HH > $3.50 or pullback to $52."
-    },
-    {
-      "ticker": "USO",
-      "bias": "mixed",
-      "notes": "May22 UPDATE: USO at ~$142.54. Brent at $104.52 (+1.89%). Ceasefire on 'massive life support.' 134M barrel Brent put spread at $91/$90 detected — major de-escalation bet. Dual positioning intact.",
-      "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $145C (ITM by $7.96) + Jun18 $135P + Jun18 $140P",
-      "status": "HOLD all. Dual directional. No new action."
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Jun18 $240C + Sep18 $260C + Sep18 $320C LEAPS + Dec18 $300/$320 BCS",
+      "status": "HOLD all. No new adds at 79th percentile IV. ADD on ceasefire flush to $215-220 only."
     },
     {
       "ticker": "XOP_HEDGE",
       "bias": "bearish",
-      "notes": "May22 UPDATE: XOP at ~$170.78 (down from $174.73). VIX at 16.76 makes puts even cheaper. Jun18 $165P still preferred — 3.4% OTM now (closer to money after selloff). Bloomberg detected 134M barrel Brent $91/$90 put spread — smart money hedging de-escalation.",
+      "notes": "May25 UPDATE: XOP at ~$172. Brent crashing to $95 on deal optimism. VIX 16.70 makes puts CHEAP. 30-40% ceasefire deal probability — highest since Apr 8. Memorial Day lockout = 72hrs without exit. MUST hedge before Tuesday open.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-22",
-      "structure": "ENTER: Jun18 $165P (~$3.25). VIX 16.76 = cheap puts.",
-      "status": "ENTER Jun18 $165P today. De-escalation hedge — 1-2% allocation."
+      "last_reviewed": "2026-05-25",
+      "structure": "ENTER: Jun18 $165P (~$3.25). 5-8 contracts.",
+      "status": "ENTER Jun18 $165P Tuesday at open. PRIORITY #1 — non-negotiable hedge."
+    },
+    {
+      "ticker": "DHT",
+      "bias": "bullish",
+      "notes": "May25 UPDATE: DHT at ~$19.10-19.27. BTIG PT $23. Q2 spot 88% at $168,300/day record. Q1 EPS $1.02 (92% beat). Einhorn 3.78M shares. Evercore downgraded. Options VERY illiquid. Cape rerouting adds 10-14 days per voyage — rate stickiness even post-ceasefire. De-mining takes 6+ months.",
+      "trade_entered": "2026-05-21",
+      "last_reviewed": "2026-05-25",
+      "structure": "ENTER: Equity 200-400 shares at $19.10 limit + Jul17 $19C (small, limit only). Stop $16.50, target $23.",
+      "status": "ENTER Tuesday via limit orders. Shares preferred. Options only if fills reasonable."
+    },
+    {
+      "ticker": "VLO",
+      "bias": "bullish",
+      "notes": "May25 UPDATE: VLO at ~$247. Crack spreads $40+/bbl (2.5x pre-war). Q1 EPS $4.22 beat. UBS $280, Wells Fargo $292. Summer driving season. SVP insider sold $1.89M. HIGH de-escalation risk (-2.0 pts).",
+      "trade_entered": "2026-05-15",
+      "last_reviewed": "2026-05-25",
+      "structure": "ROLL: Sell Jun18 $250C → Buy Jul17 $270C. Wait for Tuesday price action before executing.",
+      "status": "ROLL Tuesday. Wait to see Iran news impact. If VLO gaps to $230-240, better roll price."
+    },
+    {
+      "ticker": "MPC",
+      "bias": "bullish",
+      "notes": "May25 UPDATE: MPC at ~$259. Goldman PT $291. Q1 EPS $1.73 beat 118%. $5B buyback. Summer cracks. Scorecard #1 at 7.65. HIGH de-escalation risk. Do NOT add at current levels — conditional add only at $245-250 dip.",
+      "trade_entered": "2026-05-09",
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Jun18 $250C. CONDITIONAL ADD: Jul17 $260C only at $245-250.",
+      "status": "HOLD. Conditional add only on dip to $245-250."
+    },
+    {
+      "ticker": "VG",
+      "bias": "bullish",
+      "notes": "May25 UPDATE: VG at ~$14.17-14.32. Citi upgrade Buy PT $17, Morgan Stanley $22. EBITDA guidance $8.2-8.5B. IV at 91% — do NOT add. BP arbitration risk. Jun $12C ITM by $2+ — take profits if approaches $3.50-4.00.",
+      "trade_entered": "2026-05-09",
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Jun18 $12C + $14C. Consider partial profit-take on Jun $12C.",
+      "status": "HOLD. Do NOT add. Consider profit-take on Jun $12C near $3.50."
+    },
+    {
+      "ticker": "EQT",
+      "bias": "bullish",
+      "notes": "May25 UPDATE: EQT at ~$57.76. Henry Hub $3.07. EIA lowered HH forecast. Q1 record FCF $1.83B. Net debt reduced to $5.7B from $7.7B. Citi PT $70. No adds until HH >$3.50 or EQT pullback to $52.",
+      "trade_entered": "2026-05-02",
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Sep18 $60C + Sep18 $62.50C + Sep18 $65/$70 BCS",
+      "status": "HOLD. No adds. Patience — wait for HH catalyst."
+    },
+    {
+      "ticker": "USO",
+      "bias": "mixed",
+      "notes": "May25 UPDATE: USO at ~$140.92 (down from $142.54). Brent crashing to $95. WTI ~$91. Deal optimism selling. Jun $145C now OTM by ~$4 — cut if USO drops below $138. Jun $135P + $140P gaining value. 134M barrel put spread at $91/$90 = smart money hedging.",
+      "trade_entered": "2026-05-02",
+      "last_reviewed": "2026-05-25",
+      "structure": "HOLD: Jun18 $145C + Jun18 $135P + Jun18 $140P. CUT $145C if USO < $138.",
+      "status": "HOLD dual directional. Monitor $145C — cut if USO < $138."
     },
     {
       "ticker": "INSW",
       "bias": "neutral",
-      "notes": "May22 UPDATE: INSW at ~$83.30 (down from ATH $92.66). $200M ATM overhang. Jefferies PT $100, B. Riley $90, Pareto downgraded to Hold $88. Prefer DHT for tanker — no dilution risk. CUT DEADLINE: below $82 by May 23.",
+      "notes": "May25 UPDATE: INSW at ~$83.30. $200M ATM overhang. Q1 EPS $3.90 (45% beat), record $4.55 dividend. Prefer DHT for tanker. CUT $95C confirmed. HOLD $85C with $80 stop.",
       "trade_entered": "2026-05-09",
-      "last_reviewed": "2026-05-22",
-      "structure": "HOLD: Jun18 $85C (ATM). CUT: Jun18 $95C (likely max loss).",
-      "status": "HOLD $85C. CUT $95C. Cut all if below $82 by May 23."
+      "last_reviewed": "2026-05-25",
+      "structure": "CUT: Jun18 $95C (max loss). HOLD: Jun18 $85C (stop $80 on stock).",
+      "status": "CUT $95C Tuesday. HOLD $85C. Stop $80."
     },
     {
       "ticker": "COP",
       "bias": "bearish",
-      "notes": "May22 CUT CONFIRMED. Thesis dead. BMO cut PT to $135. Underperforming sector. Redeploy capital to VLO/DHT/USO.",
+      "notes": "May25 CUT CONFIRMED. BMO PT $135. Thesis dead. Redeploy to DHT/ET.",
       "trade_entered": "2026-04-30",
-      "last_reviewed": "2026-05-22",
+      "last_reviewed": "2026-05-25",
       "structure": "CUT: Jun20 $130C",
-      "status": "CUT TODAY. Accept loss. Better oil exposure via VLO/DHT/USO."
+      "status": "CUT Tuesday. Accept loss. Redeploy."
     },
     {
       "ticker": "CEG",
       "bias": "bearish",
-      "notes": "May22 WRITE-OFF CONFIRMED. CEG at ~$274. Nuclear/AI sector in full rotation. Accept max loss on Jun18 $300/$330 BCS (-$12.20). Do not add. Revisit only if reclaims $290 with volume.",
+      "notes": "May25 WRITE-OFF. CEG at ~$274. Nuclear/AI in rotation. Max loss on Jun18 $300/$330 BCS (-$12.20).",
       "trade_entered": "2026-03-28",
-      "last_reviewed": "2026-05-22",
+      "last_reviewed": "2026-05-25",
       "structure": "WRITE-OFF: Jun18 $300/$330 BCS ($12.20 debit)",
       "debit": 12.20,
-      "status": "Accept max loss. Do not add. Revisit if CEG reclaims $290."
+      "status": "Accept max loss. Do not add."
     },
     {
       "ticker": "CIFR",
       "bias": "bullish",
-      "notes": "May22 UPDATE: CIFR at ~$20.55 (rebranded to Cipher Digital). Morgan Stanley PT $42.50, H.C. Wainwright $30, Keefe Bruyette $27. 12 analysts Strong Buy, avg PT $27.92 (36.7% upside). AWS July 1 catalyst. Third hyperscale lease + $2B bond financing. HOLD remainder with $15 stop.",
+      "notes": "May25 UPDATE: CIFR at ~$21.96. Morgan Stanley PT $42.50, avg PT $27.92 (36.7% upside). AWS July 1 catalyst. Third hyperscale lease + $2B bond financing. 12 analysts Strong Buy.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-05-22",
+      "last_reviewed": "2026-05-25",
       "structure": "Equity — 50% trimmed; remainder HOLD with $15 stop",
       "entry": 12.64,
-      "target": 22.00,
+      "target": 28.00,
       "stop": 15.00,
-      "status": "Confirm trim. HOLD remainder. Stop $15."
+      "status": "HOLD remainder. Stop $15. AWS July 1 catalyst approaching."
     }
   ],
   "expired_positions": [
@@ -198,6 +198,12 @@
       "notes": "Bloom Energy at $283 after +24% Q1 blowout. Don't chase. Wait for 5-7% pullback to $260-265.",
       "proposed_structure": "Jun calls on pullback",
       "trigger": "BE pulls back to $260-265"
+    },
+    {
+      "ticker": "LNG_CEASEFIRE",
+      "notes": "If ceasefire announced and LNG dips to $215-220, ADD Sep $240C or Dec $260C on the flush.",
+      "proposed_structure": "Sep/Dec calls on ceasefire flush",
+      "trigger": "LNG drops to $215-220 on deal announcement"
     }
   ],
   "max_ideas_per_day": 5,
