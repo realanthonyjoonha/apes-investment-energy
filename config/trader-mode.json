@@ -6,21 +6,21 @@
       "bias": "bullish",
       "notes": "May30 TRADE OF THE DAY (2nd consecutive). ET at ~$19.33-19.67. Record Q1 EBITDA $4.94B (+20% YoY). Raised guidance $18.2-18.6B. 6 analyst upgrades: Raymond James $26, Jefferies $23 (upgrade May26), BofA $24, Stifel $25, UBS $24, Barclays $23. IV ~33% = cheapest vol in portfolio. LOW Iran sensitivity — survives ceasefire. Ex-div was May8, next Aug10.",
       "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-30",
-      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.90) + Jan27 $20C LEAPS (~$2.80). Total ET allocation ~12-15%.",
+      "last_reviewed": "2026-05-31",
+      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.80) + Jan27 $20C LEAPS (~$2.80). Total ET allocation ~12-15%.",
       "entry": 19.02,
       "target": 24.00,
       "stop": 18.50,
-      "status": "ADD Sep18 $20C + Jan27 $20C LEAPS Tuesday. HOLD all existing. #1 priority add."
+      "status": "ADD Sep18 $20C + Jan27 $20C LEAPS Monday. HOLD all existing. #1 priority add. TRADE OF THE DAY 3rd consecutive."
     },
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May30 UPDATE: GLNG at ~$49.50 (pulled back from $57.50). Goldman strategic review ongoing — exploring sale, merger, or asset divestiture. Q1 rev $137.55M (+120% YoY), net income $83.58M. AGM May19 completed. Div $0.25 payable Jun10. 4th FLNG order expected 2026. Pullback creates better entry for Sep calls.",
+      "notes": "May31 UPDATE: GLNG at ~$49.50 (pulled back 14% from $57.50). Goldman strategic review ongoing — sale/merger/divestiture. Q1 rev $137.55M (+120% YoY), net income $83.58M. Div $0.25 payable Jun10. 4th FLNG order expected 2026. Pullback creates best LEAPS entry in weeks.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-30",
-      "structure": "HOLD: Sep18 $55C + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $50C or $55C (verify price, pullback from $57.50).",
-      "status": "ADD Sep call Tuesday. Verify current price — may need lower strike. Strategic review is primary non-conflict catalyst."
+      "last_reviewed": "2026-05-31",
+      "structure": "HOLD: Sep18 $55C + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $50C (~$6.00) or Jan27 $50C LEAPS (~$9.00).",
+      "status": "ADD Sep $50C or Jan27 $50C LEAPS Monday. Pullback from $57.50 = better entry."
     },
     {
       "ticker": "LNG",
@@ -36,18 +36,18 @@
       "bias": "bearish",
       "notes": "May30 UPDATE: XOP at ~$163.41. Brent crashed to $91.12 — worst month since Covid (-19% May). Ceasefire MOU tentatively agreed, awaiting Trump signature. 35-45% deal probability. VIX 18.84 — puts still cheap. BofA scenarios: full peace Brent $82, partial $103.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-30",
+      "last_reviewed": "2026-05-31",
       "structure": "ENTER: Jun18 $160P (~$3.50-4.00). 5-8 contracts.",
-      "status": "ENTER Jun18 $160P Tuesday at open. PRIORITY #2 (after ET adds). NON-NEGOTIABLE hedge."
+      "status": "ENTER Jun18 $160P Monday at open. PRIORITY #2 (after ET adds). NON-NEGOTIABLE hedge."
     },
     {
       "ticker": "DHT",
       "bias": "bullish",
-      "notes": "May30 UPDATE: DHT at ~$18.00-18.66 range. BTIG PT $23. Q2 spot 88% at $168,300/day record. Q1 EPS $1.02 (92% beat). Einhorn 3.78M shares. Options VERY illiquid — equity preferred. Scorecard #1 at 7.65 but -3.0 ceasefire risk. VLCC rates down to ~$100K/day from $424K peak.",
+      "notes": "May31 UPDATE: DHT at ~$17.00. BTIG PT $23. Q2 spot 88% at $168,300/day record. Q1 EPS $1.02 (92% beat). Einhorn 3.78M shares. Options VERY illiquid — equity preferred. Scorecard #1 at 7.65 but -3.0 ceasefire risk.",
       "trade_entered": "2026-05-21",
-      "last_reviewed": "2026-05-30",
-      "structure": "ENTER: Equity 200-400 shares at $18.00-18.50 limit + Jul17 $19C (small, limit only). Stop $16.50, target $23.",
-      "status": "ENTER Tuesday via limit orders. Shares preferred. Size 3-4% max due to ceasefire risk."
+      "last_reviewed": "2026-05-31",
+      "structure": "ENTER: Equity 200-400 shares at $17.00-18.00 limit + Jul17 $19C (small, limit only). Stop $16.50, target $23.",
+      "status": "ENTER Monday via limit orders. Shares preferred. Size 3-4% max due to ceasefire risk."
     },
     {
       "ticker": "VLO",
@@ -123,16 +123,40 @@
       "status": "Accept max loss. Do not add."
     },
     {
+      "ticker": "NEM",
+      "bias": "bullish",
+      "notes": "May31 NEW POSITION: NEM at ~$108.23. World's largest gold miner. Q1 EPS $2.90 vs $2.24 est (29% beat). Record $3.1B FCF, rev $7.31B (+42% YoY). Gold at $4,400+, JPM targeting $5,000 by year-end. Analyst PTs $129-145. LOW Iran sensitivity — works in ALL scenarios. Fills critical gold/safe-haven gap in portfolio.",
+      "trade_entered": "2026-05-31",
+      "last_reviewed": "2026-05-31",
+      "structure": "ENTER: Jul17 $110C (~$6.00) or Sep18 $115C (~$8.50).",
+      "entry": 108.23,
+      "target": 140.00,
+      "stop": 100.00,
+      "status": "ENTER Monday. Jul17 $110C preferred. 🟢 HIGH conviction. Portfolio diversifier."
+    },
+    {
+      "ticker": "FTI",
+      "bias": "bullish",
+      "notes": "May31 NEW POSITION: FTI at ~$68.42. Dominant subsea provider (40% global share). $15.8B backlog. Record 21.8% adj EBITDA margin. Q1 subsea orders $1.9B, targeting $10B for 2026. Barclays PT $87. Deepwater breakevens $35-50/bbl — works even in ceasefire. LOW Iran sensitivity.",
+      "trade_entered": "2026-05-31",
+      "last_reviewed": "2026-05-31",
+      "structure": "ENTER: Jul17 $70C (~$3.50) or Sep18 $75C (~$4.00).",
+      "entry": 68.42,
+      "target": 85.00,
+      "stop": 63.00,
+      "status": "ENTER Monday. Jul17 $70C preferred. 🟡 Medium conviction. Iran-insensitive structural play."
+    },
+    {
       "ticker": "CIFR",
       "bias": "bullish",
-      "notes": "May30 UPDATE: CIFR at ~$23.66-24.49. Morgan Stanley PT $42.50, avg PT $31.60 (34% upside). AWS $5.5B lease Phase 1 starts July 1 (32 days). Stock +300% YTD. LOW Iran sensitivity.",
+      "notes": "May31 UPDATE: CIFR at ~$23.66-24.49. Morgan Stanley PT $42.50, avg PT $31.60 (34% upside). AWS $5.5B lease Phase 1 starts July 1 (31 days). Stock +300% YTD. LOW Iran sensitivity.",
       "trade_entered": "2026-04-01",
-      "last_reviewed": "2026-05-30",
+      "last_reviewed": "2026-05-31",
       "structure": "Equity — 50% trimmed; remainder HOLD with $15 stop",
       "entry": 12.64,
       "target": 28.00,
       "stop": 15.00,
-      "status": "HOLD remainder. Stop $15. AWS July 1 catalyst 32 days away."
+      "status": "HOLD remainder. Stop $15. AWS July 1 catalyst 31 days away."
     }
   ],
   "expired_positions": [
