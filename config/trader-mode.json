@@ -4,23 +4,23 @@
     {
       "ticker": "ET",
       "bias": "bullish",
-      "notes": "May30 TRADE OF THE DAY (2nd consecutive). ET at ~$19.33-19.67. Record Q1 EBITDA $4.94B (+20% YoY). Raised guidance $18.2-18.6B. 6 analyst upgrades: Raymond James $26, Jefferies $23 (upgrade May26), BofA $24, Stifel $25, UBS $24, Barclays $23. IV ~33% = cheapest vol in portfolio. LOW Iran sensitivity — survives ceasefire. Ex-div was May8, next Aug10.",
+      "notes": "Jun2 TRADE OF THE DAY (3rd consecutive). ET at ~$19.27. Strong Buy consensus PT $23.50-23.59 (high $26). Oracle + Fermi gas supply deals confirmed — DC infrastructure compounder. Record Q1 EBITDA $4.94B (+20% YoY), raised guidance $18.2-18.6B. IV ~33% = cheapest vol in book. LOW Iran sensitivity — survives ceasefire (-5 to -8% only). Best risk/reward in book given divergence. Next earnings ~Aug10.",
       "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-31",
-      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.80) + Jan27 $20C LEAPS (~$2.80). Total ET allocation ~12-15%.",
+      "last_reviewed": "2026-06-02",
+      "structure": "HOLD: Jun18 $20C + $21C + $22C + equity long $19.02. ADD: Sep18 $20C (~$1.35) + Jan27 $20C LEAPS (~$2.55). Aggressive tier Sep18 $18C (~$1.85). Total ET allocation ~5-8% target.",
       "entry": 19.02,
       "target": 24.00,
       "stop": 18.50,
-      "status": "ADD Sep18 $20C + Jan27 $20C LEAPS Monday. HOLD all existing. #1 priority add. TRADE OF THE DAY 3rd consecutive."
+      "status": "ADD Sep18 $20C + Jan27 $20C LEAPS. HOLD all existing. #1 priority. TRADE OF THE DAY 3rd consecutive. Iran-insensitive anchor."
     },
     {
       "ticker": "GLNG",
       "bias": "bullish",
-      "notes": "May31 UPDATE: GLNG at ~$49.50 (pulled back 14% from $57.50). Goldman strategic review ongoing — sale/merger/divestiture. Q1 rev $137.55M (+120% YoY), net income $83.58M. Div $0.25 payable Jun10. 4th FLNG order expected 2026. Pullback creates best LEAPS entry in weeks.",
+      "notes": "Jun2 UPDATE: GLNG at ~$49.50 (pulled back 14% from $57.50). Deutsche Bank PT $65 (Buy, May21) = ~30% upside. Goldman strategic review ongoing — sale/merger/divestiture binary catalyst. Q1 rev +120% YoY, EBITDA $106M. Div $0.25 payable Jun10. 4th FLNG order expected 2026. Best LEAPS entry in weeks. MEDIUM Iran sens — review/FLNG dominate.",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-31",
-      "structure": "HOLD: Sep18 $55C + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $50C (~$6.00) or Jan27 $50C LEAPS (~$9.00).",
-      "status": "ADD Sep $50C or Jan27 $50C LEAPS Monday. Pullback from $57.50 = better entry."
+      "last_reviewed": "2026-06-02",
+      "structure": "HOLD: Sep18 $55C + Jun18 $55/$65 BCS + Sep18 $60/$70 BCS + Jun18 $55C + Jun18 $60C. ADD: Sep18 $50C (~$6.00) + Jan27 $50C LEAPS (~$9.00).",
+      "status": "ADD Sep $50C + Jan27 $50C LEAPS. #4 priority. Pullback = better entry. LEAPS-weighted."
     },
     {
       "ticker": "LNG",
@@ -34,11 +34,11 @@
     {
       "ticker": "XOP_HEDGE",
       "bias": "bearish",
-      "notes": "May30 UPDATE: XOP at ~$163.41. Brent crashed to $91.12 — worst month since Covid (-19% May). Ceasefire MOU tentatively agreed, awaiting Trump signature. 35-45% deal probability. VIX 18.84 — puts still cheap. BofA scenarios: full peace Brent $82, partial $103.",
+      "notes": "Jun2 UPDATE: XOP at ~$163. Iran SUSPENDED talks Jun1 but Trump says deal reachable 'over next week' + openly wants oil lower. Brent whipsawing $93-96. VIX ~16 = puts cheap. BofA ceasefire scenario Brent $82-90. Single cleanest hedge for entire conflict-long book (offsets LNG/OXY/GLNG/tankers).",
       "trade_entered": "2026-04-07",
-      "last_reviewed": "2026-05-31",
-      "structure": "ENTER: Jun18 $160P (~$3.50-4.00). 5-8 contracts.",
-      "status": "ENTER Jun18 $160P Monday at open. PRIORITY #2 (after ET adds). NON-NEGOTIABLE hedge."
+      "last_reviewed": "2026-06-02",
+      "structure": "ENTER: Jun18 $160P (~$3.75). 5-8 contracts.",
+      "status": "ENTER Jun18 $160P at open. PRIORITY #2. NON-NEGOTIABLE hedge — Trump steering toward deal."
     },
     {
       "ticker": "DHT",
@@ -88,11 +88,11 @@
     {
       "ticker": "USO",
       "bias": "mixed",
-      "notes": "May30 UPDATE: USO at ~$128.34 (crashed from $142). Brent $91.12 — worst month since Covid. Jun $145C is $17 OTM with 18 DTE — DEAD. Jun $135P + $140P both deeply ITM and profitable. Smart money positioning for further downside.",
+      "notes": "Jun2 UPDATE: USO at ~$135.50 (bounced with Brent +5% Monday). Jun $145C still ~$10 OTM with <3wks — DEAD, cut. Jun $135P/$140P holding hedge value. ADD Jul17 $130P (~$5.50) to extend ceasefire hedge past Jun18 into July (covers late-June/early-July deal window).",
       "trade_entered": "2026-05-02",
-      "last_reviewed": "2026-05-30",
-      "structure": "CUT: Jun18 $145C (dead — $17 OTM). HOLD: Jun18 $135P + Jun18 $140P (both ITM, de-escalation hedge).",
-      "status": "CUT $145C Tuesday at open. HOLD puts — providing portfolio hedge value."
+      "last_reviewed": "2026-06-02",
+      "structure": "CUT: Jun18 $145C (dead). HOLD: Jun18 $135P + $140P. ADD: Jul17 $130P (~$5.50) secondary hedge.",
+      "status": "CUT $145C. HOLD puts. ADD Jul17 $130P as secondary oil hedge (D2)."
     },
     {
       "ticker": "INSW",
@@ -125,26 +125,26 @@
     {
       "ticker": "NEM",
       "bias": "bullish",
-      "notes": "May31 NEW POSITION: NEM at ~$108.23. World's largest gold miner. Q1 EPS $2.90 vs $2.24 est (29% beat). Record $3.1B FCF, rev $7.31B (+42% YoY). Gold at $4,400+, JPM targeting $5,000 by year-end. Analyst PTs $129-145. LOW Iran sensitivity — works in ALL scenarios. Fills critical gold/safe-haven gap in portfolio.",
+      "notes": "Jun2 HIGH CONVICTION: NEM at ~$109.81. Gold at RECORD $4,513-4,527/oz. World's largest gold miner. Q1 EPS $2.90 vs $2.24 (29% beat), record $3.1B FCF, rev +42% YoY. Consensus PT ~$141. Best TWO-WAY trade in book — wins on escalation (safe haven) AND ceasefire (inflationary shock keeps gold bid). LOW Iran sensitivity. Miner IV ~35-40% = cheap vs energy conflict names.",
       "trade_entered": "2026-05-31",
-      "last_reviewed": "2026-05-31",
-      "structure": "ENTER: Jul17 $110C (~$6.00) or Sep18 $115C (~$8.50).",
+      "last_reviewed": "2026-06-02",
+      "structure": "ENTER: Jul17 $110C (~$6.00) base, Sep18 $115C (~$8.50) conviction, Sep18 $120C (~$6.50) spec.",
       "entry": 108.23,
       "target": 140.00,
       "stop": 100.00,
-      "status": "ENTER Monday. Jul17 $110C preferred. 🟢 HIGH conviction. Portfolio diversifier."
+      "status": "ENTER. Sep18 $115C preferred for conviction tier. 🟢 HIGH conviction. #3 priority. Book diversifier/two-way hedge."
     },
     {
       "ticker": "FTI",
       "bias": "bullish",
-      "notes": "May31 NEW POSITION: FTI at ~$68.42. Dominant subsea provider (40% global share). $15.8B backlog. Record 21.8% adj EBITDA margin. Q1 subsea orders $1.9B, targeting $10B for 2026. Barclays PT $87. Deepwater breakevens $35-50/bbl — works even in ceasefire. LOW Iran sensitivity.",
+      "notes": "Jun2 UPDATE: FTI at ~$77 (near ATH $77.78). Dominant subsea (40% share). Backlog $15.8B+ (headline $29B). Record 21.8% adj EBITDA margin. Q1 subsea orders $1.9B, $10B target 2026. Barclays PT $87 (Overweight). Deepwater breakevens $35-50/bbl = works in ceasefire. LOW Iran sensitivity — pairs with NEM as Iran-insensitive leg.",
       "trade_entered": "2026-05-31",
-      "last_reviewed": "2026-05-31",
-      "structure": "ENTER: Jul17 $70C (~$3.50) or Sep18 $75C (~$4.00).",
+      "last_reviewed": "2026-06-02",
+      "structure": "ENTER: Jul17 $75C (~$4.50) base or Sep18 $80C (~$4.25) spec.",
       "entry": 68.42,
-      "target": 85.00,
-      "stop": 63.00,
-      "status": "ENTER Monday. Jul17 $70C preferred. 🟡 Medium conviction. Iran-insensitive structural play."
+      "target": 87.00,
+      "stop": 69.00,
+      "status": "ENTER. Jul17 $75C preferred. 🟡 Medium conviction. Iran-insensitive structural play."
     },
     {
       "ticker": "CIFR",
