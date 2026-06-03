@@ -230,6 +230,12 @@
       "trigger": "LNG drops to $215-220 on deal announcement"
     }
   ],
+  "last_run_picks": {
+    "date": "2026-06-03",
+    "trade_of_the_day": "ET",
+    "tickers": ["ET", "DHT", "STNG", "NEM", "CIFR", "URG", "FTI", "GLNG", "XOP", "USO"],
+    "notes": "Jun3 re-escalation (Kuwait/Bahrain/Qeshm strikes, talks suspended). ET TOTD 4th consecutive (Iran-insensitive anchor, ~$19.17). Conflict longs DHT/STNG (tankers) + NEM (two-way gold). Catalyst: CIFR (AWS Jul1), URG (Shirley Basin first production imminent), FTI (subsea, pulled back to ~$69). GLNG LEAPS. Hedges: XOP Jun18 $160P (primary, cheaper vol) + USO Jul17 $130P (secondary, expensive at OVX~61). NOT trading: LNG (79th pct IV), VG (BP $3.7B arbitration loss + 91% IV), EQT (HH ~$3.10 below $5 trigger)."
+  },
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
   "risk_tolerance": "aggressive"
