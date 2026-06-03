@@ -81,6 +81,10 @@
       "PR",
       "CHRD"
     ],
+    "refining": [
+      "PBF",
+      "MPC"
+    ],
     "renewables_storage": [
       "FSLR",
       "TSLA",
