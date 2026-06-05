@@ -231,10 +231,10 @@
     }
   ],
   "last_run_picks": {
-    "date": "2026-06-03",
+    "date": "2026-06-05",
     "trade_of_the_day": "ET",
-    "tickers": ["ET", "DHT", "STNG", "NEM", "CIFR", "URG", "FTI", "GLNG", "XOP", "USO"],
-    "notes": "Jun3 re-escalation (Kuwait/Bahrain/Qeshm strikes, talks suspended). ET TOTD 4th consecutive (Iran-insensitive anchor, ~$19.17). Conflict longs DHT/STNG (tankers) + NEM (two-way gold). Catalyst: CIFR (AWS Jul1), URG (Shirley Basin first production imminent), FTI (subsea, pulled back to ~$69). GLNG LEAPS. Hedges: XOP Jun18 $160P (primary, cheaper vol) + USO Jul17 $130P (secondary, expensive at OVX~61). NOT trading: LNG (79th pct IV), VG (BP $3.7B arbitration loss + 91% IV), EQT (HH ~$3.10 below $5 trigger)."
+    "tickers": ["ET", "DHT", "VG", "LNG", "VLO", "NEM", "FTI", "GLNG", "EQT", "XOP", "USO"],
+    "notes": "Jun5 setup: diplomacy STALLED/reversed overnight (Iran suspended talks over Lebanon, warning shots at US warships Gulf of Oman, US struck Qeshm comms tower, Hezbollah rejected truce, Trump says ceasefire 'on life support'). Hormuz Day ~98, only ~10 ships/day vs 95 normal. Brent ~$95.25 (+0.2%, +4% wk) but only ~$5 above $90 de-escalation trip-wire. Non-energy risk-off: Broadcom chip rout (AVGO -12.6%) + hot jobs (+172k vs +80k) → 10Y 4.53%, rotation INTO energy. ET TOTD 5th consecutive (Iran-insensitive anchor ~$19.27, cheapest vol). Conflict: DHT (VLCC ~$16.40, BTIG $23), VG (JPM upgrade OW $17 TODAY, ~$13 but 91% IV→spread), LNG (Sabine T7 $4.69B). Catalyst: VLO (cracks $40+, ATH ~$260, Q2 Jul30), NEM (gold record $4,521, two-way), FTI (subsea $30B pipeline). LEAPS: GLNG (Goldman review), LNG, EQT (HH $3.05 below trigger). Hedges: XOP Jun/Jul puts (primary) + USO Jul17 $130P (secondary). NOT trading: STMG (data), MPC (double-refiner w/VLO), COP/CEG (cut), nuclear (no catalyst). MMD unavailable all day — web-sourced prices."
   },
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
