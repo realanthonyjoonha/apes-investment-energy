@@ -85,6 +85,10 @@
       "PBF",
       "MPC"
     ],
+    "crude_tankers": [
+      "INSW",
+      "FRO"
+    ],
     "renewables_storage": [
       "FSLR",
       "TSLA",
