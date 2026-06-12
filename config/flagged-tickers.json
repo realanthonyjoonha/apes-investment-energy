@@ -53,9 +53,9 @@
     "description": "Tickers suggested by Claude's research agents. Claude CAN add, remove, and update these based on its analysis. Keep to 5 tickers max. Each must have a clear, evidence-based reason with a specific catalyst and timeframe.",
     "tickers": [
       {
-        "ticker": "DHT",
-        "reason": "DHT Holdings — VLCC pure-play tanker (27 vessels). Q1 2026 EPS $1.02 vs $0.53 est (92% beat). Q2 spot bookings: 88% of days at $168,300/day (record). Einhorn/Greenlight holds 3.78M shares, never sold. 5.5% dividend yield (100% ordinary income payout). Most direct Hormuz beneficiary — VLCC rerouting adds 3 weeks per voyage.",
-        "added": "2026-05-10",
+        "ticker": "DAL",
+        "reason": "Delta Air Lines — best-in-class US airline and the cleanest DE-ESCALATION hedge for a book that is otherwise 100% conflict-long. June 11 thesis flip: Trump cancelled strikes, declared a 'great settlement,' deal may sign Sunday with Hormuz reopening within 30 days; Brent broke <$90 (threshold breached), WTI ~$84. Jet fuel is Delta's #2 cost and ran ~2x YoY during the war — every $1 Brent decline drops straight to margin. Owns the Monroe refinery (~$300M Q2 in-house fuel benefit). Strong Buy consensus (56% Strong Buy/44% Buy), median PT $80 vs ~$68 spot, Morgan Stanley PT $105 (June 1). Catalyst: Q2 earnings July 9 2026 — first read on fuel relief. Replaces DHT: the tanker's record-Q2-VLCC-rate catalyst is now directly invalidated by the 30-day Hormuz-reopening clause in the draft deal (Evercore already cut FRO to In Line PT $38; Brief flagged tankers as the single most exposed corner of the watchlist).",
+        "added": "2026-06-12",
         "suggested_by": "opportunity-screener"
       },
       {
