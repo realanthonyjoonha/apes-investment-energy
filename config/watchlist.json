@@ -22,7 +22,9 @@
     ],
     "dc_power_solutions": [
       "BE",
-      "LBRT"
+      "LBRT",
+      "GNRC",
+      "CMI"
     ],
     "sector_etfs": [
       "XLU"
