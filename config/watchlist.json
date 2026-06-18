@@ -11,7 +11,8 @@
       "WULF",
       "NBIS",
       "HUT",
-      "DLR"
+      "DLR",
+      "TT"
     ],
     "utilities_dc_exposed": [
       "D",
@@ -24,7 +25,9 @@
       "BE",
       "LBRT",
       "GNRC",
-      "CMI"
+      "CMI",
+      "CAT",
+      "ENS"
     ],
     "sector_etfs": [
       "XLU"
