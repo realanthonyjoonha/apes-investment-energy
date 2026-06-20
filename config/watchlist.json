@@ -27,7 +27,8 @@
       "GNRC",
       "CMI",
       "CAT",
-      "ENS"
+      "ENS",
+      "MPWR"
     ],
     "sector_etfs": [
       "XLU"
@@ -126,6 +127,12 @@
       "NVT",
       "POWL",
       "ESE"
+    ],
+    "electrification_automation": [
+      "EMR",
+      "ABB",
+      "SMNEY",
+      "FLS"
     ],
     "power_generators": [
       "NRG"
