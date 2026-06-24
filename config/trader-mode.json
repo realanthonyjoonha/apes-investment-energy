@@ -26,16 +26,16 @@
       "status": "ADD Aug strikes to cover Jul30 Q2 ER. 🟡 Med-high conviction. Long-the-crack-spread, not crude level — refiner sweet spot as crude falls into summer driving season. Consensus PT ~$256."
     },
     {
-      "ticker": "PSX",
+      "ticker": "GEV",
       "bias": "bullish",
-      "notes": "Jun15: PSX ~$175. Cleanest DE-ESCAL-RESILIENT conflict-long: diversified downstream + fee-based midstream (commodity-agnostic) + Elliott 'Streamline 66' breakup CONFLICT-BLIND catalyst targeting >$200 (refining/chem/pipelines split). Refining margins EXPAND when crude falls. Consensus PT ~$191, Goldman $207, Mizuho $212, MS $180. Q2 ER ~late Jul. LOW-MED Iran sens (Elliott dominates).",
-      "trade_entered": "2026-06-13",
-      "last_reviewed": "2026-06-23",
-      "structure": "ENTER (spot ~$167): Aug21 $170C (~$7.50) base + Aug21 $165C (~$10) ITM + Jan27 $180C LEAPS (~$13).",
-      "entry": 167.00,
-      "target": 207.00,
-      "stop": 152.00,
-      "status": "ENTER. 🟡 Medium conviction. Idiosyncratic Elliott 'Streamline 66' breakup, macro-blind. MS $196/Mizuho $212/GS $207. Aug + Jan27."
+      "notes": "Jun24: GEV ~$1,050 (+72% YTD, 52wk $482-1,182). REPLACED PSX in my_picks (morning brief swapped PSX->GEV in flagged-tickers Jun24). THE direct gas-turbine/grid AI-power anchor now that the AI-electricity supercycle is the PRIMARY regime (war over). Jun22 marquee catalyst: Chevron+Microsoft 'Project Kilby' 20-yr PPA — 2.67GW off-grid Permian gas DC campus on SEVEN GE Vernova turbines, FID end-2026, first power 2028. DECOUPLED and held up during the Jun22-23 chip/hyperscaler rout (utility/grid backlog-driven, not chip-elastic). Buy consensus, avg PT ~$1,211, high $1,424; Bernstein initiated Outperform $1,206. CATALYST: Q2 ER Jul22. Options are high-dollar — favor ITM/spreads. LOW Iran sens — pure AI-power structural.",
+      "trade_entered": "2026-06-24",
+      "last_reviewed": "2026-06-24",
+      "structure": "ENTER (spot ~$1,050): Aug21 $1,050C (~$80) base + Aug21 $1,000C (~$110) ITM + Jan16'27 $1,200C LEAPS (~$120) + Aug21 $1,000/$1,150 BCS (~$50 debit) cost-efficient. Aug clears Jul22 ER.",
+      "entry": 1050.00,
+      "target": 1211.00,
+      "stop": 920.00,
+      "status": "ENTER. 🟢 High conviction. Project Kilby direct turbine order; decoupled from AI-capex selloff (picks-and-shovels). Q2 ER Jul22 inside Aug window. Bernstein Outperform $1,206. Invalidation: hyperscaler capex cut >20% or Kilby FID slips."
     },
     {
       "ticker": "LNG",
