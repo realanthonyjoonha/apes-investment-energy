@@ -12,14 +12,17 @@
       "NBIS",
       "HUT",
       "DLR",
-      "TT"
+      "TT",
+      "CARR"
     ],
     "utilities_dc_exposed": [
       "D",
       "AEP",
       "PPL",
       "SO",
-      "ETR"
+      "ETR",
+      "SRE",
+      "NEE"
     ],
     "dc_power_solutions": [
       "BE",
@@ -29,7 +32,8 @@
       "CAT",
       "ENS",
       "MPWR",
-      "KGS"
+      "KGS",
+      "INIO"
     ],
     "sector_etfs": [
       "XLU"
