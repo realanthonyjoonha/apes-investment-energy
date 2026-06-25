@@ -13,7 +13,8 @@
       "HUT",
       "DLR",
       "TT",
-      "CARR"
+      "CARR",
+      "JCI"
     ],
     "utilities_dc_exposed": [
       "D",
@@ -35,7 +36,8 @@
       "KGS",
       "INIO",
       "APH",
-      "VICR"
+      "VICR",
+      "TEL"
     ],
     "sector_etfs": [
       "XLU"
@@ -127,7 +129,8 @@
       "WCC",
       "FIX",
       "EME",
-      "STRL"
+      "STRL",
+      "ATKR"
     ],
     "grid_equipment": [
       "GEV",
