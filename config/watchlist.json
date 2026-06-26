@@ -14,7 +14,9 @@
       "DLR",
       "TT",
       "CARR",
-      "JCI"
+      "JCI",
+      "AAON",
+      "EQIX"
     ],
     "utilities_dc_exposed": [
       "D",
@@ -37,7 +39,8 @@
       "INIO",
       "APH",
       "VICR",
-      "TEL"
+      "TEL",
+      "FLEX"
     ],
     "sector_etfs": [
       "XLU"
@@ -130,13 +133,16 @@
       "FIX",
       "EME",
       "STRL",
-      "ATKR"
+      "ATKR",
+      "FLR",
+      "ACM"
     ],
     "grid_equipment": [
       "GEV",
       "NVT",
       "POWL",
-      "ESE"
+      "ESE",
+      "AMSC"
     ],
     "electrification_automation": [
       "EMR",
