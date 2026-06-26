@@ -6,12 +6,12 @@
       "bias": "bullish",
       "notes": "Jun16 TRADE OF THE DAY (5th consec). PRICE RE-CORRECTION: DAL ~$84 (web $84.07, near 52wk high $83.83-$84; prior Jun15 '$68-70' note was the stale/wrong print — strikes RECALIBRATED UP to $84 spot). Cleanest INVERSE-conflict long into the confirmed-and-dated deal: virtual signing done Jun15, formal signing Fri Jun19 Geneva, Hormuz reopens after signing (mine-clear 30d), oil cratering (Brent ~$83/WTI ~$80; Goldman cut Q4 Brent to $80, 2027 $75). Jet fuel = Delta's #2 cost, ran ~2x in war (+105% YoY, $2B+ extra cost); every $1 Brent drop hits margin in real time + Monroe refinery ~$300M Q2 in-house benefit. Consensus PT $80/high $89, MS $105. Q2 ER CONFIRMED Jul9 BMO (EPS guide $1.00-1.50, consensus $1.43-1.71) = first hard fuel-relief read, INSIDE Jul17 window. Scorecard #1 7.9.",
       "trade_entered": "2026-06-13",
-      "last_reviewed": "2026-06-23",
-      "structure": "HOLD/ENTER (spot ~$86, near ATH $87.39): Jul17 $85C (~$5.00) base + Jul17 $80C (~$8.00) aggressive ITM + Aug21 $90C (~$3.50) spec + Jan16'27 $95C LEAPS (~$7.50).",
-      "entry": 86.00,
-      "target": 93.00,
-      "stop": 78.00,
-      "status": "HOLD/ENTER. TOTD Jun23 (war over; AI-capex selloff = DAL is selloff-immune + $40B industry fuel windfall). Jul17 $85C base + Jan27 LEAPS. 🟢 HIGH conviction. Bernstein PT $93 (Jun17). Q2 ER Jul9 (call Jul10) inside window. Invalidation: oil re-spikes >$95 on deal collapse."
+      "last_reviewed": "2026-06-26",
+      "structure": "HOLD/ENTER (spot ~$91, new 52wk high, +fuel windfall). Aug21 $90C (~$5.50) base + Jul17 $85C (~$7.50) aggressive ITM + Aug21 $95C (~$3.20) spec + Jan16'27 $95C LEAPS (~$8.50). Q2 ER Jul10 inside Jul/Aug windows.",
+      "entry": 91.00,
+      "target": 100.00,
+      "stop": 82.00,
+      "status": "HOLD/ENTER. Section B catalyst + Section D peace-beneficiary. War over; AI-capex selloff = DAL selloff-immune + ~$40B industry fuel windfall (Brent ~$74, jet fuel rolling over). 🟢 HIGH conviction. UBS PT $107, Bernstein $93, consensus Strong Buy 22/24. Q2 ER Jul10 BMO = first hard fuel-relief read. Invalidation: oil re-spikes >$90 on Hormuz re-escalation."
     },
     {
       "ticker": "VLO",
@@ -30,12 +30,12 @@
       "bias": "bullish",
       "notes": "Jun24: GEV ~$1,050 (+72% YTD, 52wk $482-1,182). REPLACED PSX in my_picks (morning brief swapped PSX->GEV in flagged-tickers Jun24). THE direct gas-turbine/grid AI-power anchor now that the AI-electricity supercycle is the PRIMARY regime (war over). Jun22 marquee catalyst: Chevron+Microsoft 'Project Kilby' 20-yr PPA — 2.67GW off-grid Permian gas DC campus on SEVEN GE Vernova turbines, FID end-2026, first power 2028. DECOUPLED and held up during the Jun22-23 chip/hyperscaler rout (utility/grid backlog-driven, not chip-elastic). Buy consensus, avg PT ~$1,211, high $1,424; Bernstein initiated Outperform $1,206. CATALYST: Q2 ER Jul22. Options are high-dollar — favor ITM/spreads. LOW Iran sens — pure AI-power structural.",
       "trade_entered": "2026-06-24",
-      "last_reviewed": "2026-06-24",
-      "structure": "ENTER (spot ~$1,050): Aug21 $1,050C (~$80) base + Aug21 $1,000C (~$110) ITM + Jan16'27 $1,200C LEAPS (~$120) + Aug21 $1,000/$1,150 BCS (~$50 debit) cost-efficient. Aug clears Jul22 ER.",
-      "entry": 1050.00,
-      "target": 1211.00,
-      "stop": 920.00,
-      "status": "ENTER. 🟢 High conviction. Project Kilby direct turbine order; decoupled from AI-capex selloff (picks-and-shovels). Q2 ER Jul22 inside Aug window. Bernstein Outperform $1,206. Invalidation: hyperscaler capex cut >20% or Kilby FID slips."
+      "last_reviewed": "2026-06-26",
+      "structure": "TRADE OF THE DAY Jun26 (spot ~$1,085, +3.42% Jun25). Aug21 $1,100C (~$80) base + Aug21 $1,000C (~$135) ITM + Aug21 $1,200C (~$42) spec + Jan16'27 $1,200C LEAPS (~$130). Aug clears Jul21 ER (CORRECTED to Jul21, after close).",
+      "entry": 1085.00,
+      "target": 1212.00,
+      "stop": 950.00,
+      "status": "TRADE OF THE DAY. 🟢 High conviction. Project Kilby + Vietnam Quang Trach II 1.6GW H-class order (Jun23) + Venezuela grid MOU. Decoupled/bounced +3.42% while Nasdaq sold off — picks-and-shovels resilience confirmed. Q2 ER Jul21 inside Aug window. Bernstein Outperform $1,206, consensus PT $1,212. Invalidation: hyperscaler capex cut >20% or Kilby FID slips."
     },
     {
       "ticker": "LNG",
