@@ -17,7 +17,8 @@
       "JCI",
       "AAON",
       "EQIX",
-      "GLW"
+      "GLW",
+      "SPXC"
     ],
     "utilities_dc_exposed": [
       "D",
@@ -117,6 +118,10 @@
       "GWH",
       "FLNC"
     ],
+    "coal_baseload": [
+      "CNR",
+      "BTU"
+    ],
     "sector_etfs": [
       "URA",
       "XLE"
@@ -139,14 +144,16 @@
       "ATKR",
       "FLR",
       "ACM",
-      "IESC"
+      "IESC",
+      "TPC"
     ],
     "grid_equipment": [
       "GEV",
       "NVT",
       "POWL",
       "ESE",
-      "AMSC"
+      "AMSC",
+      "ITRI"
     ],
     "electrification_automation": [
       "EMR",
