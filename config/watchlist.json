@@ -18,7 +18,9 @@
       "AAON",
       "EQIX",
       "GLW",
-      "SPXC"
+      "SPXC",
+      "TPL",
+      "LB"
     ],
     "utilities_dc_exposed": [
       "D",
@@ -45,7 +47,8 @@
       "TEL",
       "FLEX",
       "ON",
-      "BWA"
+      "BWA",
+      "AEIS"
     ],
     "sector_etfs": [
       "XLU"
