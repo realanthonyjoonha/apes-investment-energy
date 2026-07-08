@@ -2,16 +2,28 @@
   "mode": "hybrid",
   "my_picks": [
     {
-      "ticker": "DAL",
+      "ticker": "FRO",
       "bias": "bullish",
-      "notes": "Jun16 TRADE OF THE DAY (5th consec). PRICE RE-CORRECTION: DAL ~$84 (web $84.07, near 52wk high $83.83-$84; prior Jun15 '$68-70' note was the stale/wrong print — strikes RECALIBRATED UP to $84 spot). Cleanest INVERSE-conflict long into the confirmed-and-dated deal: virtual signing done Jun15, formal signing Fri Jun19 Geneva, Hormuz reopens after signing (mine-clear 30d), oil cratering (Brent ~$83/WTI ~$80; Goldman cut Q4 Brent to $80, 2027 $75). Jet fuel = Delta's #2 cost, ran ~2x in war (+105% YoY, $2B+ extra cost); every $1 Brent drop hits margin in real time + Monroe refinery ~$300M Q2 in-house benefit. Consensus PT $80/high $89, MS $105. Q2 ER CONFIRMED Jul9 BMO (EPS guide $1.00-1.50, consensus $1.43-1.71) = first hard fuel-relief read, INSIDE Jul17 window. Scorecard #1 7.9.",
+      "notes": "Jul8 REGIME-FLIP TRADE OF THE DAY. Ceasefire OVER (Trump: June MoU 'over... a waste of time' at Ankara NATO summit). Iran struck 3 ships in Hormuz Jul7 (incl. Qatari LNG carrier Al Rekayyat); US CENTCOM hit 80+ Iran targets (Kharg Island oil hub, Bandar Abbas, Sirik, Qeshm, 60+ IRGC boats) + REVOKED Iran oil waiver; Iran threatens 'crushing response.' Brent ripped to ~$74-78. VLCC spot near $470k/day, war-risk premia 2.5-5% of hull (~$5M/transit). FRO ~$36.75 (Jul2), pulled back from Jun18 ATH $40.93 = clean entry, 52wk $17.20-43.10, 8.5% div yield, Q1 EPS $2.51 vs $1.58 est. Cleanest RE-ESCALATION tanker beneficiary. REPLACES DAL as ToD — Delta's de-escalation fuel-relief thesis is directly invalidated by the truce collapse. HIGH Iran sens (escalation accelerates, ceasefire kills). Catalyst: sustained Hormuz disruption + Q2 ER ~Aug.",
+      "trade_entered": "2026-07-08",
+      "last_reviewed": "2026-07-08",
+      "structure": "TRADE OF THE DAY Jul8 (spot ~$36.75). Aug21 $37C (~$2.60) base + Aug21 $34C (~$4.30) ITM + Aug21 $42C (~$1.05) spec + Jan16'27 $40C LEAPS (~$4.20).",
+      "entry": 36.75,
+      "target": 46.00,
+      "stop": 31.00,
+      "status": "TRADE OF THE DAY. 🟢 HIGH conviction re-escalation. VLCC rates near $470k/day, war-risk premia exploding, Hormuz re-closing. Pulled back from ATH = entry. Invalidation: genuine ceasefire / Hormuz reopens (collapses tanker premium)."
+    },
+    {
+      "ticker": "DAL",
+      "bias": "de-escalation hedge (thesis FLIPPED Jul8)",
+      "notes": "Jul8 THESIS INVALIDATED as directional long. The ceasefire collapsed — Trump declared the June MoU 'over' after US/Iran traded heavy strikes; jet fuel is now a SPIKING headwind (Brent ripped +5-6% to ~$74-78), not the tailwind the whole DAL long was built on. DAL slipping premarket into its Q2 ER (Jul10 BMO, Street $1.48 EPS), reporting straight into a fuel re-spike. DAL now belongs in Section D as a PEACE hedge only: it profits if the truce is somehow restored and oil rolls back over. Do NOT hold as a directional long in a re-escalation regime. Spot ~$88.63, 52wk high ~$95. Consensus Strong Buy 22/24, UBS $107 — but Street PTs predate the truce collapse.",
       "trade_entered": "2026-06-13",
-      "last_reviewed": "2026-07-07",
-      "structure": "TRADE OF THE DAY Jul1 (spot ~$94.21, Jun30 range $92.39-94.98, pressing 52wk high ~$95.14). Aug21 $95C (~$5.20) base + Jul17 $90C (~$6.50) aggressive ITM + Aug21 $100C (~$2.60) spec + Jan16'27 $100C LEAPS (~$8.80). Q2 ER Jul10 BMO = first hard fuel-relief read (Brent ~$72/WTI ~$69, Monroe ~$300M Q2 benefit, div +15% ex-Jul9). UBS $107, MS $105, Strong Buy 22/24. Scorecard #1 8.2. RISK now INVERTED: Iran rejected talks Jul1, oil re-spike would hurt DAL — hedged via Section D USO.",
-      "entry": 91.00,
+      "last_reviewed": "2026-07-08",
+      "structure": "SECTION D PEACE HEDGE ONLY (spot ~$88.63): small Aug21 $90C (~$4.20) that profits ONLY if ceasefire is restored and jet fuel rolls over. ~1-2% sizing. Q2 ER Jul10 BMO adds binary risk — could gap either way.",
+      "entry": 88.63,
       "target": 100.00,
-      "stop": 82.00,
-      "status": "HOLD/ENTER. Section B catalyst + Section D peace-beneficiary. War over; AI-capex selloff = DAL selloff-immune + ~$40B industry fuel windfall (Brent ~$74, jet fuel rolling over). 🟢 HIGH conviction. UBS PT $107, Bernstein $93, consensus Strong Buy 22/24. Q2 ER Jul10 BMO = first hard fuel-relief read. Invalidation: oil re-spikes >$90 on Hormuz re-escalation."
+      "stop": 80.00,
+      "status": "FLIPPED to de-escalation hedge. 🟠 Directional-long thesis DEAD (fuel-relief broke on truce collapse). Peace-insurance only. Q2 ER Jul10 BMO = binary. Invalidation of the HEDGE: sustained escalation keeps oil bid (then hedge loses)."
     },
     {
       "ticker": "VLO",
