@@ -53,10 +53,10 @@
     "description": "Tickers suggested by Claude's research agents. Claude CAN add, remove, and update these based on its analysis. Keep to 5 tickers max. Each must have a clear, evidence-based reason with a specific catalyst and timeframe.",
     "tickers": [
       {
-        "ticker": "DAL",
-        "reason": "Delta Air Lines — best-in-class US airline and the cleanest DE-ESCALATION hedge for a book that is otherwise 100% conflict-long. June 11 thesis flip: Trump cancelled strikes, declared a 'great settlement,' deal may sign Sunday with Hormuz reopening within 30 days; Brent broke <$90 (threshold breached), WTI ~$84. Jet fuel is Delta's #2 cost and ran ~2x YoY during the war — every $1 Brent decline drops straight to margin. Owns the Monroe refinery (~$300M Q2 in-house fuel benefit). Strong Buy consensus (56% Strong Buy/44% Buy), median PT $80 vs ~$68 spot, Morgan Stanley PT $105 (June 1). Catalyst: Q2 earnings July 9 2026 — first read on fuel relief. Replaces DHT: the tanker's record-Q2-VLCC-rate catalyst is now directly invalidated by the 30-day Hormuz-reopening clause in the draft deal (Evercore already cut FRO to In Line PT $38; Brief flagged tankers as the single most exposed corner of the watchlist).",
-        "added": "2026-06-12",
-        "suggested_by": "opportunity-screener"
+        "ticker": "FRO",
+        "reason": "Frontline plc — the cleanest RE-ESCALATION tanker beneficiary now that the ceasefire is OVER. July 8 2026 regime flip: Iran struck 3 ships in Hormuz (incl. Qatari LNG carrier Al Rekayyat) July 7, US CENTCOM retaliated with strikes on 80+ Iran targets + 60+ IRGC boats and REVOKED the Iran oil waiver, Iran hit 85 US bases in Bahrain/Kuwait, and Trump declared the June MoU 'over' at the Ankara NATO summit. Brent ripped +6% to ~$78. VLCC rates spike on Hormuz route-lengthening and ~8x war-risk premia; Frontline posted Q1 2026 EPS $2.51 vs $1.58 est on exactly this dynamic, up ~82% YTD. REPLACES DAL: Delta was flagged as the DE-ESCALATION fuel-relief hedge, but that thesis is now directly invalidated — the ceasefire collapsed, jet fuel is a spiking headwind again into Delta's July 9 print, and the 30-day Hormuz-reopening clause that killed the tanker trade in June is dead. The tanker thesis is revalidated. Catalyst: sustained Hormuz disruption + Q2 earnings August. Iran Sensitivity HIGH.",
+        "added": "2026-07-08",
+        "suggested_by": "morning-brief"
       },
       {
         "ticker": "HWM",
