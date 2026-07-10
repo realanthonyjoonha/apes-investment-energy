@@ -110,7 +110,8 @@
     ],
     "refining": [
       "PBF",
-      "MPC"
+      "MPC",
+      "PSX"
     ],
     "crude_tankers": [
       "INSW",
@@ -176,7 +177,8 @@
     "critical_metals": [
       "FCX",
       "MP",
-      "TECK"
+      "TECK",
+      "SCCO"
     ],
     "midstream": [
       "WMB",
