@@ -111,7 +111,8 @@
     "refining": [
       "PBF",
       "MPC",
-      "PSX"
+      "PSX",
+      "DINO"
     ],
     "crude_tankers": [
       "INSW",
@@ -172,7 +173,8 @@
     "oil_services": [
       "SLB",
       "HAL",
-      "TDW"
+      "TDW",
+      "WFRD"
     ],
     "critical_metals": [
       "FCX",
