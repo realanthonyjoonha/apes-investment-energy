@@ -98,16 +98,16 @@
       "status": "ENTER. Sep18 $105C preferred. 🟢 HIGH conviction. THE AI-capex-selloff haven hedge — gold rallies if tech rout deepens. BMO PT $145 (raised). Q2 ER Jul29 BMO. Buy gold dip."
     },
     {
-      "ticker": "HWM",
+      "ticker": "RTX",
       "bias": "bullish",
-      "notes": "Jun21: HWM ~$277-283 (52wk $169-291, near highs). NEW claude_suggested (replaced AVAV Jun19). The cleanest DE-ESCALATION-RESILIENT structural AI-power play AND a re-escalation survivor (aero/defense). Makes precision hot-section components for industrial gas turbines (IGT) + commercial aero/defense. Q1'26: IGT rev +39% YoY, mgmt guides $1B→$2B in 3-5yr on gas-fired DC power — the AI-electricity supercycle that is the PRIMARY regime. Record Q1: rev +19% $2.31B, EBITDA +32% $740M (32% margin), EPS +42% $1.22; FY26 raised. Buy consensus, avg PT ~$302, Citi $303 / JPM $310 / Jefferies $320 / MS $315. CATALYST: Q2 ER Jul29 BMO (NOT Aug). LOW Iran sens — works in BOTH regimes. Use Aug21 + Jan27 LEAPS.",
-      "trade_entered": "2026-06-21",
-      "last_reviewed": "2026-07-07",
-      "structure": "ENTER (spot ~$265-280, reconfirm intraday): Aug21 $280C (~$14) base + Aug21 $270C (~$19) ITM + Jan16'27 $300C LEAPS (~$24) + Aug21 $300C (~$8) spec. Aug clears ~Aug6 print.",
-      "entry": 270.00,
-      "target": 305.00,
-      "stop": 240.00,
-      "status": "ENTER. 🟡 Med-high. PRIMARY beneficiary of Jun22 Chevron/Microsoft Project Kilby (2.67GW gas-turbine DC campus on GE Vernova). IGT rev +39% YoY. Held up in AI-capex selloff (picks-and-shovels). Q2 ER ~Aug6 (CORRECTED from Jul29). Aug + Jan27 LEAPS."
+      "notes": "Jul11: RTX ~$196 (52wk range, Buy/Moderate-Buy, avg PT $216, median $225, 15/25 Strong Buy). Replaced HWM in claude_suggested Jul8 — the cleanest LIQUID Iran air-defense/munitions play and fills the watchlist's total defense blind spot. CATALYST PLAY: Q2 ER Jul23 BMO (EPS est $1.66, rev $22.89B). Doubled AIM-120 AMRAAM output to 1,200/yr on $3.5B contract; $50B 20-yr Patriot umbrella from DLA; NASAMS/LTAMDS/Coyote ramping into active Mideast air-defense demand. Record backlog $271B (+25% YoY). MED-HIGH Iran sens — works structurally on munitions restock, accelerates on re-escalation. Use Aug21 to clear the Jul23 print.",
+      "trade_entered": "2026-07-11",
+      "last_reviewed": "2026-07-11",
+      "structure": "ENTER (spot ~$196): Aug21 $200C (~$5) base + Aug21 $190C (~$10) ITM + Aug21 $210C (~$2.30) spec. Aug clears Jul23 BMO Q2 print.",
+      "entry": 196.00,
+      "target": 216.00,
+      "stop": 184.00,
+      "status": "ENTER as catalyst play into Jul23 Q2 ER. 🟡 Med-high. Direct air-defense/munitions-restock beneficiary; two-way (structural + re-escalation kicker). Invalidation: genuine durable ceasefire + munitions-restock pace disappoints."
     },
     {
       "ticker": "USO",
