@@ -6,12 +6,12 @@
       "bias": "bullish",
       "notes": "Jul8 REGIME-FLIP TRADE OF THE DAY. Ceasefire OVER (Trump: June MoU 'over... a waste of time' at Ankara NATO summit). Iran struck 3 ships in Hormuz Jul7 (incl. Qatari LNG carrier Al Rekayyat); US CENTCOM hit 80+ Iran targets (Kharg Island oil hub, Bandar Abbas, Sirik, Qeshm, 60+ IRGC boats) + REVOKED Iran oil waiver; Iran threatens 'crushing response.' Brent ripped to ~$74-78. VLCC spot near $470k/day, war-risk premia 2.5-5% of hull (~$5M/transit). FRO ~$36.75 (Jul2), pulled back from Jun18 ATH $40.93 = clean entry, 52wk $17.20-43.10, 8.5% div yield, Q1 EPS $2.51 vs $1.58 est. Cleanest RE-ESCALATION tanker beneficiary. REPLACES DAL as ToD — Delta's de-escalation fuel-relief thesis is directly invalidated by the truce collapse. HIGH Iran sens (escalation accelerates, ceasefire kills). Catalyst: sustained Hormuz disruption + Q2 ER ~Aug.",
       "trade_entered": "2026-07-08",
-      "last_reviewed": "2026-07-08",
-      "structure": "TRADE OF THE DAY Jul8 (spot ~$36.75). Aug21 $37C (~$2.60) base + Aug21 $34C (~$4.30) ITM + Aug21 $42C (~$1.05) spec + Jan16'27 $40C LEAPS (~$4.20).",
-      "entry": 36.75,
-      "target": 46.00,
+      "last_reviewed": "2026-07-12",
+      "structure": "Section A conflict play Jul12 (spot ~$36.38, sold off -5.4% Jul9 on cooling VLCC spot rates despite conflict). Aug21 $37C (~$2.40) base + Aug21 $34C (~$4.10) ITM + Aug21 $42C (~$1.00) spec + Jan16'27 $40C LEAPS (~$4.00).",
+      "entry": 36.38,
+      "target": 44.25,
       "stop": 31.00,
-      "status": "TRADE OF THE DAY. 🟢 HIGH conviction re-escalation. VLCC rates near $470k/day, war-risk premia exploding, Hormuz re-closing. Pulled back from ATH = entry. Invalidation: genuine ceasefire / Hormuz reopens (collapses tanker premium)."
+      "status": "Section A (demoted from ToD). 🟡 Med conviction re-escalation. Regime confirms escalation (US 3rd strike round Jul11-12, Hormuz closed Day 133) BUT VLCC spot rates cooled on excess vessel supply — the tape is NOT confirming tanker torque. PT $44.25 Buy. Invalidation: genuine ceasefire / Hormuz reopens, OR VLCC rates keep fading despite conflict."
     },
     {
       "ticker": "DAL",
@@ -30,12 +30,12 @@
       "bias": "bullish",
       "notes": "Jun15: VLO ~$258. The de-escalation-RESILIENT energy play — long the 3-2-1 CRACK SPREAD (~$47/bbl, BofA calls it 'structural not cyclical') NOT crude level: refiners WIN on cheaper feedstock if Hormuz reopens while product cracks stay sticky. Consensus Buy PT ~$259, Barclays $261, Piper $263, UBS $280, BofA $247. Q1 EPS $4.22 beat. Q2 ER ~late Jul = use AUG strikes. HIGH Iran sens but de-escal-resilient. Risk: crack compression if both crude AND products fall together.",
       "trade_entered": "2026-05-15",
-      "last_reviewed": "2026-07-07",
-      "structure": "ADD (spot ~$238, +45% YTD): Aug21 $240C (~$11) base + Aug21 $230C (~$16) ITM + Aug21 $260C (~$5) spec.",
-      "entry": 238.00,
-      "target": 270.00,
-      "stop": 218.00,
-      "status": "ADD Aug strikes to cover Jul30 Q2 ER. 🟡 Med-high conviction. Long-the-crack-spread, not crude level — refiner sweet spot as crude falls into summer driving season. Consensus PT ~$256."
+      "last_reviewed": "2026-07-12",
+      "structure": "TRADE OF THE DAY Jul12 (spot ~$282, 52wk high $287.05 Jul10). Sep18 $280C (~$15) base + Sep18 $260C (~$28) ITM + Aug21 $290C (~$8) spec + Jan16'27 $300C LEAPS (~$26). Sep clears Jul30 Q2 ER (EPS est $8.69, +281% YoY).",
+      "entry": 282.00,
+      "target": 315.00,
+      "stop": 258.00,
+      "status": "TRADE OF THE DAY Jul12. 🟢 High conviction two-way. Highest Scorecard composite (7.93). Wins BOTH regimes: escalation keeps distillate cracks bid, de-escalation cheapens feedstock while cracks stay sticky. Cheap equity vol (VIX 15) vs rich oil vol (OVX 47) = buy the refiner's equity call, not crude. Crack spread ~$40+/bbl. Invalidation: simultaneous crude AND product collapse (crack compression)."
     },
     {
       "ticker": "GEV",
