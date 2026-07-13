@@ -30,8 +30,8 @@
       "bias": "bullish",
       "notes": "Jun15: VLO ~$258. The de-escalation-RESILIENT energy play — long the 3-2-1 CRACK SPREAD (~$47/bbl, BofA calls it 'structural not cyclical') NOT crude level: refiners WIN on cheaper feedstock if Hormuz reopens while product cracks stay sticky. Consensus Buy PT ~$259, Barclays $261, Piper $263, UBS $280, BofA $247. Q1 EPS $4.22 beat. Q2 ER ~late Jul = use AUG strikes. HIGH Iran sens but de-escal-resilient. Risk: crack compression if both crude AND products fall together.",
       "trade_entered": "2026-05-15",
-      "last_reviewed": "2026-07-12",
-      "structure": "TRADE OF THE DAY Jul12 (spot ~$282, 52wk high $287.05 Jul10). Sep18 $280C (~$15) base + Sep18 $260C (~$28) ITM + Aug21 $290C (~$8) spec + Jan16'27 $300C LEAPS (~$26). Sep clears Jul30 Q2 ER (EPS est $8.69, +281% YoY).",
+      "last_reviewed": "2026-07-13",
+      "structure": "TRADE OF THE DAY Jul13 (reaffirmed, spot ~$280.69, 52wk high $287.05). Sep19 $280C (~$16) base + Sep19 $270C (~$23) ITM + Aug15 $290C (~$6) spec + Jan16'27 $300C LEAPS (~$26). Sep clears Jul30 Q2 ER (EPS est $8.69, +281% YoY). 3-2-1 crack hit RECORD $64.58/bbl Jul8; distillate ~12% below 5yr avg.",
       "entry": 282.00,
       "target": 315.00,
       "stop": 258.00,
@@ -95,7 +95,7 @@
       "entry": 101.46,
       "target": 144.00,
       "stop": 90.00,
-      "status": "ENTER. Sep18 $105C preferred. 🟢 HIGH conviction. THE AI-capex-selloff haven hedge — gold rallies if tech rout deepens. BMO PT $145 (raised). Q2 ER Jul29 BMO. Buy gold dip."
+      "status": "Jul13 PASS (Section F). Gold FELL -1.4% to $4,064, below $4,100 — oil→inflation→Fed rate-HIKE fear is pressuring bullion and the two-way haven thesis is broken near-term. PTs CUT (Jefferies $146, RBC $135, BofA $132). Wait for gold to reclaim $4,150 or the Jul23 Q2 print before entering. 🟠 On hold."
     },
     {
       "ticker": "RTX",
