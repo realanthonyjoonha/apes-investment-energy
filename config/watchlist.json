@@ -106,7 +106,8 @@
       "HES",
       "APA",
       "PR",
-      "CHRD"
+      "CHRD",
+      "MTDR"
     ],
     "refining": [
       "PBF",
@@ -116,7 +117,8 @@
     ],
     "crude_tankers": [
       "INSW",
-      "FRO"
+      "FRO",
+      "DHT"
     ],
     "renewables_storage": [
       "FSLR",
