@@ -206,20 +206,21 @@
     }
   ],
   "last_run_picks": {
-    "date": "2026-07-16",
+    "date": "2026-07-18",
     "trade_of_the_day": "VLO",
     "tickers": [
       "VLO",
-      "FRO",
-      "RNR",
       "LNG",
+      "RNR",
+      "STNG",
       "GEV",
       "RTX",
       "ET",
       "GLNG",
+      "FRO",
       "DAL"
     ],
-    "notes": "Jul16: MMD MCP ABSENT for a 6th straight run \u2014 prices web-sourced (stockanalysis.com live), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. THE DEFINING SIGNAL: war escalated hard overnight (CENTCOM hit Qeshm/Bandar Abbas/Chabahar + near Tehran for the first time; Iran hit Patriots at Ali Al Salem Kuwait, Sheikh Isa Bahrain, al-Azraq Jordan) and Brent STILL FELL 0.37% to $84.63. Reason: crude keeps flowing (US disputes the closure, transits continue) into a structural ~3.7 mb/d surplus \u2014 EIA sees Brent $74 avg 3Q26, $65 in 2027. So the war premium is NOT in the barrel; it is in the PLUMBING. Global refining runs ~8.4 mb/d below pre-war (~10% less fuel made) and Russia suspended diesel exports -> NYMEX 3-2-1 crack ALL-TIME HIGH $64.58 (past the 2022 peak). VLO = ToD 3rd straight day, printed a NEW ATH $300.76 (+2.77%). Vol regime: VIX 16.37 vs OVX 61.13 = buy the refiner's EQUITY call, never crude premium. CATALYST GAUNTLET: Jul21 EQT (AMC), Jul22 GEV + RNR (AMC), Jul23 RTX (BMO), Jul30 VLO. DATE CORRECTION: RNR is Jul22 AMC / call Jul23 \u2014 prior reports said Jul21. ADDED RNR to my_picks. PASSES: EQT (spot $49.60 pinned at 52wk LOW $47.94 \u2014 HH $2.93, storage +6.6% vs 5yr, output 110.2 bcfd; do NOT buy the Jul21 dip), NEM (gold $4,036, Fed-hike fear), USO (crude vol rich + wrong leg), STMG/STR (Viper/Diamondback $4.1B merger arb = capped), VG (debt + EU rule risk), XOP/XLE (too blunt). Hedges: DAL Sep $90C + FRO Sep $35P ~= 21.6% offset of conflict-beneficiary max loss."
+    "notes": "Jul18 (Sat, Jul17 close data): MMD MCP ABSENT for a 9th straight run \u2014 prices web-sourced (Yahoo/stockanalysis/CNBC/TradingEconomics), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. THE REGIME FLIPPED vs Jul16: crude CONFIRMED the escalation. Brent RIPPED +4.58% to ~$88.09 Fri (1-month high, +14% on the week) after Iran hit a Kuwaiti power/desalination plant + struck US targets across 6 Gulf states (Bahrain, Jordan, Kuwait, Oman, Qatar, Syria); US widened strikes to Iranian bridges/rail/power lines + White House Situation Room actively discussing GROUND troops to seize Kharg Island + Pickaxe Mountain tunnels. Hormuz Day 139, US naval blockade reinstated + 20% cargo fee, ~10-14 vessels/day vs ~88 normal. So BOTH legs now fire: crude war-premium is BACK in the barrel AND the 3-2-1 crack hit an ALL-TIME record $70/bbl Jul16. VLO = ToD 4th straight day (spot ~$303, ATH; Q2 ER Jul30, +231% YoY refining earnings est). Vol: VIX 18.77 (+12%, chip rout), OVX 61+ = equity vol still cheaper than rich crude vol \u2014 express oil via VLO equity + freight, not USO premium. THIS-WEEK CATALYST GAUNTLET: Jul21 EQT AMC, Jul22 GEV BMO + RNR AMC + EQT call, Jul23 RTX ~1:30pm ET, Jul30 VLO. Gold BROKE below $4,000 ($4,010.60) on 73% Dec-hike odds \u2014 NEM haven thesis stays broken, PASS. PASSES: USO (OVX 61 crude vol rich even as spot spikes), NEM (gold sub-$4k), EQT (HH ~$2.81, Q2 avg $2.95 down YoY, storage glut; don't buy Jul21 dip), VG (debt/EU risk), XOP/XLE (too blunt). De-escalation risk ELEVATED (crude at 1-mo high = most to give back on peace): hedges FRO Sep $35P + DAL Sep $90C ~= 20% offset of conflict-beneficiary max loss."
   },
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
