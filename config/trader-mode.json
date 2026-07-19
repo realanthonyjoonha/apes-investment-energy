@@ -206,21 +206,19 @@
     }
   ],
   "last_run_picks": {
-    "date": "2026-07-18",
+    "date": "2026-07-19",
     "trade_of_the_day": "VLO",
     "tickers": [
       "VLO",
       "LNG",
-      "RNR",
-      "STNG",
-      "GEV",
       "RTX",
+      "RNR",
+      "GEV",
       "ET",
       "GLNG",
-      "FRO",
       "DAL"
     ],
-    "notes": "Jul18 (Sat, Jul17 close data): MMD MCP ABSENT for a 9th straight run \u2014 prices web-sourced (Yahoo/stockanalysis/CNBC/TradingEconomics), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. THE REGIME FLIPPED vs Jul16: crude CONFIRMED the escalation. Brent RIPPED +4.58% to ~$88.09 Fri (1-month high, +14% on the week) after Iran hit a Kuwaiti power/desalination plant + struck US targets across 6 Gulf states (Bahrain, Jordan, Kuwait, Oman, Qatar, Syria); US widened strikes to Iranian bridges/rail/power lines + White House Situation Room actively discussing GROUND troops to seize Kharg Island + Pickaxe Mountain tunnels. Hormuz Day 139, US naval blockade reinstated + 20% cargo fee, ~10-14 vessels/day vs ~88 normal. So BOTH legs now fire: crude war-premium is BACK in the barrel AND the 3-2-1 crack hit an ALL-TIME record $70/bbl Jul16. VLO = ToD 4th straight day (spot ~$303, ATH; Q2 ER Jul30, +231% YoY refining earnings est). Vol: VIX 18.77 (+12%, chip rout), OVX 61+ = equity vol still cheaper than rich crude vol \u2014 express oil via VLO equity + freight, not USO premium. THIS-WEEK CATALYST GAUNTLET: Jul21 EQT AMC, Jul22 GEV BMO + RNR AMC + EQT call, Jul23 RTX ~1:30pm ET, Jul30 VLO. Gold BROKE below $4,000 ($4,010.60) on 73% Dec-hike odds \u2014 NEM haven thesis stays broken, PASS. PASSES: USO (OVX 61 crude vol rich even as spot spikes), NEM (gold sub-$4k), EQT (HH ~$2.81, Q2 avg $2.95 down YoY, storage glut; don't buy Jul21 dip), VG (debt/EU risk), XOP/XLE (too blunt). De-escalation risk ELEVATED (crude at 1-mo high = most to give back on peace): hedges FRO Sep $35P + DAL Sep $90C ~= 20% offset of conflict-beneficiary max loss."
+    "notes": "Jul19 (Sun, Jul17 close data \u2014 same close as Jul18 run): MMD MCP ABSENT for a 10th straight run \u2014 prices web-sourced (Yahoo/stockanalysis/CNBC/TradingEconomics), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. ESCALATION HARDENED over the weekend: Iran War Day 141. US concluded its 8th straight night of strikes; 2 US SERVICE MEMBERS KILLED + 1 MIA by an Iranian strike in Jordan \u2014 first US combat fatalities since March. US hit Chabahar port maritime-surveillance tower + a power plant on Kish Island + re-struck the disabled tanker Belma at Kharg. Iran adviser Rezaee warned of 'full-scale offensive operations' if US strikes continue 2-3 more days. Pakistan+Qatar still mediating but Trump holds MoU 'over.' Hormuz Day 140, ~10 vessels/day vs ~88 normal, US naval blockade + 20% cargo fee. BOTH legs fire: Brent >$84 (+10-14% wk) AND 3-2-1 crack RECORD $70/bbl (Jul16), Euro diesel margin >$60 on Russia's Jul8-31 export ban + 42.7% Russian refining offline. KEY NUANCE: crude TANKER rates (VLCC) are FALLING \u2014 vessels fleeing the Gulf create Atlantic oversupply; FRO -5.4% to $36.38 \u2014 so the freight leg that works is PRODUCT tankers/refining, not crude VLCCs. Trade the fuel (VLO), the LNG structural gap (LNG/Qatar), munitions restock (RTX), and marine war-risk (RNR) \u2014 not the barrel (USO, OVX 61 rich) or crude tankers (FRO). VLO = ToD 5th straight day (spot ~$303, ATH; Q2 ER Jul30 BMO, est EPS $8.69 +281% YoY; smart money bought Aug21 $320C blocks 4,900+7,400). Vol: VIX ~18-19, OVX 61+ (crude vol rich); GEV IV rank 100% into Jul22 print = favor ITM/spreads. THIS-WEEK CATALYST GAUNTLET: Jul21 EQT AMC, Jul22 GEV BMO + RNR AMC, Jul23 RTX BMO, Jul30 VLO BMO, Aug6 LNG BMO. Gold sub-$4k ($3,990, -3% wk), CPI cooled to 3.5%, Fed Jul28-29 ~51% Sept-hike odds \u2014 NEM haven thesis stays broken, PASS. PASSES: USO (OVX 61 rich), NEM (gold sub-$4k), EQT (HH weak $2.77-3.14, storage glut; don't buy the Jul21 dip), FRO (VLCC oversupply, crude tankers not working), VG (debt/EU risk), XOP/XLE (too blunt). De-escalation risk ELEVATED (crude near 1-mo high): hedges DAL Sep $90C + small USO Sep $110P ~= 18-20% offset of conflict-beneficiary max loss."
   },
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
