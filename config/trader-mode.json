@@ -206,19 +206,19 @@
     }
   ],
   "last_run_picks": {
-    "date": "2026-07-19",
+    "date": "2026-07-20",
     "trade_of_the_day": "VLO",
     "tickers": [
       "VLO",
       "LNG",
-      "RTX",
       "RNR",
+      "STNG",
       "GEV",
+      "RTX",
       "ET",
-      "GLNG",
-      "DAL"
+      "GLNG"
     ],
-    "notes": "Jul19 (Sun, Jul17 close data \u2014 same close as Jul18 run): MMD MCP ABSENT for a 10th straight run \u2014 prices web-sourced (Yahoo/stockanalysis/CNBC/TradingEconomics), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. ESCALATION HARDENED over the weekend: Iran War Day 141. US concluded its 8th straight night of strikes; 2 US SERVICE MEMBERS KILLED + 1 MIA by an Iranian strike in Jordan \u2014 first US combat fatalities since March. US hit Chabahar port maritime-surveillance tower + a power plant on Kish Island + re-struck the disabled tanker Belma at Kharg. Iran adviser Rezaee warned of 'full-scale offensive operations' if US strikes continue 2-3 more days. Pakistan+Qatar still mediating but Trump holds MoU 'over.' Hormuz Day 140, ~10 vessels/day vs ~88 normal, US naval blockade + 20% cargo fee. BOTH legs fire: Brent >$84 (+10-14% wk) AND 3-2-1 crack RECORD $70/bbl (Jul16), Euro diesel margin >$60 on Russia's Jul8-31 export ban + 42.7% Russian refining offline. KEY NUANCE: crude TANKER rates (VLCC) are FALLING \u2014 vessels fleeing the Gulf create Atlantic oversupply; FRO -5.4% to $36.38 \u2014 so the freight leg that works is PRODUCT tankers/refining, not crude VLCCs. Trade the fuel (VLO), the LNG structural gap (LNG/Qatar), munitions restock (RTX), and marine war-risk (RNR) \u2014 not the barrel (USO, OVX 61 rich) or crude tankers (FRO). VLO = ToD 5th straight day (spot ~$303, ATH; Q2 ER Jul30 BMO, est EPS $8.69 +281% YoY; smart money bought Aug21 $320C blocks 4,900+7,400). Vol: VIX ~18-19, OVX 61+ (crude vol rich); GEV IV rank 100% into Jul22 print = favor ITM/spreads. THIS-WEEK CATALYST GAUNTLET: Jul21 EQT AMC, Jul22 GEV BMO + RNR AMC, Jul23 RTX BMO, Jul30 VLO BMO, Aug6 LNG BMO. Gold sub-$4k ($3,990, -3% wk), CPI cooled to 3.5%, Fed Jul28-29 ~51% Sept-hike odds \u2014 NEM haven thesis stays broken, PASS. PASSES: USO (OVX 61 rich), NEM (gold sub-$4k), EQT (HH weak $2.77-3.14, storage glut; don't buy the Jul21 dip), FRO (VLCC oversupply, crude tankers not working), VG (debt/EU risk), XOP/XLE (too blunt). De-escalation risk ELEVATED (crude near 1-mo high): hedges DAL Sep $90C + small USO Sep $110P ~= 18-20% offset of conflict-beneficiary max loss."
+    "notes": "Jul20 (Mon): MMD MCP ABSENT for an 11th+ straight run \u2014 prices web-sourced (Yahoo/stockanalysis/CNBC/TradingEconomics/Bloomberg), options premiums MODELED via Black-Scholes (r=4.16%), NOT market quotes. REGIME INFLECTION: escalation hardened (Iran War Day 142, US 9th straight night of strikes, THIRD US service member killed by drone in N.Iraq/Jordan, Iran fired at Aqaba Jordan, IRGC declared ALL Hormuz maritime traffic banned Jul19, White House Situation Room weighing GROUND troops for Kharg Island) BUT the FIRST real de-escalation crack in two weeks: Monday AM Iran FM said US talks 'could be pursued based on national interests' \u2192 Brent ERASED a 3% gain, falling from intraday $91.42 to ~$87.9; another round expected next week possibly Switzerland (Pakistan+Qatar mediating). Two-way risk finally LIVE. Equities risk-on: S&P +0.5%, Nasdaq +0.8%, VIX 17.68 (-5.8%), oil reversal is inflation-relief supportive. THE PLAYBOOK: rotate toward de-escalation-RESILIENT conflict plays (VLO refining \u2014 WINS on cheaper crude if Hormuz reopens while cracks stay sticky; LNG \u2014 Qatar force majeure extended to Sept, 21 cargoes/17% supply structurally out, survives ceasefire) and AWAY from pure war-premium plays (RNR marine war-risk, STNG spot rates, USO barrel) that de-rate fast on a talks headline. VLO = ToD 6th straight day (spot $308, Fri ATH $309.65; 3-2-1 crack RECORD $70/bbl Jul16, diesel crack $87-91; Q2 ER Jul30 BMO, consensus EPS now ~$10.12 vs $8.69 earlier; Jefferies $312, RayJay $340 street-high, Goldman $286, Barclays $279). THIS-WEEK CATALYST GAUNTLET: Jul21 EQT AMC (est $0.41, HH weak $2.77-3.14), Jul22 GEV (est $3.17-3.23, rev $10.77B; IV rank ~100% = favor ITM/spreads) + RNR AMC (est $11.73, call Jul23), Jul23 RTX BMO (est $1.66, rev $22.88B), Jul30 VLO BMO. PASSES (Section F): EQT (HH glut, don't buy Jul21 dip), USO long (barrel is the wrong leg, de-escalation crack now live), NEM (gold sub-$4k, haven broken), FRO (VLCC Atlantic oversupply), XOP/XLE (too blunt). De-escalation hedges NOW ELEVATED PRIORITY: USO Sep $110P + DAL Sep $90C peace hedge ~= 18-20% offset of conflict-beneficiary max loss. flagged-tickers.json left UNTOUCHED \u2014 all 5 claude_suggested (STNG/RTX/RNR/VLO/GEV) have live imminent catalysts this week."
   },
   "max_ideas_per_day": 5,
   "preferred_timeframe": "swing",
